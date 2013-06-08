@@ -1,0 +1,152 @@
+﻿@{
+    Layout = "~/Views/Shared/_IndexLayout.cshtml";
+    ViewBag.Title = "Inpinke-印品客，感受印品的美好!";
+}
+<script  type="text/javascript" src="/Content/pagestyle/js/jquery.xslider.js"></script>
+ 
+<script type="text/javascript">
+    $(function () {
+
+        ShelfItemHoverAction();
+        $('#slider').Xslider({ affect: 'fade', ctag: 'div',stag:'span' });
+    })
+
+    function ShelfItemHoverAction() {
+        $("div.product_shelf div.shelf_item a").bind("mouseover", function () {
+            var __this = $(this), bgHtml = __this.find("span.shelf_item_descbg");
+            if (bgHtml.length > 0) {
+                bgHtml.show();
+            } else {
+                var width = __this.width(), height = __this.height();
+                bgHtml = '<span class="shelf_item_descbg" style="width:' + width + 'px;height:' + height + 'px;"></span>';
+                __this.append(bgHtml);
+            }
+        })
+        $("div.product_shelf div.shelf_item a").bind("mouseout", function () {
+            $(this).find("span.shelf_item_descbg").hide();
+        })
+
+    }
+
+ 
+</script>
+ 
+<div class="out_wrapper obanner_wrapper">
+    <!--banner和notice-->
+    <div class="content_wrapper">
+        <div class="banner_wrapper">
+             <div id="slider" class="slider">
+			<div class="conbox">				 
+				<div style="position: absolute; z-index: 1; opacity: 1;"><a href="" title=""><img width="766" height="290" alt="" src="/Content/pagestyle/images/banner_2.jpg"></a></div>
+                <div style="position: absolute; z-index: 1; opacity: 0;"><a href="" title=""><img width="766" height="290" alt="" src="/Content/pagestyle/images/banner_1.jpg"></a></div>				 
+			</div>
+			<div class="switcher">
+				<span  class="cur">1</span>
+                <span  class="">2</span>
+			</div>
+		</div>
+        </div>
+        <div class="notice_wrapper clearfix">
+            <div class="notice_bg">
+                <a href="#">公告</a></div>
+            <ul class="notice_list">
+                <li><a href="/notice">
+                    <label>
+                        [梦想]</label>2012-07-01：我们可以做什么</a></li>
+                <li><a href="#">
+                    <label>
+                        [通知]</label>2012-07-01：网站编辑器改版啦！</a></li>
+                <li><a href="#">
+                    <label>
+                        [新品]</label>2012-07-01：inLife将于2012年12月上线</a></li>
+            </ul>
+            <div class="fellow_weibo">
+                <div class="notice_bg weibo_bg">
+                    <a href="#">关注我们</a></div>
+                <span>关注我们的微博</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!--产品图片展示-->
+<div class="content_wrapper product_shelf">
+    <div class="shelf_item first_line first_cell">
+        <a href="" style="width: 394px; height: 205px;">
+            <img src="../../Content/pagestyle/images/intime_1.jpg" style="width: 380px; height: 190px;
+                padding: 7px;" alt="" />
+            <span class="shelf_item_desc">inTime-时光，风景<br />
+                75元</span></a>
+    </div>
+    <div class="shelf_item first_line">
+        <div class="inpinke_dream">
+            <div class="inpinke_dream_title">
+                <strong>印品客：</strong><span>I HAVE A DREAM</span></div>
+            <p>
+                我有一个梦想，让电子化冰冻住的美好复活，<br />
+                让我们可以用指尖感受她的质感；<br />
+                可以嗅到她笔墨的芳香；<br />
+                可以听到纸张簇新的声响。<br />
+                让我们从心感受，感受一张影像，一段文字带来的美好。<br />
+                感受印品的美好。<br />
+            </p>
+        </div>
+    </div>
+    <div class="shelf_item first_line" style="width: 215px; border-right: none;">
+        <a href="" style="width: 215px; height: 205px;">
+            <img src="../../Content/pagestyle/images/intime_3.jpg" style="width: 200px; height: 190px;
+                padding: 7px;" alt="" />
+            <span class="shelf_item_desc">inTime-时光，旅行<br />
+                75元</span></a>
+    </div>
+    <div class="shelf_item second_line" style="width: 215px;">
+        <a href="" style="width: 215px; height: 410px;">
+            <img src="../../Content/pagestyle/images/intime_pet.jpg" style="width: 199px; height: 396px;
+                padding: 7px;" alt="" />
+            <span class="shelf_item_desc">inTime-时光，萌物<br />
+                75元</span></a>
+    </div>
+    <div class="shelf_item second_line" style="width: 310px;">
+        @*<a href="" style="width: 310px; height: 410px;">*@
+            <img src="../../Content/pagestyle/images/home_intime.jpg" style="width: 296px; height: 396px;
+                padding: 7px;" alt="" />
+            @* </a>*@
+    </div>
+    <div class="shelf_item second_line" style="width: 430px; border-right: none;">
+        <div class="shelf_item first_line" style="width: 215px;">
+            <a href="" style="width: 215px; height: 205px;">
+                <img src="../../Content/pagestyle/images/intime_4.jpg" style="width: 200px; height: 190px;
+                    padding: 6px;" alt="" />
+                <span class="shelf_item_desc">inTime-时光，亲子<br />
+                    75元</span></a>
+        </div>
+        <div class="shelf_item first_line" style="width: 214px; border-right: none;">
+            <a href="" style="width: 214px; height: 205px;">
+                <img src="../../Content/pagestyle/images/intime_5.jpg" style="width: 200px; height: 190px;
+                    padding: 7px;" alt="" />
+                <span class="shelf_item_desc">inTime-时光，写真<br />
+                    75元</span></a>
+        </div>
+        <div class="shelf_item">
+            <a href="" style="width: 430px; height: 205px;">
+                <img src="../../Content/pagestyle/images/intime_2.jpg" style="width: 416px; height: 190px;
+                    padding: 7px;" alt="" />
+                <span class="shelf_item_desc">inTime-时光，爱<br />
+                    75元</span></a>
+        </div>
+    </div>
+</div>
+<!--推荐书籍展示-->
+@*<div class="content_wrapper book_show">
+    <table>
+        <tr>
+            <td class="book_show_title">
+            </td>
+            <td>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="height:200px;">
+            </td>
+        </tr>
+    </table>
+</div>*@ 

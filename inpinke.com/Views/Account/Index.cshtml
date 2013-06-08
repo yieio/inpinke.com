@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "我的印品客-Inpinke-感受印品的美好";
+}
+@section  LinkScript{
+}
+<div class="content_wrapper account_wrapper">    
+    @Html.Partial("_MyMenuPartial")
+    <div class="content_wrapper clearfix">
+    <div class="mybook_list container">
+        <div class="book_item">
+            <div class="product_name_bg">
+                <span class="pd_name">inTime</span></div>
+            <div class="book_cover">
+                <a class="" href="javascript:;">
+                    <img src="../../Content/pagestyle/demo/p20.jpg" alt="" />
+                </a>
+                <div class="done_percent">
+                  已完成<span class="percent_num">70%</span>
+                </div>
+            </div>
+            <div class="book_details">
+                <h2 class="book_name">
+                    向来缘浅</h2>
+                <p class="book_sum">
+                    向来缘浅，奈何情深。你转身的一瞬，我萧条的一生，一切都会过去，明天各人又将各奔前程。生命无所谓长短，无所谓欢乐哀愁，无所谓爱恨得失……一切都要过去，像那些花，那些流水……
+                    ——三毛《秋恋》
+                </p>
+                <div class="book_info">
+                    <p class="book_btn clearfix">
+                        <a href="" class="l_btn">预览</a><a href="" class="l_btn">编辑</a> <a href="" class="l_btn">
+                            出版</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="book_item">
+            <div class="product_name_bg">
+                <span class="pd_name">inWay</span></div>
+            <div class="book_cover">
+                <a class="" href="javascript:;">
+                    <img src="../../Content/pagestyle/demo/p16.jpg" alt="" />
+                </a>
+                <div class="done_percent">
+                  已完成<span class="percent_num">30%</span>
+                </div>
+            </div>
+            <div class="book_details">
+                <h2 class="book_name">
+                    行走在路上...</h2>
+                <p class="book_sum">
+                    向来缘浅，奈何情深。你转身的一瞬，我萧条的一生，一切都会过去，明天各人又将各奔前程。生命无所谓长短，无所谓欢乐哀愁，无所谓爱恨得失……一切都要过去，像那些花，那些流水……
+                    ——三毛《秋恋》
+                </p>
+                <div class="book_info">
+                    <p class="book_btn clearfix">
+                        <a href="" class="l_btn">预览</a><a href="" class="l_btn">编辑</a> <a href="" class="l_btn">
+                            出版</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="right_menu_wrapper">
+      <div class="menu_box">
+        <div class="menu_title"><h2>快速定制印品</h2></div>
+        <div class="box_con">        
+        </div>
+      </div>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        var bookCovers = $("div.book_cover");
+        bookCovers.bind("mouseover", function () {
+            $(this).find("div.done_percent").stop(true, false).animate({ bottom: 0 }, 300);
+        })
+        bookCovers.bind("mouseout", function () {
+            $(this).find("div.done_percent").stop(true, false).animate({ bottom: -40 }, 300);
+        })
+    })
+</script>

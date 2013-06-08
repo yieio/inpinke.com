@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inpinke.com", "inpinke.com\inpinke.com.csproj", "{ABCA6749-E4F9-47CD-BD8B-ED25EA492F80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inpinke.WebServices", "Inpinke.WebServices\Inpinke.WebServices.csproj", "{0DB8AE31-79C6-4A26-80F9-AF208082AC19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inpinke.BLL", "Inpinke.BLL\Inpinke.BLL.csproj", "{2D119DFF-4566-4741-8260-F1DDA42F65E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Inpinke.Helper\Helper.csproj", "{7B2E878F-6071-41D7-A97E-836297C88A4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inpinke.Model", "Inpinke.Model\Inpinke.Model.csproj", "{E0640E8A-FAAD-4C8E-BFC2-72D42C148F8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "admin.inpinke.com", "admin.inpinke.com\admin.inpinke.com.csproj", "{3A543930-E4D0-484D-A183-A3D273FE3C51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABCA6749-E4F9-47CD-BD8B-ED25EA492F80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABCA6749-E4F9-47CD-BD8B-ED25EA492F80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABCA6749-E4F9-47CD-BD8B-ED25EA492F80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABCA6749-E4F9-47CD-BD8B-ED25EA492F80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DB8AE31-79C6-4A26-80F9-AF208082AC19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DB8AE31-79C6-4A26-80F9-AF208082AC19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DB8AE31-79C6-4A26-80F9-AF208082AC19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DB8AE31-79C6-4A26-80F9-AF208082AC19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D119DFF-4566-4741-8260-F1DDA42F65E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D119DFF-4566-4741-8260-F1DDA42F65E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D119DFF-4566-4741-8260-F1DDA42F65E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D119DFF-4566-4741-8260-F1DDA42F65E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B2E878F-6071-41D7-A97E-836297C88A4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2E878F-6071-41D7-A97E-836297C88A4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2E878F-6071-41D7-A97E-836297C88A4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2E878F-6071-41D7-A97E-836297C88A4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0640E8A-FAAD-4C8E-BFC2-72D42C148F8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0640E8A-FAAD-4C8E-BFC2-72D42C148F8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0640E8A-FAAD-4C8E-BFC2-72D42C148F8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0640E8A-FAAD-4C8E-BFC2-72D42C148F8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A543930-E4D0-484D-A183-A3D273FE3C51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A543930-E4D0-484D-A183-A3D273FE3C51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A543930-E4D0-484D-A183-A3D273FE3C51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A543930-E4D0-484D-A183-A3D273FE3C51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

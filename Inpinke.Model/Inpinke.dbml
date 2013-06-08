@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Inpinke" Class="InpinkeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=YIEIO-PC\SQL2008;Initial Catalog=Inpinke;User ID=sa" SettingsObjectName="Inpinke.Model.Properties.Settings" SettingsPropertyName="InpinkeConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Inpinke_ImageScale" Member="Inpinke_ImageScales">
+    <Type Name="Inpinke_ImageScale">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Width" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Height" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsScale" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="GroupID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PlusName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Notice" Member="Inpinke_Notices">
+    <Type Name="Inpinke_Notice">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Brief" Type="System.String" DbType="NVarChar(300)" CanBeNull="true" />
+      <Column Name="NoticeContent" Type="System.String" DbType="Text NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+      <Column Name="NoticeType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreateUser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdateUser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_User_OAuthLogin" Member="Inpinke_User_OAuthLogins">
+    <Type Name="Inpinke_User_OAuthLogin">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="LoginType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OpenID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="AccessToken" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LoginTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="Inpinke_User_Inpinke_User_OAuthLogin" Member="Inpinke_User" ThisKey="UserID" OtherKey="ID" Type="Inpinke_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Book_Image" Member="Inpinke_Book_Images">
+    <Type Name="Inpinke_Book_Image">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BookID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ImageID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UsedNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Inpinke_Image_Inpinke_Book_Image" Member="Inpinke_Image" ThisKey="ImageID" OtherKey="ID" Type="Inpinke_Image" IsForeignKey="true" />
+      <Association Name="Inpinke_Book_Inpinke_Book_Image" Member="Inpinke_Book" ThisKey="BookID" OtherKey="ID" Type="Inpinke_Book" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Book_Page" Member="Inpinke_Book_Pages">
+    <Type Name="Inpinke_Book_Page">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BookID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PageNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IsSkip" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PageData" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" />
+      <Column Name="PageImg" Type="System.String" DbType="Text" CanBeNull="true" />
+      <Column Name="PageTxt" Type="System.String" DbType="Text" CanBeNull="true" />
+      <Column Name="PageStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Inpinke_Book_Inpinke_Book_Page" Member="Inpinke_Book" ThisKey="BookID" OtherKey="ID" Type="Inpinke_Book" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Product" Member="Inpinke_Products">
+    <Type Name="Inpinke_Product">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProductCode" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="LongName" Type="System.String" DbType="NText" CanBeNull="true" />
+      <Column Name="ShortName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="ProductType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CouponPrice" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="BasePages" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PlusPrice" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="PlusPages" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PlusTo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Width" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="Height" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreateUser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateUser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Remark" Type="System.String" DbType="Text" CanBeNull="true" />
+      <Column Name="IsDisplay" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="DisplayOrd" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Inpinke_Product_Inpinke_Order_Product" Member="Inpinke_Order_Products" ThisKey="ID" OtherKey="ProductID" Type="Inpinke_Order_Product" />
+      <Association Name="Inpinke_Product_Inpinke_Cart" Member="Inpinke_Carts" ThisKey="ID" OtherKey="ProductID" Type="Inpinke_Cart" />
+      <Association Name="Inpinke_Product_Inpinke_Book" Member="Inpinke_Books" ThisKey="ID" OtherKey="ProductID" Type="Inpinke_Book" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_User_Address" Member="Inpinke_User_Addresses">
+    <Type Name="Inpinke_User_Address">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Mobile" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ProvID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CityID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AreaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProvName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CityName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="AreaName" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="IsDefault" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Inpinke_User_Address_Inpinke_Order" Member="Inpinke_Orders" ThisKey="ID" OtherKey="AddressID" Type="Inpinke_Order" />
+      <Association Name="Inpinke_User_Inpinke_User_Address" Member="Inpinke_User" ThisKey="UserID" OtherKey="ID" Type="Inpinke_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Base_Area" Member="Base_Areas">
+    <Type Name="Base_Area">
+      <Column Name="AreaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AreaName" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="CityID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Base_City" Member="Base_Cities">
+    <Type Name="Base_City">
+      <Column Name="CityID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CityName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ProvID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Base_Province" Member="Base_Provinces">
+    <Type Name="Base_Province">
+      <Column Name="ProvID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProvName" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Order_Product" Member="Inpinke_Order_Products">
+    <Type Name="Inpinke_Order_Product">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProductID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BookID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OrderID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Num" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Envelope" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PlusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CouponID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Price" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Inpinke_Product_Inpinke_Order_Product" Member="Inpinke_Product" ThisKey="ProductID" OtherKey="ID" Type="Inpinke_Product" IsForeignKey="true" />
+      <Association Name="Inpinke_Book_Inpinke_Order_Product" Member="Inpinke_Book" ThisKey="BookID" OtherKey="ID" Type="Inpinke_Book" IsForeignKey="true" />
+      <Association Name="Inpinke_User_Inpinke_Order_Product" Member="Inpinke_User" ThisKey="UserID" OtherKey="ID" Type="Inpinke_User" IsForeignKey="true" />
+      <Association Name="Inpinke_Order_Inpinke_Order_Product" Member="Inpinke_Order" ThisKey="OrderID" OtherKey="ID" Type="Inpinke_Order" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Cart" Member="Inpinke_Carts">
+    <Type Name="Inpinke_Cart">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProductID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BookID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Num" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Envelope" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PlusID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CouponID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Inpinke_Product_Inpinke_Cart" Member="Inpinke_Product" ThisKey="ProductID" OtherKey="ID" Type="Inpinke_Product" IsForeignKey="true" />
+      <Association Name="Inpinke_Book_Inpinke_Cart" Member="Inpinke_Book" ThisKey="BookID" OtherKey="ID" Type="Inpinke_Book" IsForeignKey="true" />
+      <Association Name="Inpinke_User_Inpinke_Cart" Member="Inpinke_User" ThisKey="UserID" OtherKey="ID" Type="Inpinke_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Coupon" Member="Inpinke_Coupons">
+    <Type Name="Inpinke_Coupon">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CouponName" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="CouponDesc" Type="System.String" DbType="Text" CanBeNull="true" />
+      <Column Name="StartTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DiscountPrice" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="DiscountPostage" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="CouponType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProductID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Priority" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Inpinke_Coupon_Inpinke_Coupon_Code" Member="Inpinke_Coupon_Codes" ThisKey="ID" OtherKey="CouponID" Type="Inpinke_Coupon_Code" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Coupon_Code" Member="Inpinke_Coupon_Codes">
+    <Type Name="Inpinke_Coupon_Code">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CouponID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Code" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="StartTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="EndTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="CodeStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GetterID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GotTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="OrderID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Inpinke_Coupon_Inpinke_Coupon_Code" Member="Inpinke_Coupon" ThisKey="CouponID" OtherKey="ID" Type="Inpinke_Coupon" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Image" Member="Inpinke_Images">
+    <Type Name="Inpinke_Image">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="OriginalName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="HashCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ImageName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UsedNum" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Path" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="Text" CanBeNull="true" />
+      <Column Name="Tags" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion NOT NULL" CanBeNull="false" IsVersion="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Inpinke_Image_Inpinke_Book_Image" Member="Inpinke_Book_Images" ThisKey="ID" OtherKey="ImageID" Type="Inpinke_Book_Image" />
+      <Association Name="Inpinke_User_Inpinke_Image" Member="Inpinke_User" ThisKey="UserID" OtherKey="ID" Type="Inpinke_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Message" Member="Inpinke_Messages">
+    <Type Name="Inpinke_Message">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Title" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Msg" Type="System.String" DbType="Text" CanBeNull="true" />
+      <Column Name="FromUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ToUser" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MsgType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReplyID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="MsgStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReferID" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ReferType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Book" Member="Inpinke_Books">
+    <Type Name="Inpinke_Book">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BookName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="SubBookName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Author" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BookFont" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BookDesc" Type="System.String" DbType="Text" CanBeNull="true" />
+      <Column Name="BookCover" Type="System.String" DbType="Text" CanBeNull="true" />
+      <Column Name="BookThumb" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" />
+      <Column Name="BookView" Type="System.Xml.Linq.XElement" DbType="Xml" CanBeNull="true" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BookStauts" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="PageCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DonePages" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ProductID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ShowStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Inpinke_Book_Inpinke_Book_Image" Member="Inpinke_Book_Images" ThisKey="ID" OtherKey="BookID" Type="Inpinke_Book_Image" />
+      <Association Name="Inpinke_Book_Inpinke_Book_Page" Member="Inpinke_Book_Pages" ThisKey="ID" OtherKey="BookID" Type="Inpinke_Book_Page" />
+      <Association Name="Inpinke_Book_Inpinke_Order_Product" Member="Inpinke_Order_Products" ThisKey="ID" OtherKey="BookID" Type="Inpinke_Order_Product" />
+      <Association Name="Inpinke_Book_Inpinke_Cart" Member="Inpinke_Carts" ThisKey="ID" OtherKey="BookID" Type="Inpinke_Cart" />
+      <Association Name="Inpinke_Product_Inpinke_Book" Member="Inpinke_Product" ThisKey="ProductID" OtherKey="ID" Type="Inpinke_Product" IsForeignKey="true" />
+      <Association Name="Inpinke_User_Inpinke_Book" Member="Inpinke_User" ThisKey="UserID" OtherKey="ID" Type="Inpinke_User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Recommend_Book" Member="Inpinke_Recommend_Books">
+    <Type Name="Inpinke_Recommend_Book">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BookID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GroupName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="LikeCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RecomTxt" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_User" Member="Inpinke_Users">
+    <Type Name="Inpinke_User">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NickName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UserStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserAvatar" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="ValidateCode" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ValidateData" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmailIsReal" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="MobileIsReal" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ChannelID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ChannelName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RefUrl" Type="System.String" DbType="Text" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Timestamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Inpinke_User_Inpinke_User_OAuthLogin" Member="Inpinke_User_OAuthLogins" ThisKey="ID" OtherKey="UserID" Type="Inpinke_User_OAuthLogin" />
+      <Association Name="Inpinke_User_Inpinke_User_Address" Member="Inpinke_User_Addresses" ThisKey="ID" OtherKey="UserID" Type="Inpinke_User_Address" />
+      <Association Name="Inpinke_User_Inpinke_Order_Product" Member="Inpinke_Order_Products" ThisKey="ID" OtherKey="UserID" Type="Inpinke_Order_Product" />
+      <Association Name="Inpinke_User_Inpinke_Cart" Member="Inpinke_Carts" ThisKey="ID" OtherKey="UserID" Type="Inpinke_Cart" />
+      <Association Name="Inpinke_User_Inpinke_Image" Member="Inpinke_Images" ThisKey="ID" OtherKey="UserID" Type="Inpinke_Image" />
+      <Association Name="Inpinke_User_Inpinke_Book" Member="Inpinke_Books" ThisKey="ID" OtherKey="UserID" Type="Inpinke_Book" />
+      <Association Name="Inpinke_User_Inpinke_Order" Member="Inpinke_Orders" ThisKey="ID" OtherKey="UserID" Type="Inpinke_Order" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_User_Channel" Member="Inpinke_User_Channels">
+    <Type Name="Inpinke_User_Channel">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ChannelName" Type="System.String" DbType="NVarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Remark" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="SimpleLink" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Admin" Member="Inpinke_Admins">
+    <Type Name="Inpinke_Admin">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Inpinke_Order" Member="Inpinke_Orders">
+    <Type Name="Inpinke_Order">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="OrderCode" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="OrderStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CreateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UpdateTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="PayTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PayMethod" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TotalPrice" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="OrgPrice" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="TotalFee" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="ExpressPrice" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="ExpressTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ExpressCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ExpressName" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="ExpressStatus" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CouponID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AddressID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserRemark" Type="System.String" DbType="Text" CanBeNull="true" />
+      <Column Name="ShipperRemark" Type="System.String" DbType="Text" CanBeNull="true" />
+      <Column Name="SignerName" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="SignTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="BuyerInfo" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="RecUserName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="RecMobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="RecProvID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RecCityID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RecAreaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RecProvName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="RecCityName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="RecAreaName" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="RecAddress" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="TimeStamp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="Status" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Inpinke_Order_Inpinke_Order_Product" Member="Inpinke_Order_Products" ThisKey="ID" OtherKey="OrderID" Type="Inpinke_Order_Product" />
+      <Association Name="Inpinke_User_Inpinke_Order" Member="Inpinke_User" ThisKey="UserID" OtherKey="ID" Type="Inpinke_User" IsForeignKey="true" />
+      <Association Name="Inpinke_User_Address_Inpinke_Order" Member="Inpinke_User_Address" ThisKey="AddressID" OtherKey="ID" Type="Inpinke_User_Address" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

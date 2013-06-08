@@ -1,0 +1,101 @@
+﻿@using Inpinke.Model
+@model inpinke.com.Models.OrderInfoModel
+@{
+    ViewBag.Title = "Inpinke-填写订单信息";
+}
+<div class="content_wrapper order_wrapper">
+    <p class="content_title">
+        <span>填写订单信息</span>
+    </p>
+    <p class="order_step">
+        <span>1、确认商品信息</span><span>></span><span style="color: #111;">2、填写订单信息</span><span>></span><span>3、完成支付</span><span>></span><span>4、等待收货</span></p>
+    @using (Html.BeginForm("OrderInfo", "Order", FormMethod.Post, new { @class = "order_form" }))
+    {
+        if (ViewBag.UserAddress != null)
+        {  <div class="address_wrapper">
+            <h2>
+                选择收货人</h2>
+                <div id="consigneeItemWrapper">
+            @{IList<Inpinke_User_Address> userAddress = ViewBag.UserAddress as List<Inpinke_User_Address>;}
+            @foreach (Inpinke_User_Address a in userAddress)
+            {         
+                <div class="consignee_item @(a.IsDefault ? "selected" : "")" id="consignee_item_@(a.ID)">
+                    <input class="radio" type="radio" name="AddressID" value="@a.ID" style="width: auto;" @(a.IsDefault ? "checked=\"checked\"" : "")  id="address_radio_@(a.ID)"/>
+                    <span>@a.ProvName @a.CityName @a.AreaName @a.Address </span><span>@a.UserName（收）</span>
+                    <span>@a.Mobile</span> <a href="javascript:ModifyAddress(@(a.ID))">[修改]</a>
+                </div>
+            }</div>
+             
+            <div class="add_consignee_item">
+                  <a href="javascript:AddConsignee()" class="add_btn"><span class="add_icon">+</span><span>添加收货人</span></a>
+            </div>
+        </div>
+        }
+        else
+        {
+        <div>
+            <div class="editor_label">
+                @Html.LabelFor(m => m.Consignee)
+            </div>
+            <div class="editor_field">
+                @Html.TextBoxFor(m => m.Consignee)
+                @Html.ValidationMessageFor(m => m.Consignee)
+            </div>
+            <div class="editor_label">
+                @Html.LabelFor(m => m.Mobile)
+            </div>
+            <div class="editor_field">
+                @Html.TextBoxFor(m => m.Mobile)
+                @Html.ValidationMessageFor(m => m.Mobile)
+            </div>
+            <div class="editor_label">
+                收货地址
+            </div>
+            <div class="editor_field">
+                <select name="ProvID" id="ProvID">
+                    <option>--请选择省--</option>
+                </select>
+                <select name="CityID" id="CityID" onchange="Scripts.pca.Doajax('ajax.do?act=area&id='+escape(this.value),'post','AreaID','area');">
+                    <option>--请选择市--</option>
+                </select>
+                <select name="AreaID" id="AreaID">
+                    <option>--请选择区--</option>
+                </select>
+                @Html.ValidationMessageFor(m => m.AreaID)
+            </div>
+            <div class="editor_field">
+                @Html.TextBoxFor(m => m.Address, new { onfocus = "if (value =='详细地址'){value =''}", onblur = "if (value ==''){value='详细地址'}", value = "详细地址" })
+                @Html.ValidationMessageFor(m => m.Address)
+            </div>
+        </div>
+        }
+        <div>
+            <div class="editor_label">
+                @Html.LabelFor(m => m.Remark)
+            </div>
+            <div class="editor_field">
+                @Html.TextBoxFor(m => m.Remark)
+                @Html.ValidationMessageFor(m => m.Remark)
+            </div>
+            <p>@ViewBag.Msg</p>
+            <p class=" editor_label order_btn_field">
+                <input value="下一步：完成支付" type="submit" class="color_btn" />
+                &nbsp;&nbsp;<a href="/order">返回上一步</a>
+            </p>
+        </div>
+    }
+</div>
+<div id="AddressForm" style="display: none; text-align: left;">
+    <div class="box_title" style="background-color: #0192B5; line-height: 40px; height: 40px;
+        color: #fff; font-weight: 700; font-size: 15px; padding-left: 17px; position: relative;">
+       <span id="boxTitle">添加收货人</span> <a href="javascript:CloseBox();" title="关闭" class="panel_close" style="display: block;
+            width: 40px; text-align: center; background-color: #fff; font-size: 25px; font-weight: normal;
+            position: absolute; right: 0px; top: 0px;">X</a>
+    </div>
+    <div class="box_content" style="margin: 0 17px;">
+        @Html.Partial("_AddressForm")
+    </div>
+</div>
+<script type="text/javascript" src="../../Scripts/pca.js"></script>
+<script type="text/javascript" src="../../Content/pagestyle/js/inpinke.order.js"></script>
+ 

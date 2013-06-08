@@ -1,0 +1,68 @@
+﻿<div class="out_wrapper top_wrapper">
+    <div class="content_wrapper nav_wrapper">
+        <div class="nav_menu">
+            <div class="user_nav">
+                @if (Inpinke.BLL.Session.UserSession.CurrentUser != null)
+                {
+                    int cartProducts = Inpinke.BLL.DBCartBLL.GetUserCartProductCount(Inpinke.BLL.Session.UserSession.CurrentUser.ID); 
+                    <img src="../../Content/pagestyle/images/dot_spirt.png" alt="" class="user_name" /><a
+                        href="/my/book" title="我的印品">欢迎您： @Inpinke.BLL.Session.UserSession.CurrentUser.NickName </a> <a href="/account/logoff" title="退出"><span>[退出]</span>&nbsp;&nbsp;&nbsp;&nbsp;</a> 
+                    <img src="../../Content/pagestyle/images/dot_spirt.png" alt="" class="user_cart" /><a
+                        href="/order" title="购物车">购物车[@cartProducts]</a>
+                }
+                else
+                {
+                    <div class="user_nav" style="line-height: 40px;">
+                        <a href="/account/register" style="color: #fff;"><span>[注册]</span></a>&nbsp; <a href="/account/login"
+                            style="color: #fff;"><span>[登录]</span></a>
+                    </div> 
+            
+                }
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content_wrapper clearfix" style=" margin-bottom:20px; position:relative;">
+    <div class="nav_logo">
+        <a href="/home" title="返回首页">
+            <img src="../../Content/pagestyle/images/Inpinke_logo.png" alt="inpinke-印品客，感受印品的美好！" /></a>
+    </div>
+    <div class="nav_main_menu">
+        <ul class="clearfix" id="mainMenu">
+            <li><a href="/home" id="__mm_home">首页</a></li>
+            <li><a href="/inpin" id="__mm_inpin">印品介绍</a></li>
+            <li><a href="/shelf" id="__mm_shelf">印品精选</a></li>
+            <li><a href="/my/book" id="__mm_book">我的印品</a></li>
+        </ul>
+    </div>
+    <div class="nav_date">
+                    <div class="nav_date_content">
+                        <h2>
+                            今日订购</h2>
+                        <p>
+                            <span class="nav_date_day">17<span style="font-size:16px;">号</span></span>
+                            预计出货</p>
+                    </div>
+                     
+                </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        var url = window.location + "";
+        url = url.toLowerCase();
+        $("#mainMenu li").each(function () {
+            var theLink = $(this).find("a"); href = theLink.attr("href");
+            if (url.indexOf(href) > 0 || url.indexOf('my') > 0) {
+                theLink.addClass("active");
+                $(this).siblings("li").find("a").removeClass("active");
+            }
+        })
+    })
+
+    function setActiveManiMenu(menu_id) {
+        var activeMenu = $("#" + menu_id);
+        activeMenu.addClass("active");
+        activeMenu.parent("li").siblings("li").find("a").removeClass("active");
+
+    }
+</script>

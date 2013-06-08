@@ -1,0 +1,28 @@
+﻿@{
+    IList<Inpinke.Model.Inpinke_Book> topRList = Inpinke.BLL.DBBookBLL.GetRecommendBook("right-recom");
+}
+@if (topRList != null && topRList.Count() > 0)
+{
+    <ul class="recom_books">
+        @for (int i = 0; i < topRList.Count(); i++)
+        {
+            Inpinke.Model.Inpinke_Book b = topRList[i];
+            string cls = i == 0 ? "first_recom" : "recom_item";
+            string linkCls = i == 0 ? "first_recom_cover" : "recom_cover";
+            <li class="@(cls) clearfix"><a href="/show?id=@(b.ID)" class="@(linkCls)" target="_blank">
+                <img src="@(b.BookCover)" alt="" /></a>
+                <div class="item_info">
+                   <a href="/show?id=@(b.ID)" style="color:#fff"><span class="book_name">@(b.BookName)</span></a><br />
+                    @if (i == 0)
+                    { 
+                        <span>@(b.SubBookName)</span>
+                    }
+                    else if (!string.IsNullOrEmpty(b.BookDesc))
+                    {
+                        <span>@(b.BookDesc.Length > 22 ? b.BookDesc.Substring(0, 20) + "..." : b.BookDesc)</span>
+                    }
+                </div>
+            </li>
+        }
+    </ul>
+}

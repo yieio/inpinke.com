@@ -1,0 +1,161 @@
+﻿.e_bg{background:url(../editor_img/inway_editor_spirt.png) no-repeat 0px 0px;}
+
+.boxshadow{box-shadow: 0 1px 4px rgba(0, 0, 0, .1);-moz-box-shadow: 0 1px 4px rgba(0,0,0,.1);-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);}
+
+.editor_wrapper{ }
+.imgview_panel_wrapper{}
+.imgview_menu{ height:40px; line-height:40px; font-size:14px; background-color:#5c9ad5;}
+.imgview_menu li{ float:left; position:relative; margin-left:7px;}
+.imgview_menu li.first_item{ margin-left:130px;}
+.imgview_menu li a{ color:#fff; display:block; height:40px; padding:0 17px;}
+.imgview_menu li a:hover{ background-color:#424647;}
+.imgview_menu li span.arrow_icon{display:none; width:15px; height:10px; position:absolute; left:40%; bottom:-10px; background:url(../editor_img/inway_editor_spirt.png) no-repeat -167px -6px;}
+.imgview_menu li.active span.arrow_icon{display:block;}
+.imgview_menu li.active a{background-color:#424647;}
+.imgview_menu li a.bind_slide{ width:40px; height:40px; display:block; padding:0px; }
+.imgview_menu li a.slide_r{background-position:-102px 2px; }
+.imgview_menu li a.slide_l{ background-position:-63px 2px; }
+.imgview_menu li a.slide_r:hover{background-position:-102px -36px; background-color:#5c9ad5; }
+.imgview_menu li a.slide_l:hover{ background-position:-63px -36px;  background-color:#5c9ad5;}
+
+
+.imgview_panel{ height:100px; background-color:#fff;}
+.imgview_panel .add_img{width:120px; height:80px; background-color:#5c9ad5; display:block;  position:relative; top:10px; left:10px; float:left; cursor:pointer;}
+.imgview_panel .add_img:hover{ background-color:#72b2ef;}
+.imgview_panel .add_img .upload_icon{ width:60px; height:60px;  position:relative; top:10px; left:5px; float:left;}
+.imgview_panel .add_img .upload_num{ width:55px; float:left; position:relative; top:24px; font-size:30px; color:#fff; text-align:center; }
+
+.imgview_panel .image_view{ height:80px; float:left; width:810px; float:left; position:relative; left:20px; top:10px; overflow:hidden;}
+.imgview_panel .image_view ul{ position:relative; width:810px;}
+.imgview_panel .image_view ul li{ float:left; width:80px; height:80px; margin-left:1px; overflow:hidden;}
+.imgview_panel .image_view ul li img{ width:80px; height:80px;}
+.imgview_panel .image_view .img_used_icon{ position:absolute; left:0px; bottom:0px; background:url(../editor_img/imgview_spirt.png) 0 -36px no-repeat; height:17px; width:80px; }
+.imgview_panel .image_view .delete_img_icon,.page_item_li .delete_img_icon{ position:absolute; top:0px; right:0px; background:url(../editor_img/imgview_spirt.png) -61px 0px no-repeat; width:19px; height:22px; display:block; }
+
+.book_panel{ margin-top:20px; position:relative;}
+#bookPageWrapper{ background-color:#fff; height:360px; overflow:hidden;}
+.book_panel .book_mid{ background:url(../editor_img/book_midbg.png) left top no-repeat; height:360px; width:48px; position:absolute;left:457px; top:0px;}
+.book_panel .page_switcher{width:46px; height:64px; position:absolute; display:block;}
+.book_panel .prev_switcher{ background-position:-320px -3px; left:-50px; top:35%;}
+.book_panel .next_switcher{ background-position:-372px -3px; right:-53px; top:35%;}
+.book_panel .page_switcher:hover{ opacity: 0.8;filter: alpha(opacity=80);}
+ 
+.editor_tool{ width:480px; height:46px; background-color:#5c9ad5; position:relative;float:right;}
+.editor_tool.curr_edit_l{ float:left;}
+.editor_tool span.arrow_icon{display:block; width:15px; height:10px; position:absolute; left:50%; top:-10px; background:url(../editor_img/inway_editor_spirt.png) no-repeat -167px -21px;}
+ .editor_tool ul li{ float:right; color:#fff;  line-height:46px; height:46px; font-size:16px; position:relative; text-align:center; min-width:30px;}
+.editor_tool ul li.page_num{padding:0px 10px;}
+.editor_tool ul li a{ display:block; padding:0 7px; color:#fff; padding:0px 10px;}
+.editor_tool ul li a:hover{ background-color:#424647;}
+.editor_tool.curr_edit_l ul li{ float:left;}
+.editor_tool.curr_edit_l ul li.page_num{ margin-left:0px;}
+.editor_tool ul li.active a{background-color:#424647;}
+.editor_tool ul li.active span.active_arrow_icon{ display:block; background:url(../editor_img/inway_editor_spirt.png) no-repeat -272px -3px; width:15px; height:15px; position:absolute; top:-16px; left:40%;}
+
+.layer_panel{ background:url(../editor_img/stample_bg.png) repeat transparent;  position:absolute;}
+.layer_panel .layer_panel_content{margin:10px; position:relative;}
+
+.style_layer_panel {  width:380px; bottom:60px; right:10px; z-index:105;}
+.style_layer_panel.curr_edit_l{ left:10px;}
+.style_layer_panel .pagestyle_item{ cursor:pointer; margin-left:10px; margin-bottom:10px;height:30px; float:left; background:url(../editor_img/inway_style_spirt.png) no-repeat 0px 0px;}
+
+#pageStylePanel div.pagestyle_item .pagestyle_item_checked{ background:url(../editor_img/pagestyle_spirt.png) no-repeat 0px 0px; width:24px; height:22px; }
+
+.upload_panel,.box_panel{ position:absolute; z-index:101; top:0px; left:0px; width:100%; height:500px; background-color:#fff;box-shadow: 0 1px 3px rgba(34,25,25,0.2);-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.2);-webkit-box-shadow: 0 1px 3px rgba(34,25,2)}
+.upload_panel .panel_title,.txteditor_panel .panel_title,.box_panel .panel_title{ font-size:17px; font-weight:bold; line-height:40px; background-color:#0192B5; color:#fff; position:relative; padding-left:9px;height:40px; vertical-align:middle;}
+.upload_panel .panel_title a.panel_close,.txteditor_panel .panel_title a.panel_close,.box_panel .panel_title a.panel_close{ position:absolute; right:0px; top:0px; display:block;width: 40px;text-align: center;background-color: #fff;font-size: 25px;font-weight: normal;}
+.upload_panel .queue_list_title{}
+.upload_panel .queue_list_title th{ background-color:#eee; padding:7px; line-height:27px;}
+.upload_panel .queue_list_wrapper{ height:350px; overflow:auto;}
+.upload_panel .queue_list{ line-height:27px;}
+.upload_panel .queue_list td{padding:7px; border-bottom:dashed 1px #ccc;}
+.upload_panel .queue_list tr:hover{ background-color:#f7f7f7;}
+.upload_panel .upload_panel_btn,.txteditor_panel .txteditor_panel_btn,.box_panel .box_panel_btn{border-top:solid 1px #e5e2e2; background-color:#fafafa; margin-top:5px; padding:10px;}
+.upload_panel .upload_panel_btn a,.txteditor_panel .txteditor_panel_btn a,.box_panel .box_panel_btn  a{ line-height:30px;border: solid 1px #E8E8E8;float: right;border-radius: 5px; display:block; padding:0 10px; text-align:center; margin-left:7px;}
+.upload_panel .upload_panel_btn a:hover,.box_panel .box_panel_btn  a:hover{ background-color:#eee;}
+
+.pageview_panel{ margin-top:30px;}
+.page_view{ height:90px; background-color:#dcdcdc; overflow:hidden; position:relative;}
+.page_view_list{ position:relative;}
+
+.page_view_list li{ float:left; height:60px; overflow:hidden; position:relative; margin-top:14px; margin-left:16px; width:162px; }
+.page_view_list li div.pview_item{ cursor:pointer;width:80px; height:60px; float:left; margin-left:1px; position:relative; background:no-repeat #fff;}
+.page_view_list li div.pview_item.skip{ width:160px;}
+
+.page_view_list li div.pview_item_r{ background-position:right top;}
+.page_view_list li div.pview_item_l{ background-position:left top;}
+.page_view_list li div.pview_item span.pnum_tip{ position:absolute; width:80px; background-color:#53b6bc;color:#fff; bottom:0px; left:0px; text-align:right; line-height:13px; opacity:0.7;}
+.page_view_list li div.pview_item.skip span.pnum_tip{ width:161px;}
+.page_view_list li.selected div.pview_item span.pnum_tip {background-color: #E95A97;}
+
+
+.pageview_menu{ height:40px; background-color:#424647;line-height:40px; font-size:14px; }
+.pageview_menu li{  float:left; position:relative; margin-left:7px;}
+.pageview_menu li a{ color:#fff; display:block; height:40px; padding:0 17px;}
+.pageview_menu li a:hover{ background-color:#5c9ad5;}
+.pageview_menu li span.arrow_icon{display:none; width:15px; height:10px; position:absolute; left:40%; top:-10px; background:url(../editor_img/inway_editor_spirt.png) no-repeat -167px -21px;}
+.pageview_menu li.active span.arrow_icon{display:block;}
+.pageview_menu li.active a{background-color:#5c9ad5;}
+.pageview_menu li a.bind_slide{ width:40px; height:40px; display:block; padding:0px; }
+.pageview_menu li a.slide_r{background-position:-102px 2px; }
+.pageview_menu li a.slide_l{ background-position:-63px 2px; }
+.pageview_menu li a.slide_r:hover{background-position:-102px -36px; background-color:#424647; }
+.pageview_menu li a.slide_l:hover{ background-position:-63px -36px;  background-color:#424647;}
+
+.txteditor_tool{background-color:#eee; padding:7px; position:absolute; z-index:102;border: solid 1px #5c9ad5;}
+.txteditor_tool ul{}
+.txteditor_tool ul li{ float:left; width:20px; height:20px; margin-left:1px;}
+.txteditor_tool ul li a{background:url(../editor_img/txtalign_spirt.png) 0px 0px no-repeat;  display:block; width:20px; height:20px;}
+.txteditor_tool ul li.active a{ background-color:#5c9ad5;}
+ 
+.txteditor_tool ul li .txt_align_left{ background-position:4px 4px;}
+.txteditor_tool ul li .txt_align_center{ background-position:-16px 4px;}
+.txteditor_tool ul li .txt_align_right{ background-position:-36px 4px;}
+.txteditor_tool ul li.active .txt_align_left{ background-position:4px -19px;}
+.txteditor_tool ul li.active .txt_align_center{ background-position:-16px -19px;}
+.txteditor_tool ul li.active .txt_align_right{ background-position:-36px -19px;}
+.txteditor_tool ul li .txt_align_left:hover{ background-position:4px -19px; background-color:#5c9ad5;}
+.txteditor_tool ul li .txt_align_center:hover{ background-position:-16px -19px; background-color:#5c9ad5;}
+.txteditor_tool ul li .txt_align_right:hover{ background-position:-36px -19px;background-color:#5c9ad5;}
+.txteditor_tool ul li.txt_color a{width:14px; height:14px; margin:2px; border:solid 1px #5c9ad5}
+.txteditor_tool ul li .txt_color_white{ background:#fff;}
+.txteditor_tool ul li .txt_color_black{ background:#000;}
+.txteditor_tool ul li.txt_color:hover{ background-color:#5c9ad5; cursor:pointer;}
+.txteditor_tool ul li.txt_color.selected{ background-color:#5c9ad5; }
+.txteditor_tool ul li.txt_count{ width:200px; text-align:right; line-height:20px;}
+
+/*******页面模版样式******/
+.book_page{ margin:0px auto; background-color:#fff; width:960px;}
+.book_page .page_item{width:480px;float:left;  position:relative; background-color:#ffffff;}
+.book_page .book_page_r{ float:right;}
+.book_page .book_page_l{float:left;}
+
+.book_page .skip_page_item{width:960px;position:relative;  background-color:#ffffff;}
+.page_img_container{ position:absolute;background-color:#fff; overflow:hidden;}
+.page_img_container .imgeditor_tool{top:7px; right:7px; position:absolute;}
+.page_img_container .imgeditor_tool a.clear_img{font-size: 20px;font-weight: 600;color: white;padding: 3px 7px;background-color: #0192B5;}
+
+
+.page_txt_container{ position:absolute;  cursor:text; overflow:hidden; white-space:nowrap;}
+.page_txt_container textarea{ border:none; background:none; outline:none;resize:none; overflow:hidden; cursor:text;  text-align:left;}
+.page_txt_container input{ border:none; background:none; outline:none;resize:none; overflow:hidden; cursor:text;padding: 0px;box-shadow: none;}
+.mutiline_container textarea{ line-height:17px; font-size:10px;}
+
+.page_txt_container .input_box.txt_active{border:solid 1px #53B6BC;}
+.page_txt_container .input_box.focus{border:solid 1px #53B6BC;}
+.page_txt_container .input_box:focus{border:solid 1px #53B6BC;}
+.page_img_container img{ cursor:move;}
+ 
+ /***Inway版式样式***/
+ .book_page .page_item{ height:360px; overflow:hidden;}
+ 
+ /**inway pageview样式**/
+.page_view{ height:90px;}
+.page_view_list li{ height:60px; margin-top:14px; margin-left:25px; width:162px; }
+.page_view_list li div.pview_item{ width:80px; height:60px; }
+.page_view_list li div.pview_item.skip{ width:160px;}
+.page_view_list li div.pview_item span.pnum_tip{ width:80px;}
+.page_view_list li div.pview_item.skip span.pnum_tip{ width:161px;}
+
+.page_view_list li div.addpage_item {width: 80px;height: 60px;cursor: pointer;font-size: 60px;text-align: center;font-weight: bold;background-color: #fff;line-height: 50px;color: #5c9ad5;}
+.page_view_list li div.addpage_item:hover {color: #fff;background-color: #5c9ad5;}

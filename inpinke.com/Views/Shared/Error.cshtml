@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "出错啦！";
+    string errorMsg = ViewBag.Msg;     
+}
+<div class="content_wrapper notice_page_wrapper">
+    <div class="content_wrapper clearfix">
+        <div class="notice_list_wrapper container">
+            <div class="notice_item">
+                <h2 class="notice_item_title">
+                    出错啦！！！</h2>
+                    <div style=" margin-top:20px; overflow:hidden;"><img src="../../Content/pagestyle/images/error_bg_@((new Random()).Next(1,5)).png" /></div>
+                @if (string.IsNullOrEmpty(errorMsg))
+                { 
+                    <div class="notice_item_con">
+                        对不起，访问出错。在此我们为给您带来的不便和困惑深表歉意，您可以直接在线【<a href="">给我们反馈</a>】当前错误。我们将万分感谢并竭诚为您服务。
+                    </div>
+                }
+                else
+                {
+                     <div class="notice_item_con">
+                        @(errorMsg)
+                    </div>
+                }
+                <a href="/home" class="back_home">« 回首页</a>
+            </div>
+        </div>
+        <div class="right_menu_wrapper">
+            <div class="menu_box">
+                <div class="menu_title">
+                    <h2>
+                        快速定制印品</h2>
+                </div>
+                <div class="box_con">
+                    <a href="/intime/createintime?prodid=1">
+                        <img src="../../Content/pagestyle/images/intime_info.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

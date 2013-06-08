@@ -1,0 +1,23 @@
+﻿<div id="__menu_accordion">
+    <h3>
+        <a href="#" >会员管理</a></h3>
+    <div>
+        <dl>
+            <dd>
+                <a href="/user" class="selected">会员查询</a></dd></dl>
+    </div>
+    <h3>
+        <a href="#">订单管理</a></h3>
+    <div>
+        <dl>
+            <dd>
+                <a href="/order">订单查询</a></dd></dl>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("#__menu_accordion").accordion();
+        $("#__menu_accordion").accordion("activate", 1);
+    })
+  
+</script>

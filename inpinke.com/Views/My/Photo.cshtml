@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "影像-Inpinke感受印品的美好";
+}
+<div class="content_wrapper account_wrapper">
+    <!--用户菜单-->
+    @Html.Partial("_MyMenuPartial")
+    <div class="content_wrapper clearfix">
+        <div class="photo_list_wrapper" id="photoList">
+            <div class="photo_item">
+                <a href="javascript:;" class="item_img">
+                    <img src="../../Content/pagestyle/demo/P24.jpg" alt="" />
+                </a>
+                <p class="item_desc">
+                    回眸一笑，一如你婉约,回眸一笑，一如你婉约,回眸一笑，一如你婉约</p>
+                <div class="item_action">
+                    <a href="">印制Lomo卡</a> <a href="javascript:;">[删除]</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loading" style=" text-align:center; display:none; line-height:35px; height:35px;"><img style=" vertical-align:middle;" src="../../Content/pagestyle/editor_img/loader_32x32.gif"/>正在加载图片...</div>
+    <div id="noshow" style=" text-align:center; display:none; line-height:35px; height:35px;">没有图片啦！</div>
+</div>
+@section  LinkScript{
+    <script type="text/javascript" src="/Content/pagestyle/js/jquery.windswaterflow.js"></script>
+    <script type="text/javascript" src="/Content/pagestyle/js/jquery-lightbox-0.5/js/jquery.lightbox-0.5.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Content/pagestyle/js/jquery-lightbox-0.5/css/jquery.lightbox-0.5.css"
+        media="screen" />
+    <style type="text/css">
+        #main
+        {
+            background: url(/Content/pagestyle/images/bg.gif) repeat;
+        }
+    </style>
+}
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".photo_list_wrapper").windswaterflow({
+            itemSelector: '.photo_item',
+            loadSelector: '#loading',
+            noSelector: '#noshow',
+            boxTemplate: '<div class="photo_item" id="photo_item_{id}"><a href="{bigImg}" class="item_img"><img src="{img}" alt="" style="height:{height}px" /></a><div class="item_action"><a href="javascript:deleteUserImage({id});" class="del_btn">[删除]</a></div></div>',
+            columnWidth: 220,
+            marginWidth: 25,
+            marginHeight: 26,
+            imgWidth: 220,
+            ajaxServer: '/My/GetUserImages',
+            boxParam: 'num',
+            pageParam: 'p',
+            minCols: 4,
+            maxPage: 200,
+            init: true,
+            initBoxNumber: 20,
+            scroll: true,
+            scrollBoxNumber: 10,
+            callback: function () {
+                $("#photoList a.item_img").lightBox({
+                imageLoading:			'/Content/pagestyle/js/jquery-lightbox-0.5/images/lightbox-ico-loading.gif',		// (string) Path and the name of the loading icon
+			imageBtnPrev:			'/Content/pagestyle/js/jquery-lightbox-0.5/images/lightbox-btn-prev.gif',			// (string) Path and the name of the prev button image
+			imageBtnNext:			'/Content/pagestyle/js/jquery-lightbox-0.5/images/lightbox-btn-next.gif',			// (string) Path and the name of the next button image
+			imageBtnClose:			'/Content/pagestyle/js/jquery-lightbox-0.5/images/lightbox-btn-close.gif',		// (string) Path and the name of the close btn
+			imageBlank:				'/Content/pagestyle/js/jquery-lightbox-0.5/images/lightbox-blank.gif'
+                });
+            }
+        });
+    });
+    function deleteUserImage(id) {
+        if (confirm("确定删除该图片吗？")) {
+            $("#photo_item_" + id+" a.del_btn").text("正在删除...");
+            $.ajax({
+                url: '/my/DeleteUserImage',
+                data: { id: id },
+                type: 'get',
+                dataType:'json',
+                success: function (r) {
+                    if (r.success) {
+                        $("#photo_item_" + r.id).remove();
+                        $(window).trigger("resize");
+                    } else {
+                        alert(r.msg);
+                    }
+                }
+            })
+        }
+    }
+</script>

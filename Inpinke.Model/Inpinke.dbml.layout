@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 12.875, 21.75" name="Inpinke">
+  <DataContextMoniker Name="/InpinkeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="fd811b07-b77d-4d73-b3aa-ae51aec97cee" absoluteBounds="0.75, 0.5, 2, 1.9535852050781251">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_ImageScale" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aeb371e5-60ec-47ee-bf1c-2d884015d7b3" absoluteBounds="0.76500000000000012, 0.96, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cd04f114-f996-4767-ac08-c2346cf1d68a" absoluteBounds="0.5, 8, 2, 2.5266442871093751">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Notice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e8f04b9-e951-423b-bb7d-0e497e81bdc9" absoluteBounds="0.51500000000000057, 8.46, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66e099a5-c954-4e5f-b697-c12ac909fd9a" absoluteBounds="3, 5, 2, 2.1446048990885416">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_User_OAuthLogin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d60fbcdd-12a5-4b92-9965-8330a1a05099" absoluteBounds="3.015, 5.46, 1.9700000000000002, 1.5846048990885415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="97e05c70-2f97-4a44-a5c8-0ac7deb45f12" absoluteBounds="8.375, 3.25, 2, 1.5715458170572916">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Book_Image" />
+      <nestedChildShapes>
+        <elementListCompartment Id="291000c7-d7ee-404a-8ae7-627a28e9cb7a" absoluteBounds="8.39, 3.71, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="23c4d6da-ad50-4b52-8dc9-4d88e407ae64" absoluteBounds="8.5, 5.125, 2, 3.0997033691406251">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Book_Page" />
+      <nestedChildShapes>
+        <elementListCompartment Id="33d78dab-719b-484d-93a5-6371462cece4" absoluteBounds="8.515, 5.585, 1.9700000000000002, 2.539703369140625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fd141454-4c78-429f-a8d8-07564b978b9f" absoluteBounds="0.5, 2.625, 2, 5.2009200032552076">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="81f125fe-1205-4806-b31a-93bbca424b06" absoluteBounds="0.515, 3.085, 1.9700000000000002, 4.640920003255208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3acc79a5-d833-44c9-b747-c36f9d3cf7ef" absoluteBounds="0.625, 12.25, 2, 3.8637821451822916">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_User_Address" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1213595-0173-45f3-b46d-f68b035f3a25" absoluteBounds="0.64000000000000012, 12.71, 1.9700000000000002, 3.3037821451822915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="307e387b-3663-4c65-b77a-2dce67fd1260" absoluteBounds="5.625, 13, 2, 1.3805261230468751">
+      <DataClassMoniker Name="/InpinkeDataContext/Base_Area" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b413f1d6-feba-4a00-84d9-90dcad8816af" absoluteBounds="5.64, 13.46, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d830cfa-55a1-4b81-bca4-ce2b45cdbbf6" absoluteBounds="8.25, 13, 2, 1.3805261230468751">
+      <DataClassMoniker Name="/InpinkeDataContext/Base_City" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae4b37d5-1912-485e-8c53-afdf7d9fc650" absoluteBounds="8.265, 13.46, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="204d82a7-ed0c-4a27-9414-7f3172fa34d5" absoluteBounds="10.625, 13, 2, 1.1895064290364583">
+      <DataClassMoniker Name="/InpinkeDataContext/Base_Province" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8a943b7-f8b2-4ee8-9c05-041398e8a17e" absoluteBounds="10.64, 13.46, 1.9700000000000002, 0.62950642903645826" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5210178f-2fbb-410b-b70e-f294e08f30f3" absoluteBounds="5.5, 8.5, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Order_Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f48beb8e-45ea-40cc-8f5d-fab15608b14b" absoluteBounds="5.515, 8.96, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.5 : 7.82592000325521); (1.5 : 7.9375); (2.9375 : 7.9375); (2.9375 : 7.5625); (5.01041666666667 : 7.5625 : JumpStart); (5.17708333333333 : 7.5625 : JumpEnd); (5.40625 : 7.5625); (5.40625 : 10.1453615315755); (5.5 : 10.1453615315755)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_Product/Inpinke_Product_Inpinke_Order_Product" />
+      <nodes>
+        <classShapeMoniker Id="fd141454-4c78-429f-a8d8-07564b978b9f" />
+        <classShapeMoniker Id="5210178f-2fbb-410b-b70e-f294e08f30f3" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="37323817-58aa-4c1d-ba3d-51dd2e9f8bc6" absoluteBounds="8.125, 8.875, 2, 2.9086836751302081">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Cart" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cd67ac6e-9e56-4051-94f9-022a439326c7" absoluteBounds="8.14, 9.335, 1.9700000000000002, 2.348683675130208" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.031252 : 7.82592000325521); (2.031252 : 7.9375); (2.875 : 7.9375); (2.875 : 7.5); (4.99166666666667 : 7.5 : JumpStart); (5.17708333333333 : 7.5 : JumpEnd); (5.3125 : 7.5); (5.3125 : 11.853223063151); (6.79166666666667 : 11.853223063151 : JumpStart); (6.95833333333333 : 11.853223063151 : JumpEnd); (8.03125 : 11.853223063151); (8.03125 : 10.3293418375651); (8.125 : 10.3293418375651)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_Product/Inpinke_Product_Inpinke_Cart" />
+      <nodes>
+        <classShapeMoniker Id="fd141454-4c78-429f-a8d8-07564b978b9f" />
+        <classShapeMoniker Id="37323817-58aa-4c1d-ba3d-51dd2e9f8bc6" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d1c8b55a-dd6a-41c6-919b-925c77e017b0" absoluteBounds="0.5, 16, 2, 3.4817427571614581">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Coupon" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5ddb9c90-d993-4270-9330-5df013df19a0" absoluteBounds="0.51499999999999968, 16.46, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bed65792-6787-4b3a-a041-cb286596d6b0" absoluteBounds="2.75, 16, 2, 3.4817427571614581">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Coupon_Code" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5568e4ed-bce1-44cc-981e-592a09fc36f3" absoluteBounds="2.7649999999999997, 16.46, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.5 : 17.8290124511719); (2.75 : 17.8290124511719)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_Coupon/Inpinke_Coupon_Inpinke_Coupon_Code" />
+      <nodes>
+        <classShapeMoniker Id="d1c8b55a-dd6a-41c6-919b-925c77e017b0" />
+        <classShapeMoniker Id="bed65792-6787-4b3a-a041-cb286596d6b0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="25977bc2-36db-4bce-93a0-4d4d1fb80de7" absoluteBounds="6, 0.5, 2, 3.2907230631510416">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Image" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f093b40e-397a-4687-97aa-042614e74577" absoluteBounds="6.015, 0.96, 1.9700000000000002, 2.7307230631510415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8 : 3.52036153157552); (8.375 : 3.52036153157552)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_Image/Inpinke_Image_Inpinke_Book_Image" />
+      <nodes>
+        <classShapeMoniker Id="25977bc2-36db-4bce-93a0-4d4d1fb80de7" />
+        <classShapeMoniker Id="97e05c70-2f97-4a44-a5c8-0ac7deb45f12" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="20022e24-59c6-41f0-99a1-59c54d25c041" absoluteBounds="5.375, 16, 2, 3.4817427571614581">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Message" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d293e433-c460-4ddc-b177-c7600fa72df9" absoluteBounds="5.39, 16.46, 1.9700000000000002, 2.921742757161458" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e765cc09-4132-43f6-811c-2d669ab0a284" absoluteBounds="5.875, 4.5, 2, 4.4368412272135416">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Book" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a704ec2-eec4-4cc3-b70c-cf7fce07868e" absoluteBounds="5.89, 4.96, 1.9700000000000002, 3.876841227213542" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.875 : 4.5); (6.875 : 3.97822406315104); (8.375 : 3.97822406315104)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_Book/Inpinke_Book_Inpinke_Book_Image" />
+      <nodes>
+        <classShapeMoniker Id="e765cc09-4132-43f6-811c-2d669ab0a284" />
+        <classShapeMoniker Id="97e05c70-2f97-4a44-a5c8-0ac7deb45f12" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.875 : 6.67485168457031); (8.21666666666667 : 6.67485168457031 : JumpStart); (8.38333333333333 : 6.67485168457031 : JumpEnd); (8.5 : 6.67485168457031)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_Book/Inpinke_Book_Inpinke_Book_Page" />
+      <nodes>
+        <classShapeMoniker Id="e765cc09-4132-43f6-811c-2d669ab0a284" />
+        <classShapeMoniker Id="23c4d6da-ad50-4b52-8dc9-4d88e407ae64" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.875 : 8.93684122721354); (6.875 : 12.290723063151); (6.5 : 12.290723063151); (6.5 : 11.790723063151)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_Book/Inpinke_Book_Inpinke_Order_Product" />
+      <nodes>
+        <classShapeMoniker Id="e765cc09-4132-43f6-811c-2d669ab0a284" />
+        <classShapeMoniker Id="5210178f-2fbb-410b-b70e-f294e08f30f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.875 : 5.55617384228516); (8.3 : 5.55617384228516); (8.3 : 8.7); (9.125 : 8.7); (9.125 : 8.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_Book/Inpinke_Book_Inpinke_Cart" />
+      <nodes>
+        <classShapeMoniker Id="e765cc09-4132-43f6-811c-2d669ab0a284" />
+        <classShapeMoniker Id="37323817-58aa-4c1d-ba3d-51dd2e9f8bc6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 7.29105244954427); (5.01041666666667 : 7.29105244954427 : JumpStart); (5.28370186360677 : 7.29105244954427 : JumpEnd); (5.57291666666667 : 7.29105244954427 : JumpStart); (5.73958333333333 : 7.29105244954427 : JumpEnd); (5.875 : 7.29105244954427)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_Product/Inpinke_Product_Inpinke_Book" />
+      <nodes>
+        <classShapeMoniker Id="fd141454-4c78-429f-a8d8-07564b978b9f" />
+        <classShapeMoniker Id="e765cc09-4132-43f6-811c-2d669ab0a284" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="93a2af9f-bc10-4fef-9813-da2b6b49108b" absoluteBounds="8.5, 0.5, 2, 1.9535852050781251">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Recommend_Book" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b04f107c-78dc-433f-8e95-416599058c50" absoluteBounds="8.515, 0.96, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="88f05c82-2651-4d39-93c0-8c3194faeceb" absoluteBounds="3.125, 0.5, 2, 4.2458215332031246">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2cdb9607-3feb-4ae6-841a-7de74147203a" absoluteBounds="3.14, 0.96, 1.9700000000000002, 3.685821533203125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.0625 : 4.74582153320312); (4.0625 : 5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_User/Inpinke_User_Inpinke_User_OAuthLogin" />
+      <nodes>
+        <classShapeMoniker Id="88f05c82-2651-4d39-93c0-8c3194faeceb" />
+        <classShapeMoniker Id="66e099a5-c954-4e5f-b697-c12ac909fd9a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.09375 : 4.74582153320312); (5.09375 : 15.4635683186849); (2.625 : 15.4635683186849)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_User/Inpinke_User_Inpinke_User_Address" />
+      <nodes>
+        <classShapeMoniker Id="88f05c82-2651-4d39-93c0-8c3194faeceb" />
+        <classShapeMoniker Id="3acc79a5-d833-44c9-b747-c36f9d3cf7ef" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.125 : 4.23911153157552); (5.65625 : 4.23911153157552); (5.65625 : 8.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_User/Inpinke_User_Inpinke_Order_Product" />
+      <nodes>
+        <classShapeMoniker Id="88f05c82-2651-4d39-93c0-8c3194faeceb" />
+        <classShapeMoniker Id="5210178f-2fbb-410b-b70e-f294e08f30f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.125 : 2.32267901578776); (5.875 : 2.32267901578776); (5.875 : 4.04072306315104); (8.125 : 4.04072306315104); (8.125 : 8.47470336914063); (8.21666666666667 : 8.47470336914063 : JumpStart); (8.38333333333333 : 8.47470336914063 : JumpEnd); (9.125 : 8.47470336914063); (9.125 : 8.875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_User/Inpinke_User_Inpinke_Cart" />
+      <nodes>
+        <classShapeMoniker Id="88f05c82-2651-4d39-93c0-8c3194faeceb" />
+        <classShapeMoniker Id="37323817-58aa-4c1d-ba3d-51dd2e9f8bc6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.125 : 1.34883950789388); (6 : 1.34883950789388)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_User/Inpinke_User_Inpinke_Image" />
+      <nodes>
+        <classShapeMoniker Id="88f05c82-2651-4d39-93c0-8c3194faeceb" />
+        <classShapeMoniker Id="25977bc2-36db-4bce-93a0-4d4d1fb80de7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.125 : 3.91572356315104); (5.90625 : 3.91572356315104); (5.90625 : 4.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_User/Inpinke_User_Inpinke_Book" />
+      <nodes>
+        <classShapeMoniker Id="88f05c82-2651-4d39-93c0-8c3194faeceb" />
+        <classShapeMoniker Id="e765cc09-4132-43f6-811c-2d669ab0a284" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d6315c06-cdea-4f1e-b0cf-b380f6202eb6" absoluteBounds="0.5, 19.75, 2, 1.7625655110677081">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_User_Channel" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8304b2a-d15d-49c7-9590-554e00ff19f2" absoluteBounds="0.51500000000000012, 20.21, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ddba84e0-d46f-4eb4-9758-4c1bdc1888fa" absoluteBounds="2.75, 19.75, 2, 1.7625655110677081">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f627a8ca-aacd-4971-a3d3-784add487bcf" absoluteBounds="2.7649999999999997, 20.21, 1.9700000000000002, 1.2025655110677083" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d1163386-eeba-42e4-b21f-a6ab7dd43a01" absoluteBounds="3, 7.625, 2, 7.3021366373697907">
+      <DataClassMoniker Name="/InpinkeDataContext/Inpinke_Order" />
+      <nestedChildShapes>
+        <elementListCompartment Id="95bed5a4-7fa3-4788-b22c-80a589e21038" absoluteBounds="3.015, 8.085, 1.9700000000000002, 6.7421366373697911" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5 : 9.26018076578776); (5.01041666666667 : 9.26018076578776 : JumpStart); (5.17708333333333 : 9.26018076578776 : JumpEnd); (5.22916666666667 : 9.26018076578776 : JumpStart); (5.48958333333333 : 9.26018076578776 : JumpEnd); (5.5 : 9.26018076578776)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_Order/Inpinke_Order_Inpinke_Order_Product" />
+      <nodes>
+        <classShapeMoniker Id="d1163386-eeba-42e4-b21f-a6ab7dd43a01" />
+        <classShapeMoniker Id="5210178f-2fbb-410b-b70e-f294e08f30f3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.125 : 4.74582153320312); (5.5 : 5.12082153320312); (5.5 : 7); (5.375 : 7); (5.13662464628563 : 7.39729225619062 : JumpStart); (5.05087535371437 : 7.54020774380938 : JumpEnd); (5 : 7.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_User/Inpinke_User_Inpinke_Order" />
+      <nodes>
+        <classShapeMoniker Id="88f05c82-2651-4d39-93c0-8c3194faeceb" />
+        <classShapeMoniker Id="d1163386-eeba-42e4-b21f-a6ab7dd43a01" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.625 : 13.5885683186849); (3 : 13.5885683186849)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/InpinkeDataContext/Inpinke_User_Address/Inpinke_User_Address_Inpinke_Order" />
+      <nodes>
+        <classShapeMoniker Id="3acc79a5-d833-44c9-b747-c36f9d3cf7ef" />
+        <classShapeMoniker Id="d1163386-eeba-42e4-b21f-a6ab7dd43a01" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

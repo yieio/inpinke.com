@@ -1,0 +1,92 @@
+﻿@using Inpinke.Model
+@{
+    ViewBag.Title = "收货地址-Inpinke感受印品的美好";
+    
+}
+<div class="content_wrapper account_wrapper">
+    <!--用户菜单-->
+    @Html.Partial("_MyMenuPartial")
+    <div class="content_wrapper clearfix">
+        <div class="myaddress_list">
+            <div class="add_consignee_item">
+                <a href="javascript:AddConsignee()" class="add_btn"><span class="add_icon">+</span><span>添加收货人</span></a>
+            </div>
+            <table cellpadding="0" cellspacing="0" class="address_table">
+                <thead>
+                    <tr>
+                        <th class="con_address">
+                            收货地址
+                        </th>
+                        <th class="con_name">
+                            收货人
+                        </th>
+                        <th class="con_mobile">
+                            手机号码
+                        </th>
+                        <th class="con_action">
+                            操作
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="consigneeItemWrapper">
+                    @if (ViewBag.Address != null)
+                    {
+                        IList<Inpinke_User_Address> list = ViewBag.Address as List<Inpinke_User_Address>;
+                        foreach (Inpinke_User_Address a in list)
+                        {
+                            string title = a.IsDefault ? "默认收货地址" : "点击设为默认收货地址";
+                            string defaultCss = a.IsDefault ? "default_css" : "";
+                        <tr id="consignee_item_@(a.ID)" class="@(defaultCss)">
+                            <td title="@(title)" onclick="SetDefaultAddress(@(a.ID))" class="con_address">
+                                @(a.ProvName + " " + a.CityName + " " + a.AreaName + " " + a.Address)
+                            </td>
+                            <td>
+                                @(a.UserName)
+                            </td>
+                            <td>
+                                @(a.Mobile)
+                            </td>
+                            <td>
+                                <a href="javascript:ModifyAddress(@(a.ID))">[修改]</a>&nbsp;<a href="javascript:DeleteAddress(@(a.ID))">[删除]</a>
+                            </td>
+                        </tr>
+                        }
+
+                    }
+                </tbody>
+               
+            </table>
+            <div class="the_pages">
+             @Html.Raw(Html.uiPager4(4))
+            </div>
+        </div>
+        <div class="right_menu_wrapper">
+            <div class="menu_box">
+                <div class="menu_title">
+                    <h2>
+                        快速定制印品</h2>
+                </div>
+                <div class="box_con">
+                    <a href="javascript:;">
+                        <img src="../../Content/pagestyle/images/inway_info.png" alt="" /></a>
+                </div>
+            </div>
+           @Html.Partial("_TopList_Right")
+        </div>
+    </div>
+</div>
+<div id="AddressForm" style="">
+    <div class="box_title" style="">
+        <span id="boxTitle">添加收货人</span> <a href="javascript:CloseBox();" title="关闭" class="panel_close">
+            X</a>
+    </div>
+    <div class="box_content" style="margin: 0 17px;">
+        @Html.Partial("_AddressForm")
+    </div>
+</div>
+<script type="text/javascript" src="../../Content/pagestyle/js/inpinke.order.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#ConsigneeForm").submit(InAddressPageAfterSubmit);
+    })
+</script>

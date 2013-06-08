@@ -1,0 +1,187 @@
+﻿@using Inpinke.Model;
+@using Inpinke.BLL;
+@{  
+    ViewBag.Title = "订单详情";
+    Inpinke_Order payOrder = ViewBag.Order as Inpinke_Order;
+    IList<Inpinke_Order_Product> prodList = ViewBag.ProductList as List<Inpinke_Order_Product>;
+    string products = "";
+}
+<div class="content_wrapper order_wrapper" style="padding: 20px;">
+    <div class="order_info_wrapper">
+        <h2>
+            订单详情</h2>
+        <div class="order_info">
+            <p class="order_info_status order_btn_field" style="font-size: 14px; line-height: 40px;">
+                <strong>当前订单状态：@(Inpinke.Model.Enum.OrderStatusDesc.GetOrderStatusDesc(payOrder.OrderStatus))</strong>
+                @if (payOrder.OrderStatus == (int)Inpinke.Model.Enum.OrderStatus.Create)
+                {
+                    <a href="/alipay?orderid=@(payOrder.ID)" class="color_btn"  onclick="payAction()" target="_blank">
+                        付款 ￥@(payOrder.TotalPrice)
+                    </a>
+                }
+            </p>
+            <p>
+                订单编号：@(payOrder.OrderCode)&nbsp;&nbsp;&nbsp;下单时间：@(payOrder.CreateTime.ToString("yyyy-MM-dd HH:mm"))
+            </p>
+            <p>
+                收货地址：<span>@payOrder.RecProvName @payOrder.RecCityName
+                    @payOrder.RecAreaName @payOrder.RecAddress
+                </span><span>@payOrder.RecUserName（收）</span> <span>@payOrder.RecMobile</span>
+            </p>
+            <p>
+                买家备注：@(payOrder.UserRemark)
+            </p>
+        </div>
+    </div>
+    @if (payOrder.OrderStatus == (int)Inpinke.Model.Enum.OrderStatus.Sended)
+    { 
+        <div class="express_info_wrapper">
+            <h2>
+                物流信息</h2>
+            <div class="express_info">
+                <p>
+                    发货方式：快递</p>
+                <p>
+                    物流公司：@(payOrder.ExpressName)</p>
+                <p>
+                    运单号码：@(payOrder.ExpressCode)</p>
+                <div class="express_detail">
+                    <p>
+                        物流跟踪：</p>
+                </div>
+            </div>
+        </div>
+    }
+    <div class="order_product_wrapper">
+        <h2>
+            商品信息</h2>
+        <table cellpadding="0" cellspacing="0" class="order_table">
+            <thead>
+                <tr>
+                    <th colspan="2" class="h_item_name">
+                        商品
+                    </th>
+                    <th class="h_item_prize">
+                        单价(元)
+                    </th>
+                    <th class="h_item_num">
+                        数量
+                    </th>
+                    <th class="h_item_coupon">
+                        优惠方式(元)
+                    </th>
+                    <th class="h_item_total">
+                        小计(元)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Inpinke_Order_Product c in prodList)
+                {
+                    products = c.BookID + ",";
+                    <tr class="list_item">
+                        <td class="item_img">
+                            <img src="@(c.Inpinke_Book.BookCover)" style="width: 80px; height: 80px;" alt="" />
+                        </td>
+                        <td class="item_name">
+                            <h2>
+                                <a href="/view?bookid=@c.Inpinke_Book.ID">@c.Inpinke_Book.BookName</a></h2>
+                            <p class="item_packet">
+                                @{
+                                        string enveName = "无";
+                                        if (c.Envelope != 0)
+                                        {
+                                            Inpinke_Product envelope = DBProductBLL.GetProductByID(c.Envelope);
+                                            if (envelope != null)
+                                            {
+                                                enveName = envelope.Name;
+                                            }
+                                        }
+                                }
+                                <label>
+                                    封套：</label>
+                                <span>@(enveName)</span>
+                            </p>
+                            <p class="item_free">
+                                <label>
+                                    其他附赠：</label>@(c.PlusID != 0 ? "" : "无")</p>
+                        </td>
+                        <td>
+                            @(c.Inpinke_Product.BasePages)页： @c.Inpinke_Product.Price<br />
+                            @{decimal plusPrice = c.Inpinke_Product.PlusPrice * ((c.Inpinke_Book.PageCount - c.Inpinke_Product.BasePages) / c.Inpinke_Product.PlusPages);}
+                            加页：@plusPrice
+                            <input type="hidden" id="single_price_@(c.BookID)" value="@(c.Inpinke_Product.Price + plusPrice)" />
+                        </td>
+                        <td>
+                            @(c.Num)
+                        </td>
+                        <td>
+                            @(c.CouponID != 0 ? "" : "无优惠")
+                        </td>
+                        <td  id="total_price_@(c.BookID)">
+                            @{decimal totalPrice = (c.Inpinke_Product.Price + plusPrice) * c.Num; }
+                            @totalPrice
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">
+                    </td>
+                    <td colspan="3" style="text-align: right;">
+                        <select name="deliveryMethod" id="deliveryMethod">
+                            <option value="1_12">普通快递12元</option>
+                        </select>
+                    </td>
+                    <td style="text-align: center;" id="orderTotalPrice">@payOrder.TotalPrice
+                    </td>
+                </tr>
+                @if (payOrder.OrderStatus == (int)Inpinke.Model.Enum.OrderStatus.Create)
+                {
+                    <tr>
+                        <td colspan="2">
+                        </td>
+                        <td colspan="4" style="text-align: right;">
+                            <a href="/alipay?orderid=@(payOrder.ID)" class="color_btn" target="_blank" onclick="payAction()">
+                                付款</a>
+                        </td>
+                    </tr>
+                }
+            </tfoot>
+        </table>
+    </div>
+</div>
+@if (payOrder.OrderStatus == (int)Inpinke.Model.Enum.OrderStatus.Create)
+{ 
+    <div id="AddressForm">
+        <div class="box_title">
+            <span id="boxTitle">支付提醒</span> <a href="javascript:CloseBox();" title="关闭" class="panel_close">
+                X</a>
+        </div>
+        <div class="box_content" style="margin: 17px;">
+            <h2 style="font-size: 18px; line-height: 2em;">
+                请在新打开的"支付宝收银台"页面完成支付</h2>
+            <p style="margin-top: 10px;">
+                如果您已经支付完成可以<a href="/order/detail?orderid=@(payOrder.ID)">查看此订单详情</a>
+            </p>
+            <p style="margin-top: 10px;">
+                如果您支付遇到问题，可以寻求我们的<a href="">在线客服</a>提供帮助。或者尝试 <a href="/order/buy?orderid=@(payOrder.ID)">
+                    重新支付</a></p>
+            <p style="margin-top: 10px;">
+                如果您要需改价格，可以直接联系我们的<a href="">在线客服</a></p>
+            <p style="margin-top: 10px;">
+                支付宝支付常见问题您可以<a href="http://help.alipay.com/lab/question.htm" target="_blank">查看这里>></a></p>
+            <p class=" editor_label order_btn_field" style="margin-top: 40px;">
+                <a href="/order/detail?orderid=@(payOrder.ID)" class="color_btn">支付完成</a> &nbsp;&nbsp;<a href="/order/buy?orderid=@(payOrder.ID)" class="color_btn">
+                    重新支付</a>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="../../Content/pagestyle/js/inpinke.order.js"></script>
+    <script type="text/javascript">
+        function payAction() {
+            ShowPayNotice();
+        }
+    </script>
+}

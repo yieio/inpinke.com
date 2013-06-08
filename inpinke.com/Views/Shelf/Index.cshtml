@@ -1,0 +1,38 @@
+﻿@using Inpinke.Model
+@{
+    ViewBag.Title = "印品推荐-Inpinke感受印品的美好";
+    IList<Inpinke_Book> list = ViewBag.RecomBooks as List<Inpinke_Book>;
+}
+<div class="content_wrapper" style="">
+    <div class="recommend_wall">
+        <ul class="clearfix">
+            <li>
+                <div class="recommend_date">
+                    <h2>
+                        @(DateTime.Now.ToString("yyyy年"))</h2>
+                    <p>
+                        <span class="month">@(DateTime.Now.Month)</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="" style="width: 206px; height: 100px; background-color: #0192B5; color: #fff;">
+                    <p style="padding: 7px; font-size: 14px; line-height: 1.4;">
+                        每月为您精选30本画册，愿您每天都有好心情。温馨感受印品的美好。<br />
+                        <span style="font-size: 12px; display: block; text-align: right; margin-top: 5px;">❤by:Inpinke</span></p>
+                </div>
+            </li>
+            @if (list != null)
+            {
+                for (int i = 0; i < list.Count(); i++)
+                {
+                    Inpinke_Book b = list[i];
+                    string cls = i == 6 ? "big_img" : "mini_img";
+            
+                <li><a href="/show?id=@(b.ID)">
+                    <img src="@(b.BookCover)" alt="" class="@(cls)"/></a> </li>            
+                }
+            }
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,161 @@
+﻿@using Inpinke.Model;
+@using Inpinke.BLL;
+@{  
+    ViewBag.Title = "修改订单信息";
+    Inpinke_Order payOrder = ViewBag.Order as Inpinke_Order;
+    IList<Inpinke_Order_Product> prodList = ViewBag.ProductList as List<Inpinke_Order_Product>;
+    string products = "";
+}
+<div class="content_wrapper order_wrapper">
+    <p class="content_title">
+        <span>修改订单信息</span>
+    </p>
+    <p class="order_step">
+        <span>1、确认商品信息</span><span>></span><span style="color: #111; font-weight: bold;">2、修改订单信息</span><span>></span><span>3、完成支付</span><span>></span><span>4、等待收货</span></p>
+    <p class="error_msg" style="line-height: 1.7em; color: #900;">@(ViewBag.Msg)</p>
+    <form action="/order/modify" method="post">
+    <input type="hidden" name="ID" value="@(payOrder.ID)" />
+    @if (ViewBag.UserAddress != null)
+    {  
+        <div class="address_wrapper">
+            <h2>
+                收货人信息</h2>
+            <div id="consigneeItemWrapper">
+                @{IList<Inpinke_User_Address> userAddress = ViewBag.UserAddress as List<Inpinke_User_Address>;}
+                @foreach (Inpinke_User_Address a in userAddress)
+                {         
+                    <div class="consignee_item @(a.ID == payOrder.AddressID ? "selected" : "")" id="consignee_item_@(a.ID)">
+                        <input class="radio" type="radio" name="AddressID" value="@a.ID" style="width: auto;" @(payOrder.AddressID == a.ID ? "checked=\"checked\"" : "")  id="address_radio_@(a.ID)"/>
+                        <span>@a.ProvName @a.CityName @a.AreaName @a.Address </span><span>@a.UserName（收）</span>
+                        <span>@a.Mobile</span> <a href="javascript:ModifyAddress(@(a.ID))">[修改]</a>
+                    </div>
+                }</div>
+            <div class="add_consignee_item">
+                <a href="javascript:AddConsignee()" class="add_btn"><span class="add_icon">+</span><span>添加收货人</span></a>
+            </div>
+        </div>
+    }
+    <div class="order_product_wrapper">
+        <h2>
+            商品信息</h2>
+        <table cellpadding="0" cellspacing="0" class="order_table">
+            <thead>
+                <tr>
+                    <th colspan="2" class="h_item_name">
+                        商品
+                    </th>
+                    <th class="h_item_prize">
+                        单价(元)
+                    </th>
+                    <th class="h_item_num">
+                        数量
+                    </th>
+                    <th class="h_item_coupon">
+                        优惠方式(元)
+                    </th>
+                    <th class="h_item_total">
+                        小计(元)
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Inpinke_Order_Product c in prodList)
+                {
+                    products = c.BookID + ",";
+                    <tr class="list_item">
+                        <td class="item_img">
+                            <input type="checkbox" value="@(c.BookID)" checked="checked" name="bookids" style="
+                display:none" />
+                            <img src="@(c.Inpinke_Book.BookCover)" style="width: 80px; height: 80px;" alt="" />
+                        </td>
+                        <td class="item_name">
+                            <h2>
+                                <a href="/view?bookid=@c.Inpinke_Book.ID">@c.Inpinke_Book.BookName</a></h2>
+                            <p class="item_packet">
+                                <label>
+                                    封套：</label>
+                                @{
+                                     IList<Inpinke_Product> envList = DBProductBLL.GetPlusProduct(c.ProductID, Inpinke.Model.Enum.ProductType.Envelope);         
+                                }
+                                @if (envList == null || envList.Count() <= 0)
+                                { 
+                                    <span>无</span>
+                                }
+                                else
+                                {
+                                    <select name="envelope_@(c.BookID)" id="envelope_@(c.BookID)" class="envelope_select">
+                                        @foreach (Inpinke_Product p in envList)
+                                        {
+                                            string selected = p.ID == c.Envelope ? "selected=true" : "";
+                                            <option value="@(p.ID)" @(selected)>@(p.ShortName)</option>
+                                        }
+                                    </select>
+                                }
+                                <a href="/intime/envelope" style="color: #007700;">什么是封套？</a>
+                            </p>
+                            <p class="item_free">
+                                <label>
+                                    其他附赠：</label>@(c.PlusID != 0 ? "" : "无")</p>
+                        </td>
+                        <td>
+                            @(c.Inpinke_Product.BasePages)页： @c.Inpinke_Product.Price<br />
+                            @{decimal plusPrice = c.Inpinke_Product.PlusPrice * ((c.Inpinke_Book.PageCount - c.Inpinke_Product.BasePages) / c.Inpinke_Product.PlusPages);}
+                            加页：@plusPrice
+                            <input type="hidden" id="single_price_@(c.BookID)" value="@(c.Inpinke_Product.Price + plusPrice)" />
+                        </td>
+                        <td>
+                            <input type="text" id="num_@(c.BookID)" value="@(c.Num)" class="num_input" name="num_@(c.BookID)" />
+                        </td>
+                        <td>
+                            <select name="coupon_select_@(c.BookID)" id="coupon_select_@(c.BookID)" style="width:auto; min-width:130px;">
+                                <option value="0">无优惠</option>
+                            </select>
+                        </td>
+                        <td  id="total_price_@(c.BookID)">
+                            @{decimal totalPrice = (c.Inpinke_Product.Price + plusPrice) * c.Num; }
+                            @totalPrice
+                        </td>
+                    </tr>
+                }
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4" style=" line-height:70px;">
+                     <span style="font-size:14px;">备注：</span> <input type="text" value="@(payOrder.UserRemark)" name="Remark" style=" width:510px; line-height:24px; height:24px;" />
+                    </td>
+                    <td style="text-align: right;">
+                        <select name="deliveryMethod" id="deliveryMethod">
+                            <option value="1_12">普通快递12元</option>
+                            <option value="2_22">EMS快递22元</option>
+                        </select>
+                    </td>
+                    <td style="text-align: center;" id="orderTotalPrice">@payOrder.TotalPrice
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    </td>
+                    <td colspan="4" style="text-align: right;">
+                        <input value="确认购买" type="submit" class="color_btn" />
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    </form>
+</div>
+<div id="AddressForm">
+    <div class="box_title">
+        <span id="boxTitle">添加收货人</span> <a href="javascript:CloseBox();" title="关闭" class="panel_close">
+            X</a>
+    </div>
+    <div class="box_content" style="margin: 0 17px;">
+        @Html.Partial("_AddressForm")
+    </div>
+</div>
+<script type="text/javascript" src="../../Content/pagestyle/js/inpinke.order.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $("#ConsigneeForm").submit(InOrderPageAfterSubmit);
+    })
+</script>

@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "最新印制-印品客，感受印品的美好";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+ <script type="text/javascript" src="/Content/pagestyle/js/jquery.xslider.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#slider').Xslider({ affect: 'fade', ctag: 'div', stag: 'span' });
+    })
+</script>
+<div class="content_wrapper obanner_wrapper">
+    <div class=" banner_wrapper" style="height: 357px; position: relative;">
+        <div id="slider" class="slider">
+            <div class="conbox">
+                <div style="position: absolute; z-index: 1; opacity: 1;">
+                    <a href="" title="">
+                        <img alt="" src="/Content/pagestyle/demo/intime1.jpg"></a>
+                </div>
+                <div style="position: absolute; z-index: 1; opacity: 0;">
+                    <a href="" title="">
+                        <img alt="" src="/Content/pagestyle/demo/intime2.jpg"></a>
+                </div>
+            </div>
+            <div class="switcher switcher_dot clearfix">
+                <span class="cur">1</span> <span class="">2</span>
+            </div>
+        </div>
+    </div>
+    <div class="banner_bottom">
+    </div>
+</div>
+<div class="content_wrapper inpin_wrapper">
+    @Html.Partial("_InpinMenu", "Inpin")
+    <div class="inpin_description_list clearfix">
+        <h2>
+            照片书系列</h2>
+        
+    </div>
+</div>
+@Html.Partial("_FootDesc")
+<script type="text/javascript">
+    $(function () {
+        setActiveInpinTab("dealrecorder");
+    })
+</script>

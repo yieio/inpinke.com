@@ -1,0 +1,186 @@
+﻿@using Inpinke.Model;
+@using Inpinke.BLL.Config;
+@{
+    ViewBag.Title = "订单编辑-订单管理";
+    Inpinke_Order eModel = new Inpinke_Order();
+    if (Model != null)
+    {
+        eModel = Model as Inpinke_Order;
+    }
+}
+<form action="/order/edit" method="post">
+<h2>
+    编辑订单</h2>
+<table cellpadding="0" cellspacing="0" class="form_table">
+    <tbody>
+        <tr>
+            <th>
+                订单号：
+            </th>
+            <td>
+                @(eModel.OrderCode)
+                <input type="hidden" value="@(eModel.ID)" name="ID" />
+            </td>
+            <th>
+                下单日期：
+            </th>
+            <td>
+                @(eModel.CreateTime)
+            </td>
+            <th>
+                订单状态：
+            </th>
+            <td>
+                <select name="OrderStatus">
+                    <option value="0">--请选择--</option>
+                    @Html.Raw(Helper.Attributes.DescAttribute.ToOptionListStr(typeof(Inpinke.Model.Enum.OrderStatus), eModel.OrderStatus))
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                收货人：
+            </th>
+            <td>
+                <input type="text" value="@(eModel.RecUserName)" name="UserName"  class="form_input_txt" />
+            </td>
+            <th>
+                收货手机：
+            </th>
+            <td>
+                <input type="text" name="Mobile" class="form_input_txt"  value="@(eModel.RecMobile)" />
+            </td>
+        </tr>
+        <tr>
+            <th>
+                收货地址：
+            </th>
+            <td colspan="5">
+                <input type="hidden"  id="provinceH" value="@(eModel.RecProvID)" />
+                <input type="hidden"  id="cityH" value="@(eModel.RecCityID)" />
+                <input type="hidden"  id="areaH" value="@(eModel.RecAreaID)" />
+                <select name="ProvID" id="ProvID">
+                    <option value="0">--请选择省--</option>
+                </select>
+                <select name="CityID" id="CityID" onchange="Scripts.pca.Doajax('ajax.do?act=area&id='+escape(this.value),'post','AreaID','area');">
+                    <option value="0">--请选择市--</option>
+                </select>
+                <select name="AreaID" id="AreaID">
+                    <option value="0">--请选择区--</option>
+                </select>&nbsp;
+                <input type="text" value="@(eModel.RecAddress)" name="Address"  class="form_input_txt"  style=" width:330px;"/>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="6">
+            </th>
+        </tr>
+    </tfoot>
+</table>
+<table cellpadding="0" cellspacing="0" class="data_table">
+    <thead>
+        <tr>
+            <th>
+                印品信息
+            </th>
+            <th>
+                数量
+            </th>
+            <th>
+                优惠券
+            </th>
+            <th style="width: 80px;">
+                应支付
+            </th>
+            <th>
+                操作
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (ViewBag.OrderProducts != null)
+        {
+            IList<Inpinke_Order_Product> pList = ViewBag.OrderProducts as List<Inpinke_Order_Product>;
+            foreach (Inpinke_Order_Product p in pList)
+            {
+            <tr class="sub_tr">
+                <td>
+                    <div class=" prod_info">
+                        <a href="@(Inpinke.BLL.Config.ConfigMap.FrontWebsiteUrl)/show?id=@(p.BookID)" class="prod_info_cover" target="_blank">
+                            <img src="@(Inpinke.BLL.Config.ConfigMap.UserFileSourceUrl)@(p.Inpinke_Book.BookCover)" alt="@(p.Inpinke_Book.BookName)" /></a>
+                        <div class="prod_info_detail">
+                            <span class="book_name">
+                                @(p.Inpinke_Book.BookName)</span>
+                            <div class="info_detail">
+                                @{decimal plusPrice = p.Inpinke_Product.PlusPrice * ((p.Inpinke_Book.PageCount - p.Inpinke_Product.BasePages) / p.Inpinke_Product.PlusPages);}
+                                品名：@(p.Inpinke_Product.ShortName)&nbsp;&nbsp;规格：@(p.Inpinke_Product.Width)X@(p.Inpinke_Product.Height)CM&nbsp;&nbsp;页数：@(p.Inpinke_Book.PageCount)&nbsp;&nbsp;单价：@(p.Inpinke_Product.Price + plusPrice)
+                                <p class="item_packet" style="margin-top: 5px;">
+                                    <label class="first_label">
+                                        封套：</label>
+                                    @{
+                                                                                                                                                                                             IList<Inpinke_Product> envList = Inpinke.BLL.DBProductBLL.GetPlusProduct(p.ProductID, Inpinke.Model.Enum.ProductType.Envelope);         
+                                    }
+                                    <select name="envelope_@(p.BookID)" id="envelope_@(p.BookID)" class="envelope_select simple_select">
+                                        @if (envList == null || envList.Count() <= 0)
+                                        { 
+                                            <option value="0">无</option>
+                                        }
+                                        else
+                                        {
+                                            foreach (Inpinke_Product e in envList)
+                                            {
+                                                string selected = e.ID == p.Envelope ? "selected=true" : "";
+                                            <option value="@(e.ID)" @(selected)>@(e.ShortName)</option>
+                                            }
+
+                                        }
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <input type="text" value="@(p.Num)"  name="num_@(p.BookID)"   class="form_input_txt" style=" width:50px;"/>
+                </td>
+                <td>
+                    <select name="coupon_select_@(p.BookID)" id="coupon_select_@(p.BookID)" class="simple_select">
+                        <option value="0">无优惠</option>
+                    </select>
+                </td>
+                <td>
+                    @(p.Price)
+                </td>
+                <td>
+                    @{string editorUrl = ConfigMap.FrontWebsiteUrl + "/" + p.Inpinke_Product.ShortName + "/editor?adminkey=" + ConfigMap.AdminKey + "&userid=" + p.UserID + "&bookid=" + p.BookID;}
+                    <a href="@(editorUrl)" target="_blank">[编辑印品]</a>
+                    <br />
+                    <a href="">[删除印品]</a>
+                </td>
+            </tr>
+            }
+        }
+    </tbody>
+</table>
+<div style="margin-top: 13px; text-align: right;">
+    @(ViewBag.Msg)
+    <input type="submit" value="保存修改" class="ui_button" />&nbsp;&nbsp; <a  class="ui_button"  href="/order?ordercode=@(eModel.OrderCode)">
+        返回</a>
+</div>
+</form>
+<script type="text/javascript" src="/content/js/pca.js"></script>
+<script type="text/javascript">
+    $(function () {
+        Scripts.pca.Doajax('ajax.do?act=province', 'post', 'ProvID', "province", $("#provinceH").val());
+        Scripts.pca.Doajax('ajax.do?act=city&id=' + escape($("#provinceH").val()), 'post', 'CityID', "city", $("#cityH").val());
+        Scripts.pca.Doajax('ajax.do?act=area&id=' + escape($("#cityH").val()), 'post', 'AreaID', "area", $("#areaH").val());
+        $("#ProvID").change(function () {
+            Scripts.pca.Doajax('ajax.do?act=city&id=' + escape($(this).val()), 'post', 'CityID', 'city');
+            Scripts.pca.Doajax('ajax.do?act=area&id=' + escape(0), 'post', 'AreaID', 'area');
+        })
+
+
+    })
+</script>

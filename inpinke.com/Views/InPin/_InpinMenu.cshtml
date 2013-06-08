@@ -1,0 +1,14 @@
+﻿<ul class="inpin_wrapper_tab clearfix">
+        <li id="description" class="active" style="border-left: none;"><a href="/inpin">印品介绍</a></li>
+        <li id="compare"><a href="/inpin/compare">印品对比</a></li>
+        <li id="pricelist"><a href="/inpin/pricelist">印品价格表</a></li>
+        <li id="dealrecorder"><a href="/inpin/dealrecorder">最新印制</a></li>
+    </ul>
+    <script type="text/javascript">
+        function setActiveInpinTab(id) {
+            var activeLi = $("#" + id);
+            activeLi.addClass("active");
+            activeLi.siblings("li").removeClass("active");
+            
+        }
+    </script>

@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ABCA6749-E4F9-47CD-BD8B-ED25EA492F80}</ProjectGuid>
+    <ProjectTypeGuids>{E53F8FEA-EAE0-44A6-8774-FFD645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>inpinke.com</RootNamespace>
+    <AssemblyName>inpinke.com</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.4.1.10331.0\lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AlipayController.cs" />
+    <Compile Include="Controllers\BookController.cs" />
+    <Compile Include="Controllers\EditorController.cs" />
+    <Compile Include="Controllers\FileUploadController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InMemoryController.cs" />
+    <Compile Include="Controllers\InPinController.cs" />
+    <Compile Include="Controllers\InTimeController.cs" />
+    <Compile Include="Controllers\InWayController.cs" />
+    <Compile Include="Controllers\KQBillController.cs" />
+    <Compile Include="Controllers\MyController.cs" />
+    <Compile Include="Controllers\NoticeController.cs" />
+    <Compile Include="Controllers\OrderController.cs" />
+    <Compile Include="Controllers\ShelfController.cs" />
+    <Compile Include="Controllers\ShowController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\CartModels.cs" />
+    <Compile Include="Models\OrderModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\960grid.css" />
+    <Content Include="Content\data\p_c_a.xml" />
+    <Content Include="Content\pagestyle\css\base.css" />
+    <Content Include="Content\pagestyle\css\editor.css" />
+    <Content Include="Content\pagestyle\css\editor_v2.0.css" />
+    <Content Include="Content\pagestyle\css\page.css" />
+    <Content Include="Content\pagestyle\css\PIE.htc" />
+    <Content Include="Content\pagestyle\demo\banner_1.jpg" />
+    <Content Include="Content\pagestyle\demo\demo_p.jpg" />
+    <Content Include="Content\pagestyle\demo\demo_p2.jpg" />
+    <Content Include="Content\pagestyle\demo\demo_p3.jpg" />
+    <Content Include="Content\pagestyle\demo\demo_p4.JPG" />
+    <Content Include="Content\pagestyle\demo\demo_p5.jpg" />
+    <Content Include="Content\pagestyle\demo\index_demo_1.jpg" />
+    <Content Include="Content\pagestyle\demo\intime_demo1.jpg" />
+    <Content Include="Content\pagestyle\demo\intime_demo2.jpg" />
+    <Content Include="Content\pagestyle\demo\in_sky_0.jpg" />
+    <Content Include="Content\pagestyle\demo\in_sky_1.jpg" />
+    <Content Include="Content\pagestyle\demo\in_sky_2.jpg" />
+    <Content Include="Content\pagestyle\demo\in_sky_3.jpg" />
+    <Content Include="Content\pagestyle\demo\in_sky_4.jpg" />
+    <Content Include="Content\pagestyle\demo\in_sky_5.jpg" />
+    <Content Include="Content\pagestyle\demo\intime1.jpg" />
+    <Content Include="Content\pagestyle\demo\intime2.jpg" />
+    <Content Include="Content\pagestyle\editor_img\book_midbg.png" />
+    <Content Include="Content\pagestyle\editor_img\editor_panelbg.png" />
+    <Content Include="Content\pagestyle\editor_img\editor_spirt.png" />
+    <Content Include="Content\pagestyle\editor_img\imgview_spirt.jpg" />
+    <Content Include="Content\pagestyle\editor_img\imgview_spirt.png" />
+    <Content Include="Content\pagestyle\editor_img\font_fzlt.png" />
+    <Content Include="Content\pagestyle\editor_img\inway_editor_spirt.png" />
+    <Content Include="Content\pagestyle\editor_img\inway_style_spirt.png" />
+    <Content Include="Content\pagestyle\editor_img\loader_32x32.gif" />
+    <Content Include="Content\pagestyle\editor_img\m_t.png" />
+    <Content Include="Content\pagestyle\editor_img\pagestyle_spirt.png" />
+    <Content Include="Content\pagestyle\editor_img\stample_bg.png" />
+    <Content Include="Content\pagestyle\editor_img\txtalign_spirt.png" />
+    <Content Include="Content\pagestyle\images\arrows.png" />
+    <Content Include="Content\pagestyle\images\banner_1.jpg" />
+    <Content Include="Content\pagestyle\images\banner_2.jpg" />
+    <Content Include="Content\pagestyle\images\banner_bottom.png" />
+    <Content Include="Content\pagestyle\images\bg.gif" />
+    <Content Include="Content\pagestyle\images\bg.png" />
+    <Content Include="Content\pagestyle\images\bullets.png" />
+    <Content Include="Content\pagestyle\images\cart.png" />
+    <Content Include="Content\pagestyle\images\color_1.gif" />
+    <Content Include="Content\pagestyle\images\color_2.gif" />
+    <Content Include="Content\pagestyle\images\color_3.gif" />
+    <Content Include="Content\pagestyle\images\coupon_bg.png" />
+    <Content Include="Content\pagestyle\images\dot_spirt.png" />
+    <Content Include="Content\pagestyle\images\error.png" />
+    <Content Include="Content\pagestyle\images\error_bg_1.png" />
+    <Content Include="Content\pagestyle\images\error_bg_2.png" />
+    <Content Include="Content\pagestyle\images\error_bg_3.png" />
+    <Content Include="Content\pagestyle\images\error_bg_4.png" />
+    <Content Include="Content\pagestyle\images\heart-broken.png" />
+    <Content Include="Content\pagestyle\images\home_intime.jpg" />
+    <Content Include="Content\pagestyle\images\icon_bg.png" />
+    <Content Include="Content\pagestyle\images\icon_foot.png" />
+    <Content Include="Content\pagestyle\images\imgview_spirt.jpg" />
+    <Content Include="Content\pagestyle\images\inmemory_product.jpg" />
+    <Content Include="Content\pagestyle\images\inpinke_all_product.png" />
+    <Content Include="Content\pagestyle\images\inpinke_all_product_1.png" />
+    <Content Include="Content\pagestyle\images\Inpinke_logo.png" />
+    <Content Include="Content\pagestyle\images\Inpinke_logo_1.png" />
+    <Content Include="Content\pagestyle\images\inpinke_logo_2.png" />
+    <Content Include="Content\pagestyle\images\inpinke_logo_3.png" />
+    <Content Include="Content\pagestyle\images\inpinke_logo_email.jpg" />
+    <Content Include="Content\pagestyle\images\Inpinke_logo_text.png" />
+    <Content Include="Content\pagestyle\images\inpinke_logo_w.png" />
+    <Content Include="Content\pagestyle\images\inpinke_o.png" />
+    <Content Include="Content\pagestyle\images\inpinke_ob_48x48.png" />
+    <Content Include="Content\pagestyle\images\inpinke_o_48x48.png" />
+    <Content Include="Content\pagestyle\images\inpinke_o_48x70.png" />
+    <Content Include="Content\pagestyle\images\inpinke_spirt.png" />
+    <Content Include="Content\pagestyle\images\inpin_icon.png" />
+    <Content Include="Content\pagestyle\images\intime_1.jpg" />
+    <Content Include="Content\pagestyle\images\intime_2.jpg" />
+    <Content Include="Content\pagestyle\images\intime_3.jpg" />
+    <Content Include="Content\pagestyle\images\intime_4.jpg" />
+    <Content Include="Content\pagestyle\images\intime_5.jpg" />
+    <Content Include="Content\pagestyle\images\intime_cover.png" />
+    <Content Include="Content\pagestyle\images\intime_editor.jpg" />
+    <Content Include="Content\pagestyle\images\intime_envelop.jpg" />
+    <Content Include="Content\pagestyle\images\intime_envelop_s.jpg" />
+    <Content Include="Content\pagestyle\images\intime_info.png" />
+    <Content Include="Content\pagestyle\images\intime_pet.jpg" />
+    <Content Include="Content\pagestyle\images\intime_product.jpg" />
+    <Content Include="Content\pagestyle\images\intime_style.jpg" />
+    <Content Include="Content\pagestyle\images\intime_s_bg.png" />
+    <Content Include="Content\pagestyle\images\inway_info.png" />
+    <Content Include="Content\pagestyle\images\banner_1_thumb.jpg" />
+    <Content Include="Content\pagestyle\images\banner_2_thumb.jpg" />
+    <Content Include="Content\pagestyle\images\left_line.png" />
+    <Content Include="Content\pagestyle\images\loader.gif" />
+    <Content Include="Content\pagestyle\images\loading.gif" />
+    <Content Include="Content\pagestyle\images\love_icon.png" />
+    <Content Include="Content\pagestyle\images\msg_arrow.png" />
+    <Content Include="Content\pagestyle\images\my_spirt.png" />
+    <Content Include="Content\pagestyle\images\nav_spirt.png" />
+    <Content Include="Content\pagestyle\images\product_name.gif" />
+    <Content Include="Content\pagestyle\images\qqservice.jpg" />
+    <Content Include="Content\pagestyle\images\slider_dot.png" />
+    <Content Include="Content\pagestyle\images\state_1.gif" />
+    <Content Include="Content\pagestyle\images\state_2.gif" />
+    <Content Include="Content\pagestyle\images\state_3.gif" />
+    <Content Include="Content\pagestyle\images\top_nav_shadow.png" />
+    <Content Include="Content\pagestyle\js\editor.base.js" />
+    <Content Include="Content\pagestyle\js\inpinke.order.js" />
+    <Content Include="Content\pagestyle\js\intime.editor.js" />
+    <Content Include="Content\pagestyle\js\jquery-lightbox-0.5\css\jquery.lightbox-0.5.css" />
+    <Content Include="Content\pagestyle\js\jquery-lightbox-0.5\images\lightbox-blank.gif" />
+    <Content Include="Content\pagestyle\js\jquery-lightbox-0.5\images\lightbox-btn-close.gif" />
+    <Content Include="Content\pagestyle\js\jquery-lightbox-0.5\images\lightbox-btn-next.gif" />
+    <Content Include="Content\pagestyle\js\jquery-lightbox-0.5\images\lightbox-btn-prev.gif" />
+    <Content Include="Content\pagestyle\js\jquery-lightbox-0.5\images\lightbox-ico-loading.gif" />
+    <Content Include="Content\pagestyle\js\jquery-lightbox-0.5\js\jquery.js" />
+    <Content Include="Content\pagestyle\js\jquery-lightbox-0.5\js\jquery.lightbox-0.5.js" />
+    <Content Include="Content\pagestyle\js\jquery-lightbox-0.5\js\jquery.lightbox-0.5.min.js" />
+    <Content Include="Content\pagestyle\js\jquery-lightbox-0.5\js\jquery.lightbox-0.5.pack.js" />
+    <Content Include="Content\pagestyle\js\jquery-ui-1.8.21.custom.min.js" />
+    <Content Include="Content\pagestyle\js\jquery.blockui.js" />
+    <Content Include="Content\pagestyle\js\jquery.lazyloader.js" />
+    <Content Include="Content\pagestyle\js\jquery.nivo.slider.pack.js" />
+    <Content Include="Content\pagestyle\js\jquery.windswaterflow.js" />
+    <Content Include="Content\pagestyle\js\jquery.xslider.js" />
+    <Content Include="Content\pagestyle\js\plupload\plupload.flash.html4.js" />
+    <Content Include="Content\pagestyle\js\plupload\plupload.flash.swf" />
+    <Content Include="Content\pdf\inpinke_logo_pdf.jpg" />
+    <Content Include="Content\pdf\inpinke_logo_pdf.png" />
+    <Content Include="Content\pdf\inpinke_logo_pdf1.jpg" />
+    <Content Include="Content\pdf\inpinke_logo_pdf4.jpg" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="DLL\LitJSON.dll" />
+    <Content Include="DLL\log4net.dll" />
+    <Content Include="DLL\NetDimension.Weibo.dll" />
+    <Content Include="DLL\Newtonsoft.Json.dll" />
+    <Content Include="DLL\Newtonsoft.Json.Net35.dll" />
+    <Content Include="DLL\QConnectSDK.dll" />
+    <Content Include="DLL\RestSharp.dll" />
+    <Content Include="error.htm" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="MailTemplate.htm" />
+    <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.5.1.js" />
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\modernizr-1.7.js" />
+    <Content Include="Scripts\modernizr-1.7.min.js" />
+    <Content Include="default.aspx" />
+    <Content Include="Scripts\pca.js" />
+    <Content Include="Scripts\plupload.vsdoc.js" />
+    <Content Include="Views\KQBill\Send.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Account\ChangePasswordSuccess.cshtml" />
+    <Content Include="Views\Account\LogOn.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_LogOnPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\douban\" />
+    <Folder Include="Content\KQBill\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_TopPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_FootPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\InTime\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_MenuPartial.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\InMemory\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inpinke.BLL\Inpinke.BLL.csproj">
+      <Project>{2D119DFF-4566-4741-8260-F1DDA42F65E6}</Project>
+      <Name>Inpinke.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inpinke.Helper\Helper.csproj">
+      <Project>{7B2E878F-6071-41D7-A97E-836297C88A4E}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inpinke.Model\Inpinke.Model.csproj">
+      <Project>{E0640E8A-FAAD-4C8E-BFC2-72D42C148F8B}</Project>
+      <Name>Inpinke.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\Login.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Account\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Account\Agreement.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_EditorLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\InTime\Editor.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Order\Index.cshtml" />
+    <Content Include="Views\Order\OrderInfo.cshtml" />
+    <Content Include="Views\Order\Pay.cshtml" />
+    <Content Include="Views\Order\Send.cshtml" />
+    <Content Include="Views\Order\Success.cshtml" />
+    <Content Include="Views\InTime\Envelope.cshtml" />
+    <Content Include="Views\Shared\_AddressForm.cshtml" />
+    <Content Include="Views\Account\Copy of Index.cshtml" />
+    <Content Include="Views\My\Index.cshtml" />
+    <Content Include="Views\My\Book.cshtml" />
+    <Content Include="Views\Shared\_MyMenuPartial.cshtml" />
+    <Content Include="Views\My\Photo.cshtml" />
+    <Content Include="Views\My\Order.cshtml" />
+    <Content Include="Views\My\Coupon.cshtml" />
+    <Content Include="Views\My\Message.cshtml" />
+    <Content Include="Views\My\Address.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\My\MsgDetail.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\My\Info.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_IndexLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\_TopPartial_Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Notice\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Alipay.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\Email.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\EmailTemplate.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\Settings.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\UyanApi.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Config\Editor.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Content\fonts\FZLTHK_0.TTF" />
+    <Content Include="Views\Shelf\Index.cshtml" />
+    <Content Include="Views\Show\Index.cshtml" />
+    <Content Include="Views\Shared\_TopList_Right.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetNotice.cshtml" />
+    <Content Include="Views\Order\Detail.cshtml" />
+    <Content Include="Views\Order\Modify.cshtml" />
+    <Content Include="Views\Home\Copy of Index.cshtml" />
+    <Content Include="Views\InPin\Index.cshtml" />
+    <Content Include="Views\Shared\_FootDesc.cshtml" />
+    <Content Include="Views\InPaint\Index.cshtml" />
+    <Content Include="Views\InTime\Copy of Index.cshtml" />
+    <Content Include="Views\InPin\_InpinMenu.cshtml" />
+    <Content Include="Views\InPin\Compare.cshtml" />
+    <Content Include="Views\InPin\PriceList.cshtml" />
+    <Content Include="Views\InPin\DealRecorder.cshtml" />
+    <Content Include="Views\InWay\Index.cshtml" />
+    <Content Include="Views\InWay\Editor.cshtml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>28564</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

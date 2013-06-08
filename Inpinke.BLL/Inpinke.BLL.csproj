@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D119DFF-4566-4741-8260-F1DDA42F65E6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Inpinke.BLL</RootNamespace>
+    <AssemblyName>Inpinke.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\inpinke.com\DLL\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\inpinke.com\DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\inpinke.com\DLL\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\ConfigMap.cs" />
+    <Compile Include="DBAddressBLL.cs" />
+    <Compile Include="DBAdminBLL.cs" />
+    <Compile Include="DBBookBLL.cs" />
+    <Compile Include="DBCartBLL.cs" />
+    <Compile Include="DBCouponBLL.cs" />
+    <Compile Include="DBImageBLL.cs" />
+    <Compile Include="DBImageScaleBLL.cs" />
+    <Compile Include="DBMessageBLL.cs" />
+    <Compile Include="DBOrderBLL.cs" />
+    <Compile Include="DBProductBLL.cs" />
+    <Compile Include="DBProvinceBLL.cs" />
+    <Compile Include="DBUserBLL.cs" />
+    <Compile Include="Drawing\TextDrawing.cs" />
+    <Compile Include="Filters\AdminFilterAttribute.cs" />
+    <Compile Include="Filters\UserFilterAttribute.cs" />
+    <Compile Include="ImageProcess\ImageProcessBLL.cs" />
+    <Compile Include="PDFProcess\CMYK_Color.cs" />
+    <Compile Include="PDFProcess\InTimePDFBLL.cs" />
+    <Compile Include="PDFProcess\InWayPDFBLL.cs" />
+    <Compile Include="PDFProcess\PDFProcessBLL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Session\AdminSession.cs" />
+    <Compile Include="Session\UserSession.cs" />
+    <Compile Include="UYanBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Inpinke.Helper\Helper.csproj">
+      <Project>{7B2E878F-6071-41D7-A97E-836297C88A4E}</Project>
+      <Name>Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Inpinke.Model\Inpinke.Model.csproj">
+      <Project>{E0640E8A-FAAD-4C8E-BFC2-72D42C148F8B}</Project>
+      <Name>Inpinke.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,168 @@
+﻿@using Inpinke.Model;
+@{
+    ViewBag.Title = "订单查询-订单管理";
+    Inpinke.Model.CustomClass.OrderQueryModels qModel = new Inpinke.Model.CustomClass.OrderQueryModels();
+    if (ViewBag.QueryModel != null)
+    {
+        qModel = ViewBag.QueryModel as Inpinke.Model.CustomClass.OrderQueryModels;
+    }
+}
+<form action="" method="get">
+<h2>
+    输入条件查询订单</h2>
+<table cellpadding="0" cellspacing="0" class="form_table">
+    <tbody>
+        <tr>
+            <th>
+                订单号：
+            </th>
+            <td>
+                <input type="text" name="OrderCode" class="form_input_txt" value="@(qModel.OrderCode)" />
+            </td>
+            <th>
+                用户邮箱：
+            </th>
+            <td>
+                <input type="text" name="Email" class="form_input_txt" value="@(qModel.Email)" />
+            </td>
+            <th>
+                订单状态：
+            </th>
+            <td>
+                <select name="OrderStatus">
+                    <option value="0">--请选择--</option>
+                    @Html.Raw(Helper.Attributes.DescAttribute.ToOptionListStr(typeof(Inpinke.Model.Enum.OrderStatus), qModel.OrderStatus))
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                下单日期：
+            </th>
+            <td colspan="3">
+                从&nbsp;&nbsp;<input type="text" name="StartTime" id="StartTimeEndTime-minDate" class="datetime_input form_input_txt" value="@(qModel.StartTime)" />&nbsp;&nbsp;到&nbsp;&nbsp;<input
+                    type="text" name="EndTime" id="StartTimeEndTime-maxDate" class="datetime_input form_input_txt" value="@(qModel.EndTime)" />
+            </td>
+            <script type="text/javascript">
+                $(function () {
+                    $("input.datetime_input").datepicker({
+                        changeMonth: true,
+                        changeYear: true,
+                        dateFormat: "yy-mm-dd",
+                        onClose: function (sdate, inst) {
+                            var _this = $(inst), thisID = _this.attr("id"), thisName = _this.attr("input").attr("name"), thisIDInfo = thisID.split("-");
+                            if (thisIDInfo.length > 1) {
+                                var otherName = thisIDInfo[0].replace(thisName, "");
+                                $("input[name=" + otherName + "]").datepicker("option", thisIDInfo[1], sdate);
+                            }
+                        }
+                    });
+                })
+         
+            </script>
+        </tr>
+
+        <tr>
+            <th>
+                支付日期：
+            </th>
+            <td colspan="3">
+                从&nbsp;&nbsp;<input type="text" name="PayStartTime" id="PayStartTimePayEndTime-minDate" class="datetime_input form_input_txt" value="@(qModel.PayStartTime)" />&nbsp;&nbsp;到&nbsp;&nbsp;<input
+                    type="text" name="PayEndTime" id="PayStartTimePayEndTime-maxDate" class="datetime_input form_input_txt" value="@(qModel.PayEndTime)" />
+            </td>
+            </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th colspan="6">
+                <input type="submit" value="查询" /> &nbsp;&nbsp;<a href="/order" >全部订单</a>
+            </th>
+        </tr>
+    </tfoot>
+</table>
+</form>
+<table cellpadding="0" cellspacing="0" class="data_table">
+    <thead>
+        <tr>
+            <th class="check_box">
+                <input type="checkbox" name="_list_chkall" id="_list_chkall" onchange="checkall(this.form,'idarray','_list_chkall')" />
+            </th>
+            <th>
+                订单信息
+            </th>
+            <th>
+                订单状态
+            </th>
+            <th style="width: 80px;">
+                价格
+            </th>
+           
+            <th style="width: 80px;">
+                应支付
+            </th>
+            <th>
+                操作
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            IList<Inpinke_Order> olist = Model as List<Inpinke_Order>;
+            foreach (Inpinke_Order o in olist)
+            { 
+            <tr>
+                <td>
+                    <input type="checkbox" name="idarray" value="@(o.ID)" />
+                </td>
+                <td>
+                    <div class="order_userinfo">
+                        <label class="first_label">
+                            用户邮箱：</label>@(o.Inpinke_User.Email)
+                        (@(o.UserID))</div>
+                    <div class="order_info">
+                        <label class="first_label">
+                            订单号：</label>@(o.OrderCode)
+                        <label>
+                            下单日期：</label>@(o.CreateTime.ToString("yyyy年MM月dd日 mm:ss"))
+                        @if (o.PayTime.HasValue)
+                        {
+                            <label>
+                                支付日期：</label>@(o.PayTime.Value.ToString("yyyy年MM月dd日 mm:ss"))
+                        }
+                    </div>
+                    <div class="address_info">
+                        <label class="first_label">
+                            收货信息：</label>
+                        @(o.Inpinke_User_Address.ProvName + "  " + o.Inpinke_User_Address.CityName + "  " + o.Inpinke_User_Address.AreaName + " " + o.Inpinke_User_Address.Address + " " + o.Inpinke_User_Address.UserName + "（收）" + o.Inpinke_User_Address.Mobile)
+                    </div>
+                    @if (o.ExpressTime.HasValue)
+                    {
+                        <div class="deliver_info">
+                            <label class="first_label">
+                                发货日期：</label>@(o.ExpressTime.Value.ToString("yyyy年MM月dd日 mm:ss"))
+                            <label>
+                                快递商：</label>@(o.ExpressName)<label>快递单号：</label>@(o.ExpressCode)
+                        </div>                        
+                    }
+                </td>
+                <td>
+                    @(Inpinke.Model.Enum.OrderStatusDesc.GetOrderStatusDesc(o.OrderStatus))
+                </td>
+                <td>@(o.OrgPrice)
+                </td>
+                <td>
+                    @(o.TotalPrice)
+                </td>
+                <td>
+                    @*   <a href="">[订单详情]</a><br />*@ <a href="/order/edit/@(o.ID)">[编辑订单]</a>
+                </td>
+            </tr>
+            }
+
+        }
+    </tbody>
+</table>
+<div class="the_pages">
+    @Html.Raw(Html.uiPager())
+</div>

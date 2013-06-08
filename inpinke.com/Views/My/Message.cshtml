@@ -1,0 +1,80 @@
+﻿@using Inpinke.Model
+@{
+    ViewBag.Title = "我的消息-Inpinke感受印品的美好";
+}
+<div class="content_wrapper account_wrapper">
+    <!--用户菜单-->
+    @Html.Partial("_MyMenuPartial")
+    <div class="content_wrapper clearfix">
+        <div class="mymessage_list">
+            @if (ViewBag.MsgList == null)
+            {
+                <div class="message_item clearfix">
+                    <div class="message_avatar">
+                        <img src="../../Content/pagestyle/images/inpinke_o_48x48.png" alt="" />
+                    </div>
+                    <div class="message_con_list">
+                        <div class="message_con">
+                            <span class="msg_arrow"></span>
+                            <p class="message_time">
+                                @(DateTime.Now.ToString("yyyy年MM月dd日 HH:mm"))
+                            </p>
+                            <p class="">
+                                没有消息。您可以<a href="">[查看最近公告]</a>&nbsp;<a href="/">[看看别人制作的印品]</a><a href="/">[也可以给我们发消息]</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                IList<Inpinke_Message> mList = ViewBag.MsgList as List<Inpinke_Message>;
+                foreach (Inpinke_Message m in mList)
+                {               
+                <div class="message_item clearfix">
+                    <div class="message_avatar">
+                        @if (m.MsgType == (int)Inpinke.Model.Enum.MsgType.UserReply)
+                        {
+                            <img src="../../Content/pagestyle/images/inpinke_ob_48x48.png" alt="" />
+                        }
+                        else
+                        {
+                            <img src="../../Content/pagestyle/images/inpinke_o_48x48.png" alt="" />
+                        }
+                    </div>
+                    <div class="message_con_list">
+                        <div class="message_con">
+                            <span class="msg_arrow"></span>
+                            <p class="message_time">
+                                @(m.CreateTime.ToString("yyyy年MM月dd日 HH:mm"))
+                            </p>
+                            <p class="">
+                                @Html.Raw(m.Msg)
+                            </p>
+                            <p class="message_action" style="text-align: right;">
+                                <a href="/my/msgdetail/@(m.ID).html">[详细]</a>&nbsp;&nbsp;<a href="javascript:DeleteMessage(@(m.ID))">[删除]</a></p>
+                        </div>
+                    </div>
+                </div>
+                }
+            }
+
+            <div class="the_pages">
+             @Html.Raw(Html.uiPager4(4))
+            </div>
+        </div>
+        <div class="right_menu_wrapper">
+            <div class="menu_box">
+                <div class="menu_title">
+                    <h2>
+                        快速定制印品</h2>
+                </div>
+                <div class="box_con">
+                    <a href="javascript:;">
+                        <img src="../../Content/pagestyle/images/inway_info.png" alt="" /></a>
+                </div>
+            </div>
+           @Html.Partial("_TopList_Right")
+        </div>
+    </div>
+</div>

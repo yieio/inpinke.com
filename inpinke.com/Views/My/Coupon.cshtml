@@ -1,0 +1,85 @@
+﻿@using Inpinke.Model
+@{
+    ViewBag.Title = "优惠券-Inpinke感受印品的美好";
+}
+<div class="content_wrapper account_wrapper">
+    <!--用户菜单-->
+    @Html.Partial("_MyMenuPartial")
+    <div class="content_wrapper clearfix">
+        <div class="mycoupon_list">
+            @if (ViewBag.CouponList == null)
+            {
+                <div class="coupon_item clearfix">
+                    <div class="coupon_expire">
+                        <h2>
+                            为空</h2>
+                        <p>
+                            <span class="expire_day">@(DateTime.Now.Day)</span>
+                            @(DateTime.Now.ToString("yyyy年MM月"))</p>
+                    </div>
+                    <div class="coupon_info">
+                        <h2>
+                            您还没有优惠券</h2>
+                        <p>
+                            您可以 <a href="#">[参加活动获取优惠券]</a></p>
+                    </div>
+                </div>
+            }
+            else
+            {
+                IList<Inpinke_Coupon_Code> cList = ViewBag.CouponList as List<Inpinke_Coupon_Code>;
+                foreach (Inpinke_Coupon_Code c in cList)
+                {
+                    string title = c.CodeStatus == (int)Inpinke.Model.Enum.CodeStatus.Used ? "已使用" : DateTime.Now < c.StartTime ? "未生效" : DateTime.Now > c.EndTime ? "已过期" : "有效期";
+                    string titleCss = c.CodeStatus == (int)Inpinke.Model.Enum.CodeStatus.Used ? "expired" : DateTime.Now < c.StartTime ? "not_start" : DateTime.Now > c.EndTime ? "expired" : "";
+                    DateTime showDT = DateTime.Now < c.StartTime ? c.StartTime : c.EndTime;
+                    
+                <div class="coupon_item clearfix">
+                    <div class="coupon_expire">
+                        <h2 class="@(titleCss)">
+                            @(title)</h2>
+                        <p>
+                            <span class="expire_day">@(showDT.Day)</span>@(showDT.ToString("yyyy年MM月"))</p>
+                    </div>
+                    <div class="coupon_info">
+                        <h2>
+                          <a href="">  @(c.Inpinke_Coupon.CouponName)</a> >>编号：[@(c.Code)]</h2>
+                        <p>
+                            @(c.Inpinke_Coupon.CouponDesc)</p>
+                        <p>
+                            可以用于印品：@(c.Inpinke_Coupon.ProductID == 0 ? "全部印品" : Inpinke.BLL.DBProductBLL.GetProductByID(c.Inpinke_Coupon.ProductID).Name)
+                        </p>
+                        <p>
+                            有效期：@(c.StartTime.ToString("yyyy年MM月dd日"))-@(c.EndTime.ToString("yyyy年MM月dd日")) &nbsp;&nbsp;<a href="#">[马上下单使用]</a></p>
+                    </div>
+                </div>
+                }
+            }
+            
+        </div>
+        <div class="right_menu_wrapper">
+            <div class="menu_box">
+                <div class="menu_title">
+                    <h2>
+                        优惠券小贴士</h2>
+                </div>
+                <div class="box_con">
+                    <a href="javascript:;">1、如何获取优惠券？</a><br />
+                    <br />
+                    <a href="javascript:;">2、如何使用优惠券？</a>
+                </div>
+            </div>
+            <div class="menu_box">
+                <div class="menu_title">
+                    <h2>
+                        快速定制印品</h2>
+                </div>
+                <div class="box_con">
+                    <a href="javascript:;">
+                        <img src="../../Content/pagestyle/images/inway_info.png" alt="" /></a>
+                </div>
+            </div>
+          @Html.Partial("_TopList_Right")
+        </div>
+    </div>
+</div>

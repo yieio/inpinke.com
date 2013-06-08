@@ -1,0 +1,334 @@
+﻿@{
+    Inpinke.Model.Inpinke_Book model = ViewBag.EditBook as Inpinke.Model.Inpinke_Book;
+
+    ViewBag.Title = model.BookName;
+    Layout = "~/Views/Shared/_EditorLayout.cshtml";
+    
+}
+<script type="text/javascript" src="../../Content/pagestyle/js/jquery-ui-1.8.21.custom.min.js"></script>
+<script type="text/javascript" src="../../Content/pagestyle/js/jquery.blockui.js"></script>
+<script type="text/javascript" src="../../Content/pagestyle/js/plupload/plupload.flash.html4.js"></script>
+<div class="left_wrapper clearfix" id="leftWrapper">
+    <div class="txteditor_tool" id="txtEditorTool" style="display: none;">
+        <ul class="clearfix">
+            <li class="txt_align active"><a href="javascript:;" id="txtAlignLeft" class="txt_align_left"
+                title="左对齐"></a></li>
+            <li class="txt_align"><a href="javascript:;" id="txtAlignMid" class="txt_align_center"
+                title="居中"></a></li>
+            <li class="txt_align"><a href="javascript:;" id="txtAlignRight" class="txt_align_right"
+                title="右对齐"></a></li>
+            <li class="txt_color selected" style="margin-left: 20px;"><a href="javascript:;"
+                id="txtColorBlack" class="txt_color_black"></a></li>
+            <li class="txt_color "><a href="javascript:;" id="txtColorWhite" class="txt_color_white">
+            </a></li>
+        </ul>
+    </div>
+    <div class="left_menu">
+       @* <a href="/home">
+            <img src="/Content/pagestyle/images/Inpinke_logo_w.png" style="width: 90px; margin: 7px 0px 0px 7px;"
+                alt="" title="返回首页" /></a>*@
+        <div class="e_bg editor_step">
+            <a href="javascript:;" class="show_booksetpanel" id="ShowBookSetPanelBtn" title="设置书本信息/字体/作者">
+            </a><a href="javascript:;" class="show_uploadpanel" id="ShowUploadPanelBtn" title="上传照片">
+            </a><a href="javascript:;" class="show_pagesetpanel" id="ShowPageSetPanelBtn" title="调整页面顺序/增减页面">
+            </a><a href="javascript:;" class="save_page_data" id="SavePageDataBtn" title="保存页面编辑">
+            </a><a href="javascript:;" class="show_page_view" id="ShowPageViewBtn" title="预览页面">
+            </a><a href="javascript:;" class="print_book" id="PrintBookBtn" title="下单印刷书本"></a>
+        </div>
+        <div class="e_bg editor_help">
+        <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=854984844&site=qq&menu=yes" style="display:block; width:90px; height:30px;" title="点击咨询" ></a>
+        </div>
+    </div>
+    <div class="mid_bg">
+        <span class="mid_top_bg"></span>
+    </div>
+    <div class="main_panel">
+        <div class="imgview_panel clearfix" id="imgViewPanel">
+            <a href="javascript:;" class="e_bg slide_l bind_slide"></a><a id="addImageBtn" class="e_bg add_img"
+                href="javascript:;"></a>
+            <div class="image_view">
+                <ul class="clearfix" id="imageViewList">
+                </ul>
+            </div>
+            <a href="javascript:;" class="e_bg slide_r bind_slide"></a>
+        </div>
+        <div class="book_panel">
+            <div id="bookPageWrapper">
+            </div>
+            <div class="book_mid">
+            </div>
+            <div class="editor_tool">
+                <ul class="clearfix">
+                    <li class="page_num"><span id="panNumTxt">封面</span>
+                        <div class="pagestyle_panel clearfix" id="pageStylePanel" style="display: none;">
+                            <a class="panel_close" href="javascript:;" id="pageStylePanelClose">X</a>
+                        </div>
+                    </li>
+                    <li class="page_style"><a href="javascript:;" id="pageStyleBtn">版式</a>
+                        <div class="pagebgcolor_panel pagestyle_panel clearfix" id="bgColorPanel">
+                            <div class="panel_content clearfix">
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_FFFFFF"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_000000"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_DF0000"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_D6EAF3"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_E4DFD6"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_F9DCDA"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_FFE99D"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_FCDCAB"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_FBE7D4"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_D2DC9F"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_B90000"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_175724"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_A7BBC1"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_FBBBAB"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_6789A4"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_F8F2E4"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_EF006B"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_009FE0"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_FFC400"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_F98C00"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_93BC00"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_C2891B"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_77420D"></a>
+                                </div>
+                                <div class="bgcolor_item">
+                                    <a href="javascript:;" class="bgcolor color_CABCAC"></a>
+                                </div>
+                            </div>
+                            <a class="panel_close" href="javascript:;" id="pageBgColorPanelClose">X</a>
+                        </div>
+                    </li>
+                    @* <li class="txt_color"><a href="javascript:;" id="txtColorBtn">文字色</a></li>*@
+                    <li class="bg_color"><a href="javascript:;" id="bgColorBtn">背景色</a></li>
+                </ul>
+            </div>
+            <div id="uploadPanel" class="upload_panel" style="visibility:hidden">
+                <div class="panel_title" style="">
+                    上传照片<a href="javascript:;" title="关闭" class="panel_close">X</a>
+                </div>
+                <table class="queue_list_title">
+                    <colgroup>
+                        <col width="50%" />
+                        <col width="100" />
+                        <col width="270" />
+                        <col width="200" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>
+                                文件名
+                            </th>
+                            <th>
+                                大小
+                            </th>
+                            <th>
+                                进度
+                            </th>
+                            <th>
+                                操作
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="queue_list_wrapper">
+                    <table class="queue_list">
+                        <colgroup>
+                            <col width="50%" />
+                            <col width="100" />
+                            <col width="270" />
+                            <col width="200" />
+                        </colgroup>
+                        <tbody id="uploadQueue">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="upload_panel_btn clearfix">
+                    <a href="javascript:;" id="uploadSelectFile">选择文件</a><a href="javascript:;" id="uploadFiles">上传文件</a><a
+                        href="javascript:;" id="clearUploadQueue">清空列表</a><a href="javascript:;" title="关闭"
+                            class="panel_close">关闭</a>
+                </div>
+            </div>
+            <div id="bookSetPanel" class="upload_panel" style="@(model.DonePages==0?"":"display: none;") ">
+                <div class="panel_title" style="">
+                    预设书本信息<a href="javascript:;" title="关闭" class="panel_close">X</a>
+                </div>
+                <form action="/intime/savebookset" method="post" id="BookSetForm">
+                <div class="editor_label">
+                    书名</div>
+                <div class="editor_field">
+                    <input type="hidden" id="BookID" name="BookID" value="@(model.ID)" />
+                    <input type="hidden" id="UserID" name="UserID" value="@(model.UserID)" />
+                    <input type="hidden" id="TotalCount" name="TotalCount" value="@(model.PageCount)" />
+                    <input type="text" maxlength="50" name="BookName" id="BookName" class="type_text" value="@(model.BookName)" />
+                </div>
+                <div class="editor_label">
+                    作者</div>
+                <div class="editor_field">
+                    <input type="text" maxlength="50" name="BookAuthor" id="BookAuthor"  class="type_text" value="@(model.Author)"  />
+                </div>
+                <div class="editor_label">
+                    序言</div>
+                <div class="editor_field">
+                    <textarea rows="10" cols="20" name="BookBrief" id="BookBrief">@(model.BookDesc)</textarea>
+                </div>
+                <div class="editor_label">
+                    印刷字体</div>
+                <div class="editor_field" style="font-size: 24px; margin-top: 7px;">
+                    <input type="radio" checked="checked" name="BookPrintFont" id="BookPrintFont" value="1" /> <img src="../../Content/pagestyle/editor_img/font_fzlt.png" alt="方正兰亭黑" style="vertical-align:middle;"  />
+                </div>
+                </form>
+                <div class="upload_panel_btn clearfix">
+                    <div id="saveBookSetNotice">
+                    </div>
+                    <a href="javascript:;" id="saveBookSetBtn">保存设置</a><a href="javascript:;" class="panel_close">关闭</a>
+                </div>
+            </div>
+            <div id="pageSetPanel" class="upload_panel" style="height: 600px; display: none;
+                background-color: #f3f3f3;">
+                <div class="panel_title" style="">
+                    书本页面管理[可拖拽调整页面顺序,调整完记得保存设置]<a href="javascript:;" title="关闭" class="panel_close">X</a>
+                </div>
+                <div class="pageset_item" id="pageSetItem" style="height: 500px; overflow: auto;">
+                </div>
+                <div class="upload_panel_btn clearfix">
+                    <div id="savePageSetNotice">
+                    </div>
+                    <a href="javascript:;" id="savePageSetBtn">保存设置</a><a href="javascript:;" class="panel_close">关闭</a>
+                </div>
+            </div>
+        </div>
+        <div class="notice_panel">
+            <img src="../../Content/pagestyle/images/dot_spirt.png" class="e_bg notice_icon"
+                alt="提示" />
+            @* <div class="notice_time" id="timeClock"></div>*@
+            <div class="notice_msg_con" id="noticeMsgCon">
+                <div class="the_msg_con" style="position: absolute;">
+                </div>
+            </div>
+            <ul class="notice_tool">
+                <li>
+                    <div class="e_bg order_to_print" id="order2Print" title="下单印刷">
+                    </div>
+                </li>
+                <li>
+                    <div class="e_bg switch_to_view" id="switch2ViewBtn" title="预览">
+                    </div>
+                </li>
+                <li class="">
+                    <div class="e_bg save_book" id="saveBookBtn" title="保存">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="pageview_panel" id="pageViewPanel">
+            <div class="e_bg slide_l bind_slide">
+            </div>
+            <div class="page_view">
+                <ul class="page_view_list clearfix" id="pageViewList">
+                </ul>
+            </div>
+            <div class="e_bg slide_r bind_slide">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mpview_panel" id="mpviewPanel" style="display: none; left:0px;">
+    <div class="mpview_con_wrapper">
+        <div class="mpview_con">
+            <ul class="clearfix" id="mpviewList">
+            </ul>
+            <div class="book_mid">
+            </div>
+        </div>
+    </div>
+    <div class="mpview_btn clearfix">
+        <a href="javascript:;" id="nextPage">下一页</a> <a href="javascript:;" id="prevPage">上一页</a><a
+            href="javascript:;" id="editPage">编辑当前页</a><a href="javascript:;" id="closePanel">关闭</a>
+    </div>
+</div>
+<script type="text/javascript" src="../../Content/pagestyle/js/intime.editor.js?v=1.0"></script>
+<script type="text/javascript">
+
+    $(function () {
+
+        _editorData.bookID=@(model.ID);
+        _editorData.userID=@(model.UserID);
+        _editorData.totalCount=@(model.PageCount);
+        var BookSetPanelObj = new BookSetPanel();
+        BookSetPanelObj.init();
+        //startTime();        
+       
+        var ImageViewObj = new ImageView({  imgPath: '/UserFile/' +  _editorData.userID + '/' });
+        ImageViewObj.init();
+
+        var uploadConfig = { container: "uploadPanel", queue: "uploadQueue", selectBtn: "uploadSelectFile", clearBtn: "clearUploadQueue", uploadBtn: "uploadFiles", ImageViewObj: ImageViewObj };
+        var UploaderObj = new ImageUploader(uploadConfig);
+        UploaderObj.init();
+
+        var BookPageObj = new BookPage();
+        BookPageObj.setPageStyle($.extend(true, {}, _pagestyles[0], { outPageNum: _editorData.outPNum, pageNum: _editorData.currEditorPNum, pageItemCss: 'page_item  book_page_r', txtContainer: [{ width: 360, height: 32, css: 'page_txt_container cover_title', txt: '点击输入主标题', left: null, top: null, conid: 'txt_1' }, { width: 360, height: 22, css: 'page_txt_container cover_subtitle', txt: '点击输入副标题', conid: 'txt_2'}] }));
+        BookPageObj.init();
+        BookPageObj.loadPageData(_editorData.outPNum);
+
+        var EditorToolObj = new EditorTool();
+        EditorToolObj.init();
+
+        var PageViewObj = new PageView();
+        PageViewObj.init();
+
+        var MPageViewObj = new MPageView({ totalCount: _editorData.totalCount });
+        MPageViewObj.init();
+
+        var BgColorPanelObj = new BgColorPanel();
+        BgColorPanelObj.init();
+
+        var PageSetPanelObj = new PageSetPanel();
+        PageSetPanelObj.init();
+    })
+
+</script>

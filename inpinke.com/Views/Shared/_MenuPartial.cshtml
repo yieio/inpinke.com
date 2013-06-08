@@ -1,0 +1,29 @@
+﻿<div class="menu_wrapper menu_o_wrapper " id="menuWrapper">
+            <ul>
+                <li ><a href="/intime"><strong>inTime</strong><span>·14X14cm</span><br />
+                    <span>❤留住逝去在时光里的纪念...</span></a> </li>
+                <li><a href="/inmemory"><strong>inMemory</strong><span>·15X15cm</span><br />
+                    <span>❤触摸回忆中的影像...</span></a> </li>
+                <li><a href="/inlife"><strong>inLife</strong><span>·15X21cm</span><br />
+                    <span>❤留住生命中的瞬间...</span></a> </li>
+                <li><a href="/inway"><strong>inWay</strong><span>·18.6X24.8cm</span><br />
+                    <span>❤在路上...</span></a> </li>
+                <li><a href="/inscenery"><strong>inScenery</strong><span>·20X15cm</span><br />
+                    <span>❤图画里...</span></a> </li>
+                <li style=" border:none;"><a href="/inpiece"><strong>inLomoCard</strong><span>·20X15cm</span><br />
+                    <span>❤碎片...</span></a> </li>
+            </ul>
+        </div>
+<script type="text/javascript">
+    $(function () {
+        var url = window.location + "";
+        url = url.toLowerCase();
+        $("#menuWrapper li").each(function () {
+            var theLink = $(this).find("a"); href = theLink.attr("href");
+            if (url.indexOf(href) >= 0) {
+                theLink.addClass("active");
+                $(this).siblings("li").find("a").removeClass("active");
+            }
+        })
+    })
+</script>

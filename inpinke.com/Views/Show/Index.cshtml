@@ -1,0 +1,258 @@
+﻿@using Inpinke.Model
+@{
+    Inpinke_Book model = new Inpinke_Book();
+    if (ViewBag.ShowBook != null)
+    {
+        model = ViewBag.ShowBook as Inpinke_Book;
+        ViewBag.Title = model.BookName;
+    }
+    IList<Inpinke_Book_Page> list = new List<Inpinke_Book_Page>();
+    if (ViewBag.ShowBookPage != null)
+    {
+        list = ViewBag.ShowBookPage as List<Inpinke_Book_Page>;
+    }
+}
+<script type="text/javascript">
+    $(function () {
+        setActiveManiMenu("__mm_shelf");
+    });
+</script>
+<div class="content_wrapper">
+    <h1 class="" style="font-size: 22px; line-height: 44px; padding-top: 20px;">
+        <span class="book_name">@(model.BookName)</span>&nbsp;&nbsp;<span class="book_author"
+            style="font-size: 14px;">by：@(model.Author)-@(model.CreateTime.ToString("yyyy年MM月dd日 HH:mm"))</span></h1>
+    <div class="show_detail_wrapper clearfix">
+        <div class="left_wrapper">
+            <div class="show_book_detail">
+                <div class="book_cover">
+                    <img src="@(model.BookCover)" alt="@(model.BookName)" />
+                    @*<div class="cover_info">
+                        <span class="book_name">@(model.BookName)</span><br />
+                        <span>@(model.SubBookName)</span></div>*@
+                </div>
+                @if (Inpinke.BLL.Session.UserSession.CurrentUser != null && Inpinke.BLL.Session.UserSession.CurrentUser.ID == model.UserID)
+                {
+                    <div class="product_info">
+                        <p>
+                            品名：@(model.Inpinke_Product.Name)</p>
+                        <p>
+                            规格：@(model.Inpinke_Product.Width + "X" + model.Inpinke_Product.Height)CM</p>
+                        <p>
+                            页数：@(model.PageCount)页</p>
+                        <p>
+                            内页纸质：特级铜版纸</p>
+                        <p class="order_btn_field product_price clearfix">
+                            <span style="float: left; line-height: 26px;">￥@(model.Inpinke_Product.Price + model.Inpinke_Product.PlusPrice * ((model.PageCount - model.Inpinke_Product.BasePages) / model.Inpinke_Product.PlusPages))</span>
+                            @if (model.DonePages * 100 / model.PageCount > 90)
+                            {
+                                <a href="/order/addbook2cart?bookid=@(model.ID)" class="color_btn" style=" float:right; padding:2px 15px;" >
+                                    下单印刷</a>
+                            }
+                            else
+                            {
+                                <a href="@("/" + model.Inpinke_Product.ShortName + "/editor?bookid=" + model.ID)" class="color_btn" style=" float:right; padding:2px 15px;" >
+                                    继续编辑</a>
+                            }
+                        </p>
+                    </div>
+
+                }
+                else
+                {
+                    <div class="product_info">
+                        <p>
+                            品名：@(model.Inpinke_Product.Name)</p>
+                        <p>
+                            规格：@(model.Inpinke_Product.Width + "X" + model.Inpinke_Product.Height)CM</p>
+                        <p>
+                            页数：@(model.Inpinke_Product.BasePages)页</p>
+                        <p>
+                            内页纸质：特级铜版纸</p>
+                        <p class="order_btn_field product_price clearfix">
+                            <span style="float: left; line-height: 26px;">￥@(model.Inpinke_Product.Price)</span><a href="/@(model.Inpinke_Product.ShortName)/createintime?prodid=1" class="color_btn" style=" float:right; padding:2px 15px;" >我也做一本</a></p>
+                    </div>
+                }
+            </div>
+            <div class="show_next">
+                <a href="/shelf" class="back_shelf">« 查看本月精选</a>&nbsp;&nbsp;❤&nbsp;&nbsp; <a href="/show/random"
+                    class="next_random">随机一本 »</a>
+            </div>
+        </div>
+        <div class="right_wrapper">
+            <div>
+                <ul id="BookPages" class="show_view_list clearfix">
+                </ul>
+            </div>
+            <div class="book_comments">
+                <h2 class="book_name">@(model.BookName)<span class="sub_name">@(string.IsNullOrEmpty(model.SubBookName) ? "" : ("—" + model.SubBookName))
+                </span>
+                </h2>
+                <div class="book_sum">
+                    <span class="book_author">@(model.Author)：</span>@(model.BookDesc)</div>
+                <div class="time_action clearfix">
+                    <div style="float: left;">
+                        —@(model.CreateTime.ToString("yyyy年MM月dd日 HH:mm"))&nbsp;&nbsp;|&nbsp;&nbsp;分享到：</div>
+                    <!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style" style="float: left;">
+                        <a class="jiathis_button_qzone"></a><a class="jiathis_button_tsina"></a><a class="jiathis_button_tqq">
+                        </a><a class="jiathis_button_renren"></a><a class="jiathis_button_kaixin001"></a>
+                        <a href="http://www.jiathis.com/share?uid=1767183" class="jiathis jiathis_txt jtico jtico_jiathis"
+                            target="_blank"></a>
+                    </div>
+                    <script type="text/javascript">
+                        var jiathis_config = { data_track_clickback: 'true' };
+                    </script>
+                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1353289875651342"
+                        charset="utf-8"></script>
+                    <!-- JiaThis Button END -->
+                </div>
+                <!-- UY BEGIN -->
+                <div id="uyan_frame" style="margin-top: 37px;">
+                </div>
+                <script type="text/javascript" id="UYScript" src="http://v1.uyan.cc/js/iframe.js?UYUserId=1767183"
+                    async=""></script>
+                <!-- UY END -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mpview_panel" id="mpviewPanel" style="display: none; left: 0px;">
+    <div class="mpview_con_wrapper">
+        <div class="mpview_con">
+            <ul class="clearfix" id="mpviewList">
+            </ul>
+            <div class="book_mid">
+            </div>
+        </div>
+    </div>
+    <div class="mpview_btn clearfix">
+        <a href="javascript:nextPView();" id="nextPage">下一页</a> <a href="javascript:prevPView();"
+            id="prevPage">上一页</a><a href="javascript:closePViewPanel();" id="closePanel">关闭</a>
+    </div>
+</div>
+<script type="text/javascript">
+    function renderMinPView() {
+        var items = [], len = @(model.PageCount);
+        var k = 1;
+        for (var i = -1; i <= len; i++) {
+            var tipName = i == -1 ? '封底' : i == 0 ? '封面' : i < 10 ? '0' + i : i, className = k%4==0? 'class="last_item"':'', pagenum = 'pagenum="' + i + '_' + (i + 1) + '"';
+            k++;
+            if (i == 1) {
+                tipName = '折页';
+                items.push('<li pagenum="-2_1" onclick="showPView(\'-2_1\')"><div  class="pview_item" id="pview_-2" pagenum="-2"><span class="pnum_tip">' + tipName + '</span></div>');
+                tipName = '01'
+                items.push('<div class="pview_item" id="pview_' + i + '" pagenum="' + i + '"><span class="pnum_tip">' + tipName + '</span></div></li>');
+                continue;
+            }
+            if (i == len) {
+                items.push('<li '+className+' pagenum="' + i + '_-3"  onclick="showPView(\''+i+'_-3\')"><div class="pview_item" id="pview_' + i + '" pagenum="' + i + '"><span class="pnum_tip">' + tipName + '</span></div>');
+                tipName = '封底折页';
+                items.push('<div class="pview_item" id="pview_-3" pagenum="-3"><span class="pnum_tip">' + tipName + '</span></div></li>');
+                break;
+            }
+
+            items.push('<li ' + className + ' ' + pagenum + ' onclick="showPView(\''+i+'_' + (i + 1)+'\')"><div  class="pview_item" id="pview_' + i + '" pagenum="' + i + '"><span class="pnum_tip">' + tipName + '</span></div>');
+            i++
+            tipName = i == -1 ? '封底' : i == 0 ? '封面' : i < 10 ? '0' + i : i;
+            items.push('<div class="pview_item" id="pview_' + i + '" pagenum="' + i + '"><span class="pnum_tip">' + tipName + '</span></div></li>');
+        } 
+        $("#BookPages").append(items.join(''));
+    }
+
+    function renderPView() {
+        var items = [], len = @(model.PageCount);
+        for (var i = -1; i <= len; i++) {
+            var tipName = i == -1 ? '封底' : i == 0 ? '封面' : i < 10 ? '0' + i : i, className = i == -1 ? 'class="selected"' : '', pagenum = 'pagenum="' + i + '_' + (i + 1) + '"';
+            if (i == 1) {
+                tipName = '折页';
+                items.push('<li pagenum="-2_1"><div  class="pview_item" id="mpview_-2" pagenum="-2"><span class="pnum_tip">' + tipName + '</span></div>');
+                tipName = '01'
+                items.push('<div class="pview_item" id="mpview_' + i + '" pagenum="' + i + '"><span class="pnum_tip">' + tipName + '</span></div></li>');
+                continue;
+            }
+            if (i == len) {
+                items.push('<li pagenum="' + i + '_-3"><div class="pview_item" id="mpview_' + i + '" pagenum="' + i + '"><span class="pnum_tip">' + tipName + '</span></div>');
+                tipName = '封底折页';
+                items.push('<div class="pview_item" id="mpview_-3" pagenum="-3"><span class="pnum_tip">' + tipName + '</span></div></li>');
+                break;
+            }
+            items.push('<li ' + className + ' ' + pagenum + '><div  class="pview_item" id="mpview_' + i + '" pagenum="' + i + '"><span class="pnum_tip">' + tipName + '</span></div>');
+            i++
+            tipName = i == -1 ? '封底' : i == 0 ? '封面' : i < 10 ? '0' + i : i;
+            items.push('<div class="pview_item" id="mpview_' + i + '" pagenum="' + i + '"><span class="pnum_tip">' + tipName + '</span></div></li>');
+        }
+
+        $("#mpviewList").append(items.join('')).addClass("render");
+    }
+     /*
+    获取pageview的图片
+    */
+    function getPageViewImgs() {
+        $.ajax({
+            url: '/intime/GetPageView',
+            dataType: 'json',
+            data: { userid: @(model.UserID), bookid: @(model.ID) },
+            type: 'get',
+            cache: false,
+            success: function (r) {
+                if (r.success) {
+                    var pviews = r.pviews;
+                    if (pviews != undefined && pviews.length > 0) {
+                        for (var i = 0, len = pviews.length; i < len; i++) {
+                            var skipCss = pviews[i].isskip ? "skip" : "";
+                            $("#pview_" + pviews[i].pnum).css("background-image", "url(" + pviews[i].src + "?t=" + Math.random() + ")").addClass(skipCss);
+                            if (pviews[i].isskip && pviews[i].pnum == 0) {
+                                $("#pview_-1").hide();
+                            }
+                            $("#mpview_" + pviews[i].pnum).css("background-image", "url(" + pviews[i].src.replace('pview', 'pthumb') + "?t=" + Math.random() + ")").addClass(skipCss);
+                            if (pviews[i].isskip && pviews[i].pnum == 0) {
+                                $("#mpview_-1").hide();
+                            }
+                        }
+                    }
+                }
+            },
+            error: function (r) { }
+        })
+    }
+    //显示大图预览
+    function showPView(outPNum) {
+        var _mpViewListObj =$("#mpviewList"),
+        wHeight = $(window).height(), wWidth = $(window).width(),
+        pHeight = 490, pWidth = 850,_mpViewPanel=$("#mpviewPanel"),//+$(document).scrollTop()
+        left = (wWidth - pWidth) / 2, top = (wHeight - pHeight) / 2;
+         
+         _mpViewListObj.find('li[pagenum=' +outPNum + ']').show().siblings("li").hide();
+                  
+        $.blockUI({ message: _mpViewPanel[0], css: { border: 'none', width: '840', backgroundColor: 'none', height: '420', left: left, top: top}, overlayCSS: { backgroundColor: "#555"} }); 
+    }
+
+    function closePViewPanel(){
+       $.unblockUI();
+    }
+
+    function nextPView(){
+       var _mpViewListObj = $("#mpviewList"), items = _mpViewListObj.find("li"),oldShow = _mpViewListObj.find("li:visible"),oldIndex = oldShow.index();
+       if(oldIndex<items.length-1){
+          oldShow.hide();
+          var newShow = items.eq(oldIndex+1);
+          newShow.show();
+       }
+    }
+
+    function prevPView(){
+       var _mpViewListObj = $("#mpviewList"), items = _mpViewListObj.find("li"),oldShow = _mpViewListObj.find("li:visible"),oldIndex = oldShow.index();
+       if(oldIndex>0){
+          oldShow.hide();
+          var newShow = items.eq(oldIndex-1);
+          newShow.show();
+       }
+    }
+
+    $(function(){
+       renderMinPView();
+       renderPView();
+       getPageViewImgs();
+    })
+
+</script>

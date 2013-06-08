@@ -1,0 +1,77 @@
+﻿@using Inpinke.Model
+@{
+    ViewBag.Title = "消息详情-Inpinke感受印品的美好";
+}
+<div class="content_wrapper account_wrapper">
+    <!--用户菜单-->
+    @Html.Partial("_MyMenuPartial")
+    <div class="content_wrapper clearfix">
+        <div class="mymessage_list">
+            @if (ViewBag.MsgDetail == null)
+            { 
+                <div class="message_item clearfix">
+                    <div class="message_avatar">
+                        <img src="../../Content/pagestyle/images/inpinke_o_48x48.png" alt="" />
+                    </div>
+                    <div class="message_con_list">
+                        <div class="message_con">
+                            <span class="msg_arrow"></span>
+                            <p class="message_time">
+                                @(DateTime.Now.ToString("yyyy年MM月dd日 HH:mm"))</p>
+                            <p class="">
+                                对不起没有找到您要查看的消息内容。<a href="#">[返回]</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                IList<Inpinke_Message> mList = ViewBag.MsgDetail as List<Inpinke_Message>;
+                Inpinke_Message mainMsg = mList.Where(e => e.ReplyID == 0).FirstOrDefault();
+                  
+                <div class="message_item clearfix">
+                    <div class="message_avatar">
+                        @if (mainMsg.FromUser == 0)
+                        {
+                            <img src="../../Content/pagestyle/images/inpinke_o_48x48.png" alt="" />
+                        }
+                    </div>
+                    <div class="message_con_list">
+                        <div class="message_con">
+                            <span class="msg_arrow"></span>
+                            <p class="message_time">
+                                @(mainMsg.CreateTime.ToString("yyyy年MM月dd日 HH:mm"))</p>
+                            <p class="">
+                                @Html.Raw(mainMsg.Msg)
+                            </p>
+                            <p class="message_action" style="text-align: right;">
+                                <a href="javascript:DeleteMessage(@(mainMsg.ID))">[删除]</a></p>
+                        </div>
+                        @foreach (Inpinke_Message m in mList)
+                        {
+                            if (m.ReplyID == 0) { continue; }
+                            string whoReply = m.MsgType == (int)Inpinke.Model.Enum.MsgType.UserReply ? "user_reply" : "sys_reply";
+                            <div class="message_con @(whoReply)">
+                                <span class="msg_arrow"></span>
+                                <p class="message_time">
+                                    @(m.CreateTime.ToString("yyyy年MM月dd日 HH:mm"))</p>
+                                <p class="">
+                                    @Html.Raw(m.Msg)</p>
+                            </div>
+                        }
+                        <form class="reply_msg" action="/my/replymsg/@(mainMsg.ID)" method="post">
+                        <h2>
+                            咨询</h2>
+                        <input type="hidden" name="ToUser" value="@(mainMsg.FromUser)" />
+                        <textarea rows="5" cols="20" name="Msg"></textarea>
+                        <p class="notice_msg">@ViewBag.Msg</p>
+                        <p class="order_btn_field">
+                            <input type="submit" value="提交" class="color_btn" /></p>
+                        </form>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

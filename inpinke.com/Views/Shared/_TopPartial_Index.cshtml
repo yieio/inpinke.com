@@ -1,0 +1,36 @@
+﻿<div class="out_wrapper top_wrapper">
+  <div class="content_wrapper nav_wrapper">
+     <div class="nav_logo">
+     <a href="/home" title="返回首页">
+       <img  src="../../Content/pagestyle/images/Inpinke_logo_3.png" alt="inpinke-印品客，感受印品的美好！" height="42px;" /></a>
+     </div>
+     <div class="nav_menu clearfix">
+        <div class="product_menu" id="__productMenu">印品客出品</div>
+         @Html.Partial("_MenuPartial")
+    <script type="text/javascript">
+        $(function () { $("#menuWrapper").removeClass("menu_o_wrapper"); })
+       </script>
+        @if (Inpinke.BLL.Session.UserSession.CurrentUser != null)
+        {
+            int cartProducts = Inpinke.BLL.DBCartBLL.GetUserCartProductCount(Inpinke.BLL.Session.UserSession.CurrentUser.ID);
+                        
+         <div class="user_nav">         
+           <span>Hi、@Inpinke.BLL.Session.UserSession.CurrentUser.NickName</span>
+           <a href="/my/book"><span>我是印品客</span></a>
+           <a href="/order"><span class="cart_icon">购物车（<span id="CartProductCount">@(cartProducts)</span>）</span></a>
+          <a href="/account/logoff"><span>[退出]</span></a> 
+          
+        </div> 
+        }
+        else
+        {
+        <div class="user_nav">
+           <a href="/account/register"><span>注册</span></a>
+           <a href="/account/login"><span>登录</span></a>
+           <a href="/account/login"><span>我是印品客</span></a>
+           <a href="/order"><span class="cart_icon">购物车（0）</span></a>
+        </div>
+        }
+     </div>
+  </div>
+</div>

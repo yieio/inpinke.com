@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "印品对比-印品客，感受印品的美好";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script type="text/javascript" src="/Content/pagestyle/js/jquery.xslider.js"></script>
+<div class="content_wrapper obanner_wrapper">
+    <div class=" banner_wrapper" style="height: auto;">
+        <img src="../../Content/pagestyle/demo/banner_1.jpg" alt="" />
+    </div>
+    <div class="banner_bottom">
+    </div>
+</div>
+<div class="content_wrapper inpin_wrapper">
+    @Html.Partial("_InpinMenu", "Inpin")
+    <div class="inpin_description_list clearfix">
+        <h2>
+            照片书系列</h2>
+        <table cellpadding="0" cellspacing="0" class="products_table">
+            <thead>
+                <tr>
+                    <th class="prod_img" style="width: 120px;">
+                    </th>
+                    <th class="prod_name">
+                        产品名称
+                    </th>
+                    <th class="prod_price">
+                        价格
+                    </th>
+                    <th class="prod_pages">
+                        页数
+                    </th>
+                    <th>
+                        内页材质
+                    </th>
+                    <th>
+                        装订工艺
+                    </th>
+                    <th>
+                        附赠
+                    </th>
+                    <th>
+                        制作时间
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="../../Content/pagestyle/demo/demo_p3.jpg" alt="" style=" width:100px; height:100px;" />
+                    </td>
+                    <td>
+                        inTime-时光
+                    </td>
+                    <td>
+                        75元
+                    </td>
+                    <td>
+                        44P
+                    </td>
+                    <td>
+                        特级铜版纸<br />
+                        温暖手感纸
+                    </td>
+                    <td>软皮精装</td>
+                    <td>礼品封套，索引卡</td>
+                    <td>2~3个工作日</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+@Html.Partial("_FootDesc")
+<script type="text/javascript">
+    $(function () {
+        setActiveInpinTab("compare");
+    })
+</script>

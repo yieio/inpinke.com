@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "我的印品客-Inpinke-感受印品的美好";
+}
+@section  LinkScript{
+    <script type="text/javascript" src="/Content/pagestyle/js/jquery.windswaterflow.js"></script>
+}
+<div class="content_wrapper account_wrapper clearfix">
+    <div class="account_menu">
+        <dl class="menu_item">
+            <dt class="menu_title"><span class="in_icon"></span>InPinBoard</dt>
+            <dd class="menu_con menu_pinboard clearfix">
+                <a href="">卡片</a> <a href="" class="selected">照片书</a> <a href="">影像</a>
+            </dd>
+            <dd class="menu_list">
+                <div class="bd">
+                    <span class="card-exit"></span>
+                </div>
+                <div class="menu_list_con clearfix">
+                    <a href="">inTime</a> <a href="" class="selected">inMemory</a> <a href="">inLife</a>
+                    <a href="">inWay</a> <a href="">inScenery</a> <a href="">inLomoCard</a> <a href=""
+                        class="add_icon" title="添加照片书">+添加照片书</a>
+                </div>
+            </dd>
+        </dl>
+        <dl class="menu_item in_order">
+            <dt class="menu_title "><span class="in_icon"></span>InOrder</dt>
+            <dd class="menu_con clearfix">
+                <a href="">已支付订单 <span>0张</span></a> <a href="" class="selected">未支付订单 <span>0张</span></a>
+            </dd>
+        </dl>
+        <dl class="menu_item in_coupon">
+            <dt class="menu_title "><span class="in_icon"></span>InOrder</dt>
+            <dd class="menu_con clearfix">
+                <a href="" class="selected">我的优惠券<span>3张</span></a> <a href="">如何获取优惠券?</a>
+            </dd>
+        </dl>
+        <dl class="menu_item in_formation">
+            <dt class="menu_title "><span class="in_icon"></span>InOrder</dt>
+            <dd class="menu_con clearfix">
+                <a href="" class="selected">账户信息</a> <a href="">收货地址</a>
+            </dd>
+        </dl>
+    </div>
+    <div class="account_con">
+        @*<div id="loading">
+            正在加载中……</div>
+        <div id="noshow">
+            亲，已经没有了！</div>*@
+        <div class="mybook_list container">
+            <div class="book_item">
+            <div class="product_name_bg"><span class="pd_name">inTime</span></div>
+                <div class="book_cover">
+                    <img src="../../Content/pagestyle/demo/demo_img.jpg" />
+                </div>
+                <p class="book_name">
+                    向来缘浅，奈何情深。你转身的一瞬，我萧条的一生，</p>
+                <div class="book_info">
+                    <p class="book_btn clearfix">
+                      @*  <a href="" class="l_btn">预览</a><a href="">编辑</a>*@ <a href="" class="f_btn">出版</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".container").windswaterflow({
+            itemSelector: '.book_item',
+            loadSelector: '#loading',
+            noSelector: '#noshow',
+            boxTemplate: '<div class="book_item"><div class="product_name_bg"><span class="pd_name">inTime</span></div><div class="book_cover"><img src="{img}" style="height:{height}px;" /></div><p class="book_name">{title} </p><div class="book_info"><p class="book_btn clearfix"> <a href="" class="f_btn">出版</a></p></div></div>',
+            columnWidth: 216,
+            marginWidth: 28,
+            marginHeight: 16,
+            imgWidth:200,
+            ajaxServer: '/Book/GetBookList.html',
+            boxParam: 'num',
+            pageParam: 'page',
+            minCols:3,
+            maxPage: 0,
+            init: true,
+            initBoxNumber: 20,
+            scroll: true,
+            scrollBoxNumber: 10,
+            callback: function () {
+                $(".pin").mouseover(function () {
+                    $(this).find(".btn").show();
+                }).mouseout(function () {
+                    $(this).find('.btn').hide();
+                });
+            }
+        });
+    });
+</script>

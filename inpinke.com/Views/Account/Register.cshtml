@@ -1,0 +1,64 @@
+﻿@model inpinke.com.Models.RegisterModel
+@{
+    ViewBag.Title = "注册成为印品客-Inpinke-感受印品的美好";
+}
+<div class="content_wrapper reg_wrapper">  
+    <p class="reg_title">
+    <span>
+        注册印品客</span>
+        一起制作印品，感受印品的美好。
+    </p>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+    
+    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "account_form" }))
+    {
+         
+        <div>
+                <div class="editor_label">
+                    @Html.LabelFor(m => m.Email)
+                </div>
+                <div class="editor_field">
+                    @Html.TextBoxFor(m => m.Email)
+                    @Html.ValidationMessageFor(m => m.Email)
+                </div>
+                <div class="editor_label">
+                    @Html.LabelFor(m => m.Password)
+                </div>
+                <div class="editor_field">
+                    @Html.PasswordFor(m => m.Password)
+                    @Html.ValidationMessageFor(m => m.Password)
+                </div>
+                <div class="editor_label">
+                    @Html.LabelFor(m => m.ConfirmPassword)
+                </div>
+                <div class="editor_field">
+                    @Html.PasswordFor(m => m.ConfirmPassword)
+                    @Html.ValidationMessageFor(m => m.ConfirmPassword)
+                </div>
+                <div class="editor_label">
+                    @Html.LabelFor(m => m.NickName)
+                </div>
+                <div class="editor_field">
+                    @Html.TextBoxFor(m => m.NickName)
+                    @Html.ValidationMessageFor(m => m.NickName)
+                </div>
+              <p>@ViewBag.Msg</p>
+                <p class=" editor_label btn_field">
+                    <input type="submit" value="同意以下协议并注册" class="color_btn" style=" letter-spacing:normal;" />
+                </p>
+            <div class="editor_label" style=" font-size:15px;">
+               <a href="/account/agreement.html" style="color:#007700;">《印品客服务协议》</a>
+                </div>
+        </div>
+    }
+    <div class="login_tip">
+      <p>>>已经有印品客账号了？<a href="/account/login" style="color:#007700;">直接登录</a></p>
+     @* <p>>>其他方式登录：</p>
+      <p>
+      <a href="javascript:;" title="" class="icon_bg weibo_icon">新浪微博登录</a>
+      <a href="javascript:;" title="" class="icon_bg qq_icon">QQ账号登录</a>
+      <a href="javascript:;" title="" class="icon_bg douban_icon">豆瓣账号登录</a>
+      </p>*@
+    </div>
+</div>

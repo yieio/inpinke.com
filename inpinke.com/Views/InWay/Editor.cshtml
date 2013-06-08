@@ -1,0 +1,166 @@
+﻿@{
+    ViewBag.Title = "路途...";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section  LinkScript{
+    <script type="text/javascript" src="../../Content/pagestyle/js/jquery-ui-1.8.21.custom.min.js"></script>
+    @*<script type="text/javascript" src="../../Content/pagestyle/js/jquery.blockui.js"></script>*@
+    <script type="text/javascript" src="../../Content/pagestyle/js/plupload/plupload.flash.html4.js"></script>
+    <link href="../../Content/pagestyle/css/editor_v2.0.css" rel="Stylesheet" type="text/css" />
+    <script type="text/javascript" src="../../Content/pagestyle/js/editor.base.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            __ImageViewObj.getInstance();
+            __ImageUploaderObj.getInstance();
+            __PageViewObj.getInstance();
+            __PageStylePanelObj.getInstance();
+            __BookPageObj.getInstance();
+            __PageSetPanelObj.getInstance();
+        })
+    </script>
+}
+<div class="content_wrapper editor_wrapper">
+    <div class="imgview_panel_wrapper boxshadow">
+        <ul class="imgview_menu clearfix">
+            <li class="first_item"><a href="javascript:;" id="usedImageBtn" class="image_view_switch" type="1">已使用</a><span class="arrow_icon"></span></li>
+            <li class="active"><a href="javascript:;" id="allImageBtn"  class="image_view_switch" type="2">全部</a><span class="arrow_icon"></span></li><li><a href="javascript:;" id="newImageBtn"  class="image_view_switch" type="3">
+                未使用</a><span class="arrow_icon"></span></li>
+            <li style="float: right;"><a href="javascript:;" class="e_bg slide_r bind_slide"
+                title="下一页"></a></li>
+            <li style="float: right;"><a href="javascript:;" class="e_bg slide_l bind_slide"
+                title="上一页"></a></li>
+        </ul>
+        <div class="imgview_panel clearfix" id="imgViewPanel">
+            <div id="addImageBtn" class="add_img">
+                <div class="e_bg upload_icon">
+                </div>
+                <div class="upload_num">
+                    0</div>
+            </div>
+            <div class="image_view">
+                <ul class="clearfix" id="imageViewList">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="book_panel clearfix">
+        <div id="bookPageWrapper" class="boxshadow">
+           
+        </div>
+        <a class="e_bg page_switcher prev_switcher" href="javascript:;" title="上一页"></a>
+        <div class="book_mid">
+        </div>
+        <a class="e_bg page_switcher next_switcher" href="javascript:;" title="下一页"></a>
+        <div class="editor_tool boxshadow">
+            <span class="arrow_icon"></span>
+            <ul class="clearfix">
+                <li class="page_num"><span id="panNumTxt">封面</span>
+                    <div class="pagestyle_panel clearfix"  style="display: none;">
+                        <a class="panel_close" href="javascript:;" id="pageStylePanelClose">X</a>
+                    </div>
+                </li>
+                <li class="page_style"><a href="javascript:;" id="pageStyleBtn">版式</a><span class="active_arrow_icon"></span> </li>
+                <li class="bg_color"><a href="javascript:;" id="bgColorBtn">背景色</a><span class="active_arrow_icon"></span></li>
+            </ul>
+        </div>
+
+        <div class="layer_panel style_layer_panel" id="pageStylePanel">
+        <div class="layer_panel_content">
+        </div>
+        </div>
+
+        <div id="uploadPanel" class="upload_panel box_panel" style="visibility: hidden">
+            <div class="panel_title" style="">
+                上传照片<a href="javascript:;" title="关闭" class="panel_close">X</a>
+            </div>
+            <table class="queue_list_title">
+                <colgroup>
+                    <col width="50%" />
+                    <col width="100" />
+                    <col width="270" />
+                    <col width="200" />
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>
+                            文件名
+                        </th>
+                        <th>
+                            大小
+                        </th>
+                        <th>
+                            进度
+                        </th>
+                        <th>
+                            操作
+                        </th>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="queue_list_wrapper">
+                <table class="queue_list">
+                    <colgroup>
+                        <col width="50%" />
+                        <col width="100" />
+                        <col width="270" />
+                        <col width="200" />
+                    </colgroup>
+                    <tbody id="uploadQueue">
+                    </tbody>
+                </table>
+            </div>
+            <div class="upload_panel_btn clearfix">
+                <a href="javascript:;" id="uploadSelectFile">选择文件</a><a href="javascript:;" id="uploadFiles">上传文件</a><a
+                    href="javascript:;" id="clearUploadQueue">清空列表</a><a href="javascript:;" title="关闭"
+                        class="panel_close">关闭</a>
+            </div>
+        </div>
+        <div id="pageSetPanel" class="box_panel" style="height: 600px; display: none;
+                background-color: #f3f3f3;">
+                <div class="panel_title" style="">
+                    书本页面管理[可拖拽调整页面顺序,调整完记得保存设置]<a href="javascript:;" title="关闭" class="panel_close">X</a>
+                </div>
+                <div class="pageset_item" id="pageSetItem" style="height: 500px; overflow: auto;">
+                </div>
+                <div class="box_panel_btn clearfix">
+                    <div id="savePageSetNotice">
+                    </div>
+                    <a href="javascript:;" id="savePageSetBtn">保存设置</a><a href="javascript:;" class="panel_close">关闭</a>
+                </div>
+            </div>
+
+        <div class="txteditor_tool" id="txtEditorTool" style="display: none;">
+        <ul class="clearfix">
+            <li class="txt_align active"><a href="javascript:;" id="txtAlignLeft" class="txt_align_left"
+                title="左对齐"></a></li>
+            <li class="txt_align"><a href="javascript:;" id="txtAlignMid" class="txt_align_center"
+                title="居中"></a></li>
+            <li class="txt_align"><a href="javascript:;" id="txtAlignRight" class="txt_align_right"
+                title="右对齐"></a></li>
+            <li class="txt_color selected" style="margin-left: 20px;"><a href="javascript:;"
+                id="txtColorBlack" class="txt_color_black"></a></li>
+            <li class="txt_color "style="margin-left: 7px;"><a href="javascript:;" id="txtColorWhite" class="txt_color_white">
+            </a></li>
+            <li class="txt_count">还可以输入<span id="alreadyInputCount">20</span>/<span id="canInputCount">20</span>个字符</li>
+        </ul>
+    </div>
+    </div>
+    <div class="pageview_panel boxshadow" id="pageViewPanel">
+        <div class="page_view">
+            <ul class="page_view_list clearfix" id="pageViewList">
+            </ul>
+        </div>
+        <ul class="pageview_menu">
+            <li class="first_item"><a href="">印品预设</a><span class="arrow_icon"></span></li>
+            <li class="active"><a href="javascript:;">编辑</a><span class="arrow_icon"></span></li><li><a href="javascript:;" id="ShowPageSetPanelBtn">
+                页面管理</a><span class="arrow_icon" style="z-index:103"></span></li>
+            <li><a href="">印品预览</a><span class="arrow_icon"></span></li>
+            <li><a href="">下单印制</a><span class="arrow_icon"></span></li>
+            <li><a href="">在线客服</a><span class="arrow_icon"></span></li>
+            <li style="float: right;"><a href="javascript:;" class="e_bg slide_r bind_slide"
+                title="下一页"></a></li>
+            <li style="float: right;"><a href="javascript:;" class="e_bg slide_l bind_slide"
+                title="上一页"></a></li>
+        </ul>
+    </div>
+</div>

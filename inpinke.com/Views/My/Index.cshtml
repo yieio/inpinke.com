@@ -1,0 +1,75 @@
+﻿@using Inpinke.BLL.Session
+@model inpinke.com.Models.RegisterModel
+@{
+    ViewBag.Title = "我是印品客-Inpinke感受印品的美好";
+    
+}
+<script type="text/javascript">
+    $(function () {
+        $("#myindex_href").find('a').addClass('active');
+    })
+</script>
+
+<div class="content_wrapper account_wrapper">
+    <!--用户菜单-->
+    @Html.Partial("_MyMenuPartial")
+    <div class="content_wrapper clearfix">
+    <div class="myinfo container">
+    
+      @using (Html.BeginForm("Index", "My", FormMethod.Post, new { @class = "account_form",style="width:670px;" }))
+    {
+         <h2>修改账户信息</h2>
+        <div>
+        <div class="editor_label">
+                    @Html.LabelFor(m => m.NickName)
+                </div>
+                <div class="editor_field">
+                    @Html.TextBoxFor(m => m.NickName)
+                    @Html.ValidationMessageFor(m => m.NickName)
+                </div>
+                <div class="editor_label">
+                    @Html.LabelFor(m => m.Email)
+                </div>
+                <div class="editor_field">
+                    @Html.TextBoxFor(m => m.Email)
+                    @Html.ValidationMessageFor(m => m.Email)
+                </div>
+                <div class="editor_label">
+                    @Html.LabelFor(m => m.Password)
+                </div>
+                <div class="editor_field">
+                    @Html.PasswordFor(m => m.Password)
+                    @Html.ValidationMessageFor(m => m.Password)
+                </div>
+                <div class="editor_label">
+                    @Html.LabelFor(m => m.ConfirmPassword)
+                </div>
+                <div class="editor_field">
+                    @Html.PasswordFor(m => m.ConfirmPassword)
+                    @Html.ValidationMessageFor(m => m.ConfirmPassword)
+                </div>
+                
+              <p>@ViewBag.Msg</p>
+                <p class=" editor_label order_btn_field">
+        <input value="修改" type="submit" class="color_btn" />
+      
+    </p>
+           
+        </div>
+    }
+    </div>
+     <div class="right_menu_wrapper">
+            <div class="menu_box">
+                <div class="menu_title">
+                    <h2>
+                        快速定制印品</h2>
+                </div>
+                <div class="box_con">
+                    <a href="javascript:;">
+                        <img src="../../Content/pagestyle/images/intime_info.png" alt="" /></a>
+                </div>
+            </div>
+            @Html.Partial("_TopList_Right")
+        </div>
+    </div>
+</div>

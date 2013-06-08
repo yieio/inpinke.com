@@ -1,0 +1,4006 @@
+<?xml version="1.0" encoding="gbk"?><results>
+<province id="1" name="安徽省">
+<city id="1" name="安庆市">
+<area id="269">枞阳县</area>
+<area id="293">大观区</area>
+<area id="822">怀宁县</area>
+<area id="972">宜秀区</area>
+<area id="1683">潜山县</area>
+<area id="1982">宿松县</area>
+<area id="2016">太湖县</area>
+<area id="2095">桐城市</area>
+<area id="2142">望江县</area>
+<area id="2594">迎江区</area>
+<area id="2707">岳西县</area>
+<area id="2885">安庆市</area>
+</city>
+<city id="2" name="蚌埠市">
+<area id="85">蚌山区</area>
+<area id="637">固镇县</area>
+<area id="825">怀远县</area>
+<area id="827">淮上区</area>
+<area id="1322">龙子湖区</area>
+<area id="2219">五河县</area>
+<area id="2670">禹会区</area>
+<area id="2886">蚌埠市</area>
+</city>
+<city id="3" name="亳州市">
+<area id="1194">利辛县</area>
+<area id="1439">蒙城县</area>
+<area id="1693">谯城区</area>
+<area id="2186">涡阳县</area>
+<area id="2887">亳州市</area>
+</city>
+<city id="4" name="巢湖市">
+<area id="700">含山县</area>
+<area id="735">和县</area>
+<area id="1069">居巢区</area>
+<area id="1340">庐江县</area>
+<area id="2207">无为县</area>
+<area id="2888">巢湖市</area>
+</city>
+<city id="5" name="池州市">
+<area id="425">东至县</area>
+<area id="664">贵池区</area>
+<area id="1722">青阳县</area>
+<area id="1907">石台县</area>
+<area id="2889">池州市</area>
+</city>
+<city id="6" name="滁州市">
+<area id="382">定远县</area>
+<area id="510">凤阳县</area>
+<area id="1127">来安县</area>
+<area id="1148">琅琊区</area>
+<area id="1470">明光市</area>
+<area id="1529">南谯区</area>
+<area id="1765">全椒县</area>
+<area id="2046">天长市</area>
+<area id="2890">滁州市</area>
+</city>
+<city id="7" name="阜阳市">
+<area id="541">阜南县</area>
+<area id="988">界首市</area>
+<area id="1245">临泉县</area>
+<area id="2015">太和县</area>
+<area id="2600">颍东区</area>
+<area id="2601">颍泉区</area>
+<area id="2602">颍上县</area>
+<area id="2603">颍州区</area>
+<area id="2891">阜阳市</area>
+</city>
+<city id="8" name="合肥市">
+<area id="86">包河区</area>
+<area id="180">长丰县</area>
+<area id="480">肥东县</area>
+<area id="481">肥西县</area>
+<area id="1342">庐阳区</area>
+<area id="1926">蜀山区</area>
+<area id="2541">瑶海区</area>
+<area id="2892">合肥市</area>
+</city>
+<city id="9" name="淮北市">
+<area id="439">杜集区</area>
+<area id="1226">烈山区</area>
+<area id="1987">濉溪县</area>
+<area id="2330">相山区</area>
+<area id="2893">淮北市</area>
+</city>
+<city id="10" name="淮南市">
+<area id="52">八公山区</area>
+<area id="302">大通区</area>
+<area id="507">凤台县</area>
+<area id="1574">潘集区</area>
+<area id="2062">田家庵区</area>
+<area id="2365">谢家集区</area>
+<area id="2894">淮南市</area>
+</city>
+<city id="11" name="黄山市">
+<area id="845">黄山区</area>
+<area id="856">徽州区</area>
+<area id="1661">祁门县</area>
+<area id="2117">屯溪区</area>
+<area id="2304">歙县</area>
+<area id="2453">休宁县</area>
+<area id="2554">黟县</area>
+<area id="2895">黄山市</area>
+</city>
+<city id="12" name="六安市">
+<area id="878">霍邱县</area>
+<area id="879">霍山县</area>
+<area id="989">金安区</area>
+<area id="1016">金寨县</area>
+<area id="1920">寿县</area>
+<area id="1924">舒城县</area>
+<area id="2682">裕安区</area>
+<area id="2896">六安市</area>
+</city>
+<city id="13" name="马鞍山市">
+<area id="333">当涂县</area>
+<area id="798">花山区</area>
+<area id="997">金家庄区</area>
+<area id="2668">雨山区</area>
+<area id="2897">马鞍山市</area>
+</city>
+<city id="14" name="宿州市">
+<area id="337">砀山县</area>
+<area id="1266">灵璧县</area>
+<area id="1961">泗县</area>
+<area id="2358">萧县</area>
+<area id="2605">埇桥区</area>
+<area id="2898">宿州市</area>
+</city>
+<city id="15" name="铜陵市">
+<area id="971">郊区</area>
+<area id="1889">狮子山区</area>
+<area id="2100">铜官山区</area>
+<area id="2102">铜陵县</area>
+<area id="2899">铜陵市</area>
+</city>
+<city id="16" name="芜湖市">
+<area id="468">繁昌县</area>
+<area id="1059">镜湖区</area>
+<area id="1060">鸠江区</area>
+<area id="1410">弋江区</area>
+<area id="1524">南陵县</area>
+<area id="2215">芜湖县</area>
+<area id="2413">新芜区</area>
+<area id="2900">芜湖市</area>
+</city>
+<city id="17" name="宣城市">
+<area id="651">广德县</area>
+<area id="885">绩溪县</area>
+<area id="1032">泾县</area>
+<area id="1036">旌德县</area>
+<area id="1147">郎溪县</area>
+<area id="1554">宁国市</area>
+<area id="2477">宣州区</area>
+<area id="2901">宣城市</area>
+</city>
+</province>
+<province id="3" name="北京市">
+<city id="18" name="北京市">
+<area id="172">昌平区</area>
+<area id="204">朝阳区</area>
+<area id="252">崇文区</area>
+<area id="311">大兴区</area>
+<area id="390">东城区</area>
+<area id="477">房山区</area>
+<area id="494">丰台区</area>
+<area id="679">海淀区</area>
+<area id="824">怀柔区</area>
+<area id="1435">门头沟区</area>
+<area id="1456">密云县</area>
+<area id="1602">平谷区</area>
+<area id="1895">石景山区</area>
+<area id="1951">顺义区</area>
+<area id="2087">通州区</area>
+<area id="2265">西城区</area>
+<area id="2476">宣武区</area>
+<area id="2498">延庆县</area>
+<area id="2902">北京市</area>
+</city>
+</province>
+<province id="4" name="福建省">
+<city id="19" name="福州市">
+<area id="143">仓山区</area>
+<area id="183">长乐市</area>
+<area id="530">福清市</area>
+<area id="630">鼓楼区</area>
+<area id="1023">晋安区</area>
+<area id="1202">连江县</area>
+<area id="1387">罗源县</area>
+<area id="1411">马尾区</area>
+<area id="1467">闽侯县</area>
+<area id="1468">闽清县</area>
+<area id="1619">平潭县</area>
+<area id="2007">台江区</area>
+<area id="2632">永泰县</area>
+<area id="2903">福州市</area>
+</city>
+<city id="20" name="龙岩市">
+<area id="192">长汀县</area>
+<area id="1201">连城县</area>
+<area id="1856">上杭县</area>
+<area id="2246">武平县</area>
+<area id="2399">新罗区</area>
+<area id="2613">永定县</area>
+<area id="2755">漳平市</area>
+<area id="2904">龙岩市</area>
+</city>
+<city id="21" name="南平市">
+<area id="648">光泽县</area>
+<area id="929">建瓯市</area>
+<area id="933">建阳市</area>
+<area id="1641">浦城县</area>
+<area id="1868">邵武市</area>
+<area id="1945">顺昌县</area>
+<area id="1968">松溪县</area>
+<area id="2254">武夷山市</area>
+<area id="2497">延平区</area>
+<area id="2795">政和县</area>
+<area id="2905">南平市</area>
+</city>
+<city id="22" name="宁德市">
+<area id="526">福安市</area>
+<area id="527">福鼎市</area>
+<area id="625">古田县</area>
+<area id="982">蕉城区</area>
+<area id="1632">屏南县</area>
+<area id="1919">寿宁县</area>
+<area id="2310">霞浦县</area>
+<area id="2771">柘荣县</area>
+<area id="2820">周宁县</area>
+<area id="2906">宁德市</area>
+</city>
+<city id="23" name="莆田市">
+<area id="233">城厢区</area>
+<area id="703">涵江区</area>
+<area id="1196">荔城区</area>
+<area id="2321">仙游县</area>
+<area id="2461">秀屿区</area>
+<area id="2907">莆田市</area>
+</city>
+<city id="24" name="泉州市">
+<area id="37">安溪县</area>
+<area id="350">德化县</area>
+<area id="496">丰泽区</area>
+<area id="865">惠安县</area>
+<area id="999">金门县</area>
+<area id="1024">晋江市</area>
+<area id="1185">鲤城区</area>
+<area id="1391">洛江区</area>
+<area id="1498">南安市</area>
+<area id="1768">泉港区</area>
+<area id="1905">石狮市</area>
+<area id="2609">永春县</area>
+<area id="2908">泉州市</area>
+</city>
+<city id="25" name="三明市">
+<area id="300">大田县</area>
+<area id="928">建宁县</area>
+<area id="967">将乐县</area>
+<area id="1429">梅列区</area>
+<area id="1473">明溪县</area>
+<area id="1557">宁化县</area>
+<area id="1733">清流县</area>
+<area id="1820">三元区</area>
+<area id="1832">沙县</area>
+<area id="2023">泰宁县</area>
+<area id="2606">永安市</area>
+<area id="2637">尤溪县</area>
+<area id="2909">三明市</area>
+</city>
+<city id="26" name="厦门市">
+<area id="676">海沧区</area>
+<area id="792">湖里区</area>
+<area id="897">集美区</area>
+<area id="1953">思明区</area>
+<area id="2089">同安区</area>
+<area id="2348">翔安区</area>
+<area id="2910">厦门市</area>
+</city>
+<city id="27" name="漳州市">
+<area id="191">长泰县</area>
+<area id="413">东山县</area>
+<area id="801">华安县</area>
+<area id="1299">龙海市</area>
+<area id="1319">龙文区</area>
+<area id="1520">南靖县</area>
+<area id="1604">平和县</area>
+<area id="2328">芗城区</area>
+<area id="2721">云霄县</area>
+<area id="2756">漳浦县</area>
+<area id="2765">诏安县</area>
+<area id="2911">漳州市</area>
+</city>
+</province>
+<province id="5" name="甘肃省">
+<city id="28" name="白银市">
+<area id="75">白银区</area>
+<area id="862">会宁县</area>
+<area id="1046">景泰县</area>
+<area id="1053">靖远县</area>
+<area id="1598">平川区</area>
+<area id="2912">白银市</area>
+</city>
+<city id="29" name="定西市">
+<area id="21">安定区</area>
+<area id="1248">临洮县</area>
+<area id="1333">陇西县</area>
+<area id="1465">岷县</area>
+<area id="2084">通渭县</area>
+<area id="2162">渭源县</area>
+<area id="2757">漳县</area>
+<area id="2913">定西市</area>
+</city>
+<city id="30" name="甘南藏族自治州">
+<area id="367">迭部县</area>
+<area id="723">合作市</area>
+<area id="1247">临潭县</area>
+<area id="1364">碌曲县</area>
+<area id="1415">玛曲县</area>
+<area id="2316">夏河县</area>
+<area id="2818">舟曲县</area>
+<area id="2832">卓尼县</area>
+<area id="2914">甘南藏族自治州</area>
+</city>
+<city id="31" name="嘉峪关市">
+<area id="2915">嘉峪关市</area>
+</city>
+<city id="32" name="金昌市">
+<area id="992">金川区</area>
+<area id="2607">永昌县</area>
+<area id="2916">金昌市</area>
+</city>
+<city id="33" name="酒泉市">
+<area id="6">阿克塞哈萨克族自治县</area>
+<area id="36">瓜州县</area>
+<area id="443">敦煌市</area>
+<area id="1007">金塔县</area>
+<area id="1977">肃北蒙古族自治县</area>
+<area id="1980">肃州区</area>
+<area id="2674">玉门市</area>
+<area id="2917">酒泉市</area>
+</city>
+<city id="34" name="兰州市">
+<area id="30">安宁区</area>
+<area id="224">城关区</area>
+<area id="579">皋兰县</area>
+<area id="768">红古区</area>
+<area id="1654">七里河区</area>
+<area id="2272">西固区</area>
+<area id="2611">永登县</area>
+<area id="2662">榆中县</area>
+<area id="2918">兰州市</area>
+</city>
+<city id="35" name="临夏回族自治州">
+<area id="419">东乡族自治县</area>
+<area id="654">广河县</area>
+<area id="736">和政县</area>
+<area id="884">积石山保安族东乡族撒拉族自治县</area>
+<area id="1096">康乐县</area>
+<area id="1253">临夏市</area>
+<area id="1254">临夏县</area>
+<area id="2621">永靖县</area>
+<area id="2919">临夏回族自治州</area>
+</city>
+<city id="36" name="陇南市">
+<area id="217">成县</area>
+<area id="336">宕昌县</area>
+<area id="855">徽县</area>
+<area id="1099">康县</area>
+<area id="1181">礼县</area>
+<area id="1223">两当县</area>
+<area id="2179">文县</area>
+<area id="2235">武都区</area>
+<area id="2273">西和县</area>
+<area id="2920">陇南市</area>
+</city>
+<city id="37" name="平凉市">
+<area id="253">崇信县</area>
+<area id="808">华亭县</area>
+<area id="1031">泾川县</area>
+<area id="1058">静宁县</area>
+<area id="1113">崆峒区</area>
+<area id="1272">灵台县</area>
+<area id="2830">庄浪县</area>
+<area id="2921">平凉市</area>
+</city>
+<city id="38" name="庆阳市">
+<area id="721">合水县</area>
+<area id="802">华池县</area>
+<area id="833">环县</area>
+<area id="1568">宁县</area>
+<area id="1745">庆城县</area>
+<area id="2269">西峰区</area>
+<area id="2786">镇原县</area>
+<area id="2792">正宁县</area>
+<area id="2922">庆阳市</area>
+</city>
+<city id="39" name="天水市">
+<area id="106">麦积区</area>
+<area id="563">甘谷县</area>
+<area id="1699">秦安县</area>
+<area id="1700">秦州区</area>
+<area id="1736">清水县</area>
+<area id="2249">武山县</area>
+<area id="2749">张家川回族自治县</area>
+<area id="2923">天水市</area>
+</city>
+<city id="40" name="武威市">
+<area id="622">古浪县</area>
+<area id="1217">凉州区</area>
+<area id="1463">民勤县</area>
+<area id="2060">天祝藏族自治县</area>
+<area id="2924">武威市</area>
+</city>
+<city id="41" name="张掖市">
+<area id="568">甘州区</area>
+<area id="590">高台县</area>
+<area id="1261">临泽县</area>
+<area id="1462">民乐县</area>
+<area id="1838">山丹县</area>
+<area id="1978">肃南裕固族自治县</area>
+<area id="2925">张掖市</area>
+</city>
+</province>
+<province id="6" name="广东省">
+<city id="42" name="潮州市">
+<area id="207">潮安县</area>
+<area id="1774">饶平县</area>
+<area id="2336">湘桥区</area>
+<area id="2926">潮州市</area>
+</city>
+<city id="43" name="东莞市">
+<area id="2927">东莞市</area>
+</city>
+<city id="44" name="佛山市">
+<area id="163">禅城区</area>
+<area id="586">高明区</area>
+<area id="1513">南海区</area>
+<area id="1817">三水区</area>
+<area id="1947">顺德区</area>
+<area id="2928">佛山市</area>
+</city>
+<city id="45" name="广州市">
+<area id="78">白云区</area>
+<area id="267">从化市</area>
+<area id="466">番禺区</area>
+<area id="698">海珠区</area>
+<area id="797">花都区</area>
+<area id="843">黄埔区</area>
+<area id="1198">荔湾区</area>
+<area id="2049">天河区</area>
+<area id="2712">越秀区</area>
+<area id="2736">增城市</area>
+<area id="2929">广州市</area>
+<area id="3305">萝岗区</area>
+<area id="3306">南沙区</area>
+</city>
+<city id="46" name="河源市">
+<area id="424">东源县</area>
+<area id="730">和平县</area>
+<area id="1204">连平县</area>
+<area id="1295">龙川县</area>
+<area id="2699">源城区</area>
+<area id="2846">紫金县</area>
+<area id="2930">河源市</area>
+</city>
+<city id="47" name="惠州市">
+<area id="136">博罗县</area>
+<area id="866">惠城区</area>
+<area id="867">惠东县</area>
+<area id="873">惠阳区</area>
+<area id="1308">龙门县</area>
+<area id="2931">惠州市</area>
+</city>
+<city id="48" name="江门市">
+<area id="457">恩平市</area>
+<area id="755">鹤山市</area>
+<area id="950">江海区</area>
+<area id="1088">开平市</area>
+<area id="1588">蓬江区</area>
+<area id="2010">台山市</area>
+<area id="2393">新会区</area>
+<area id="2932">江门市</area>
+</city>
+<city id="49" name="揭阳市">
+<area id="868">惠来县</area>
+<area id="984">揭东县</area>
+<area id="985">揭西县</area>
+<area id="1651">普宁市</area>
+<area id="1790">榕城区</area>
+<area id="2933">揭阳市</area>
+</city>
+<city id="50" name="茂名市">
+<area id="364">电白县</area>
+<area id="597">高州市</area>
+<area id="815">化州市</area>
+<area id="1422">茂港区</area>
+<area id="1423">茂南区</area>
+<area id="2424">信宜市</area>
+<area id="2934">茂名市</area>
+</city>
+<city id="51" name="梅州市">
+<area id="298">大埔县</area>
+<area id="493">丰顺县</area>
+<area id="983">蕉岭县</area>
+<area id="1427">梅江区</area>
+<area id="1430">梅县</area>
+<area id="1629">平远县</area>
+<area id="2221">五华县</area>
+<area id="2438">兴宁市</area>
+<area id="2935">梅州市</area>
+</city>
+<city id="52" name="清远市">
+<area id="515">佛冈县</area>
+<area id="1203">连南瑶族自治县</area>
+<area id="1206">连山壮族瑶族自治县</area>
+<area id="1208">连州市</area>
+<area id="1726">清城区</area>
+<area id="1737">清新县</area>
+<area id="2529">阳山县</area>
+<area id="2590">英德市</area>
+<area id="2936">清远市</area>
+</city>
+<city id="53" name="汕头市">
+<area id="208">潮南区</area>
+<area id="209">潮阳区</area>
+<area id="239">澄海区</area>
+<area id="717">濠江区</area>
+<area id="1002">金平区</area>
+<area id="1300">龙湖区</area>
+<area id="1500">南澳县</area>
+<area id="2937">汕头市</area>
+</city>
+<city id="54" name="汕尾市">
+<area id="227">城区</area>
+<area id="681">海丰县</area>
+<area id="1355">陆丰市</area>
+<area id="1356">陆河县</area>
+<area id="2938">汕尾市</area>
+</city>
+<city id="55" name="韶关市">
+<area id="1157">乐昌市</area>
+<area id="1536">南雄市</area>
+<area id="1756">曲江区</area>
+<area id="1778">仁化县</area>
+<area id="1801">乳源瑶族自治县</area>
+<area id="1909">始兴县</area>
+<area id="2184">翁源县</area>
+<area id="2239">武江区</area>
+<area id="2383">新丰县</area>
+<area id="2773">浈江区</area>
+<area id="2939">韶关市</area>
+</city>
+<city id="56" name="深圳市">
+<area id="87">宝安区</area>
+<area id="533">福田区</area>
+<area id="1297">龙岗区</area>
+<area id="1382">罗湖区</area>
+<area id="1531">南山区</area>
+<area id="2509">盐田区</area>
+<area id="2940">深圳市</area>
+<area id="3292">光明新区</area>
+</city>
+<city id="57" name="阳江市">
+<area id="944">江城区</area>
+<area id="2523">阳春市</area>
+<area id="2524">阳东县</area>
+<area id="2531">阳西县</area>
+<area id="2941">阳江市</area>
+</city>
+<city id="58" name="云浮市">
+<area id="1381">罗定市</area>
+<area id="2417">新兴县</area>
+<area id="2681">郁南县</area>
+<area id="2713">云安县</area>
+<area id="2714">云城区</area>
+<area id="2942">云浮市</area>
+</city>
+<city id="59" name="湛江市">
+<area id="245">赤坎区</area>
+<area id="1168">雷州市</area>
+<area id="1214">廉江市</area>
+<area id="1403">麻章区</area>
+<area id="1634">坡头区</area>
+<area id="1999">遂溪县</area>
+<area id="2209">吴川市</area>
+<area id="2311">霞山区</area>
+<area id="2467">徐闻县</area>
+<area id="2943">湛江市</area>
+</city>
+<city id="60" name="肇庆市">
+<area id="356">德庆县</area>
+<area id="372">鼎湖区</area>
+<area id="440">端州区</area>
+<area id="498">封开县</area>
+<area id="594">高要市</area>
+<area id="658">广宁县</area>
+<area id="820">怀集县</area>
+<area id="1957">四会市</area>
+<area id="2944">肇庆市</area>
+</city>
+<city id="61" name="中山市">
+<area id="2945">中山市</area>
+</city>
+<city id="62" name="珠海市">
+<area id="435">斗门区</area>
+<area id="1011">金湾区</area>
+<area id="2334">香洲区</area>
+<area id="2946">珠海市</area>
+</city>
+</province>
+<province id="7" name="广西壮族自治区">
+<city id="63" name="百色市">
+<area id="346">德保县</area>
+<area id="1051">靖西县</area>
+<area id="1164">乐业县</area>
+<area id="1278">凌云县</area>
+<area id="1328">隆林各族自治县</area>
+<area id="1492">那坡县</area>
+<area id="1603">平果县</area>
+<area id="2061">田东县</area>
+<area id="2063">田林县</area>
+<area id="2064">田阳县</area>
+<area id="2279">西林县</area>
+<area id="2642">右江区</area>
+<area id="2947">百色市</area>
+</city>
+<city id="64" name="北海市">
+<area id="677">海城区</area>
+<area id="719">合浦县</area>
+<area id="2070">铁山港区</area>
+<area id="2583">银海区</area>
+<area id="2948">北海市</area>
+</city>
+<city id="65" name="崇左市">
+<area id="309">大新县</area>
+<area id="519">扶绥县</area>
+<area id="964">江州区</area>
+<area id="1321">龙州县</area>
+<area id="1563">宁明县</area>
+<area id="1630">凭祥市</area>
+<area id="2047">天等县</area>
+<area id="2949">崇左市</area>
+</city>
+<city id="66" name="防城港市">
+<area id="421">东兴市</area>
+<area id="476">防城区</area>
+<area id="576">港口区</area>
+<area id="1861">上思县</area>
+<area id="2950">防城港市</area>
+</city>
+<city id="67" name="贵港市">
+<area id="575">港北区</area>
+<area id="577">港南区</area>
+<area id="670">桂平市</area>
+<area id="1613">平南县</area>
+<area id="2028">覃塘区</area>
+<area id="2951">贵港市</area>
+</city>
+<city id="68" name="桂林市">
+<area id="368">叠彩区</area>
+<area id="609">恭城瑶族自治县</area>
+<area id="645">灌阳县</area>
+<area id="1197">荔浦县</area>
+<area id="1238">临桂县</area>
+<area id="1267">灵川县</area>
+<area id="1315">龙胜各族自治县</area>
+<area id="1608">平乐县</area>
+<area id="1655">七星区</area>
+<area id="1767">全州县</area>
+<area id="2353">象山区</area>
+<area id="2428">兴安县</area>
+<area id="2458">秀峰区</area>
+<area id="2519">雁山区</area>
+<area id="2530">阳朔县</area>
+<area id="2615">永福县</area>
+<area id="2839">资源县</area>
+<area id="2952">桂林市</area>
+</city>
+<city id="69" name="河池市">
+<area id="59">巴马瑶族自治县</area>
+<area id="294">大化瑶族自治县</area>
+<area id="401">东兰县</area>
+<area id="430">都安瑶族自治县</area>
+<area id="506">凤山县</area>
+<area id="832">环江毛南族自治县</area>
+<area id="991">金城江区</area>
+<area id="1379">罗城仫佬族自治县</area>
+<area id="1506">南丹县</area>
+<area id="2048">天峨县</area>
+<area id="2953">河池市</area>
+<area id="2960">宜州市</area>
+</city>
+<city id="70" name="贺州市">
+<area id="50">八步区</area>
+<area id="546">富川瑶族自治县</area>
+<area id="2761">昭平县</area>
+<area id="2815">钟山县</area>
+<area id="2954">贺州市</area>
+</city>
+<city id="71" name="来宾市">
+<area id="720">合山市</area>
+<area id="1014">金秀瑶族自治县</area>
+<area id="2252">武宣县</area>
+<area id="2355">象州县</area>
+<area id="2367">忻城县</area>
+<area id="2429">兴宾区</area>
+<area id="2955">来宾市</area>
+</city>
+<city id="72" name="柳州市">
+<area id="235">城中区</area>
+<area id="1284">柳北区</area>
+<area id="1285">柳城县</area>
+<area id="1287">柳江县</area>
+<area id="1289">柳南区</area>
+<area id="1361">鹿寨县</area>
+<area id="1792">融安县</area>
+<area id="1793">融水苗族自治县</area>
+<area id="1815">三江侗族自治县</area>
+<area id="2656">鱼峰区</area>
+<area id="2956">柳州市</area>
+</city>
+<city id="73" name="南宁市">
+<area id="123">宾阳县</area>
+<area id="761">横县</area>
+<area id="955">江南区</area>
+<area id="1215">良庆区</area>
+<area id="1323">隆安县</area>
+<area id="1409">马山县</area>
+<area id="1720">青秀区</area>
+<area id="1859">上林县</area>
+<area id="2244">武鸣县</area>
+<area id="2292">西乡塘区</area>
+<area id="2437">兴宁区</area>
+<area id="2604">邕宁区</area>
+<area id="2957">南宁市</area>
+</city>
+<city id="74" name="钦州市">
+<area id="1269">灵山县</area>
+<area id="1640">浦北县</area>
+<area id="1697">钦北区</area>
+<area id="1698">钦南区</area>
+<area id="2958">钦州市</area>
+</city>
+<city id="75" name="梧州市">
+<area id="149">苍梧县</area>
+<area id="155">岑溪市</area>
+<area id="198">长洲区</area>
+<area id="369">蝶山区</area>
+<area id="1440">蒙山县</area>
+<area id="2045">藤县</area>
+<area id="2132">万秀区</area>
+<area id="2959">梧州市</area>
+</city>
+<city id="77" name="玉林市">
+<area id="110">北流市</area>
+<area id="133">博白县</area>
+<area id="1354">陆川县</area>
+<area id="1789">容县</area>
+<area id="2446">兴业县</area>
+<area id="2680">玉州区</area>
+<area id="2961">玉林市</area>
+<area id="3303">福绵管理区</area>
+</city>
+</province>
+<province id="8" name="贵州省">
+<city id="78" name="安顺市">
+<area id="639">关岭布依族苗族自治县</area>
+<area id="1596">平坝县</area>
+<area id="1646">普定县</area>
+<area id="2294">西秀区</area>
+<area id="2781">镇宁布依族苗族自治县</area>
+<area id="2848">紫云苗族布依族自治县</area>
+<area id="2962">安顺市</area>
+</city>
+<city id="79" name="毕节地区">
+<area id="118">毕节市</area>
+<area id="289">大方县</area>
+<area id="750">赫章县</area>
+<area id="1003">金沙县</area>
+<area id="1495">纳雍县</area>
+<area id="1685">黔西县</area>
+<area id="2145">威宁彝族回族苗族自治县</area>
+<area id="2799">织金县</area>
+<area id="2963">毕节地区</area>
+</city>
+<city id="80" name="贵阳市">
+<area id="79">白云区</area>
+<area id="799">花溪区</area>
+<area id="1090">开阳县</area>
+<area id="1525">南明区</area>
+<area id="1742">清镇市</area>
+<area id="2189">乌当区</area>
+<area id="2296">息烽县</area>
+<area id="2360">小河区</area>
+<area id="2455">修文县</area>
+<area id="2722">云岩区</area>
+<area id="2964">贵阳市</area>
+</city>
+<city id="81" name="黔东南苗族侗族自治州">
+<area id="154">岑巩县</area>
+<area id="268">从江县</area>
+<area id="329">丹寨县</area>
+<area id="842">黄平县</area>
+<area id="937">剑河县</area>
+<area id="1021">锦屏县</area>
+<area id="1093">凯里市</area>
+<area id="1167">雷山县</area>
+<area id="1178">黎平县</area>
+<area id="1399">麻江县</area>
+<area id="1791">榕江县</area>
+<area id="1818">三穗县</area>
+<area id="1887">施秉县</area>
+<area id="2008">台江县</area>
+<area id="2059">天柱县</area>
+<area id="2787">镇远县</area>
+<area id="2965">黔东南苗族侗族自治州</area>
+</city>
+<city id="82" name="黔南布依族苗族自治州">
+<area id="190">长顺县</area>
+<area id="434">都匀市</area>
+<area id="436">独山县</area>
+<area id="531">福泉市</area>
+<area id="666">贵定县</area>
+<area id="872">惠水县</area>
+<area id="1195">荔波县</area>
+<area id="1305">龙里县</area>
+<area id="1380">罗甸县</area>
+<area id="1620">平塘县</area>
+<area id="1813">三都水族自治县</area>
+<area id="2185">瓮安县</area>
+<area id="2966">黔南布依族苗族自治州</area>
+</city>
+<city id="83" name="黔西南布依族苗族自治州">
+<area id="28">安龙县</area>
+<area id="152">册亨县</area>
+<area id="1645">普安县</area>
+<area id="1743">晴隆县</area>
+<area id="2144">望谟县</area>
+<area id="2441">兴仁县</area>
+<area id="2447">兴义市</area>
+<area id="2772">贞丰县</area>
+<area id="2967">黔西南布依族苗族自治州</area>
+</city>
+<city id="84" name="遵义市">
+<area id="246">赤水市</area>
+<area id="342">道真仡佬族苗族自治县</area>
+<area id="502">凤冈县</area>
+<area id="770">红花岗区</area>
+<area id="858">汇川区</area>
+<area id="1431">湄潭县</area>
+<area id="1779">仁怀市</area>
+<area id="1994">绥阳县</area>
+<area id="2098">桐梓县</area>
+<area id="2260">务川仡佬族苗族自治县</area>
+<area id="2305">习水县</area>
+<area id="2653">余庆县</area>
+<area id="2789">正安县</area>
+<area id="2853">遵义县</area>
+<area id="2968">遵义市</area>
+</city>
+<city id="380" name="铜仁地区">
+<area id="352">德江县</area>
+<area id="953">江口县</area>
+<area id="1902">石阡县</area>
+<area id="1954">思南县</area>
+<area id="1967">松桃苗族自治县</area>
+<area id="2103">铜仁地区</area>
+<area id="2104">铜仁市</area>
+<area id="2130">万山特区</area>
+<area id="2500">沿河土家族自治县</area>
+<area id="2586">印江土家族苗族自治县</area>
+<area id="2675">玉屏侗族自治县</area>
+</city>
+<city id="390" name="六盘水市">
+<area id="1292">六枝特区</area>
+<area id="1578">盘县</area>
+<area id="1942">水城县</area>
+<area id="2814">钟山区</area>
+<area id="3278">六盘水市</area>
+</city>
+</province>
+<province id="9" name="海南省">
+<city id="85" name="海口市">
+<area id="1301">龙华区</area>
+<area id="1433">美兰区</area>
+<area id="1751">琼山区</area>
+<area id="2460">秀英区</area>
+<area id="2969">海口市</area>
+</city>
+<city id="86" name="三亚市">
+<area id="2970">三亚市</area>
+</city>
+<city id="407" name="琼海市">
+<area id="3293">琼海市</area>
+</city>
+<city id="413" name="五指山市">
+<area id="2228">五指山市</area>
+</city>
+<city id="414" name="文昌市">
+<area id="2172">文昌市</area>
+</city>
+<city id="415" name="万宁市">
+<area id="2127">万宁市</area>
+</city>
+<city id="416" name="儋州市">
+<area id="332">儋州市</area>
+</city>
+<city id="417" name="东方市">
+<area id="392">东方市</area>
+</city>
+<city id="418" name="定安县">
+<area id="373">定安县</area>
+</city>
+<city id="419" name="屯昌县">
+<area id="2115">屯昌县</area>
+</city>
+<city id="420" name="澄迈县">
+<area id="241">澄迈县</area>
+</city>
+<city id="421" name="临高县">
+<area id="1237">临高县</area>
+</city>
+<city id="422" name="白沙黎族自治县">
+<area id="71">白沙黎族自治县</area>
+</city>
+<city id="423" name="昌江黎族自治县">
+<area id="167">昌江黎族自治县</area>
+</city>
+<city id="424" name="乐东黎族自治县">
+<area id="1158">乐东黎族自治县</area>
+</city>
+<city id="425" name="陵水黎族自治县">
+<area id="1280">陵水黎族自治县</area>
+</city>
+<city id="426" name="保亭黎族苗族自治县">
+<area id="99">保亭黎族苗族自治县</area>
+</city>
+<city id="427" name="琼中黎族苗族自治县">
+<area id="1752">琼中黎族苗族自治县</area>
+</city>
+<city id="428" name="西南中沙群岛办事处">
+<area id="1530">西南中沙群岛办事处</area>
+</city>
+<city id="429" name="洋浦经济开发区">
+<area id="3300">洋浦经济开发区</area>
+</city>
+</province>
+<province id="10" name="河北省">
+<city id="87" name="保定市">
+<area id="24">安国市</area>
+<area id="40">安新县</area>
+<area id="114">北市区</area>
+<area id="139">博野县</area>
+<area id="381">定兴县</area>
+<area id="383">定州市</area>
+<area id="543">阜平县</area>
+<area id="581">高碑店市</area>
+<area id="593">高阳县</area>
+<area id="1129">涞水县</area>
+<area id="1130">涞源县</area>
+<area id="1179">蠡县</area>
+<area id="1417">满城县</area>
+<area id="1533">南市区</area>
+<area id="1741">清苑县</area>
+<area id="1761">曲阳县</area>
+<area id="1788">容城县</area>
+<area id="1949">顺平县</area>
+<area id="2034">唐县</area>
+<area id="2140">望都县</area>
+<area id="2409">新市区</area>
+<area id="2452">雄县</area>
+<area id="2466">徐水县</area>
+<area id="2579">易县</area>
+<area id="2835">涿州市</area>
+<area id="2971">保定市</area>
+</city>
+<city id="88" name="沧州市">
+<area id="130">泊头市</area>
+<area id="145">沧县</area>
+<area id="397">东光县</area>
+<area id="691">海兴县</area>
+<area id="740">河间市</area>
+<area id="838">黄骅市</area>
+<area id="1443">孟村回族自治县</area>
+<area id="1527">南皮县</area>
+<area id="1719">青县</area>
+<area id="1782">任丘市</area>
+<area id="1979">肃宁县</area>
+<area id="2212">吴桥县</area>
+<area id="2325">献县</area>
+<area id="2389">新华区</area>
+<area id="2508">盐山县</area>
+<area id="2726">运河区</area>
+<area id="2972">沧州市</area>
+</city>
+<city id="89" name="承德市">
+<area id="219">承德县</area>
+<area id="491">丰宁满族自治县</area>
+<area id="1117">宽城满族自治县</area>
+<area id="1326">隆化县</area>
+<area id="1375">滦平县</area>
+<area id="1615">平泉县</area>
+<area id="1934">双滦区</area>
+<area id="1936">双桥区</area>
+<area id="2151">围场满族蒙古族自治县</area>
+<area id="2436">兴隆县</area>
+<area id="2593">鹰手营子矿区</area>
+<area id="2973">承德市</area>
+</city>
+<city id="90" name="邯郸市">
+<area id="214">成安县</area>
+<area id="266">磁县</area>
+<area id="270">丛台区</area>
+<area id="296">大名县</area>
+<area id="482">肥乡县</area>
+<area id="500">峰峰矿区</area>
+<area id="545">复兴区</area>
+<area id="642">馆陶县</area>
+<area id="659">广平县</area>
+<area id="701">邯郸县</area>
+<area id="702">邯山区</area>
+<area id="883">鸡泽县</area>
+<area id="1262">临漳县</area>
+<area id="1754">邱县</area>
+<area id="1762">曲周县</area>
+<area id="1874">涉县</area>
+<area id="2165">魏县</area>
+<area id="2230">武安市</area>
+<area id="2623">永年县</area>
+<area id="2974">邯郸市</area>
+</city>
+<city id="91" name="衡水市">
+<area id="31">安平县</area>
+<area id="539">阜城县</area>
+<area id="638">故城县</area>
+<area id="904">冀州市</area>
+<area id="1047">景县</area>
+<area id="1775">饶阳县</area>
+<area id="1877">深州市</area>
+<area id="2038">桃城区</area>
+<area id="2247">武强县</area>
+<area id="2256">武邑县</area>
+<area id="2730">枣强县</area>
+<area id="2975">衡水市</area>
+</city>
+<city id="92" name="廊坊市">
+<area id="19">安次区</area>
+<area id="66">霸州市</area>
+<area id="285">大厂回族自治县</area>
+<area id="286">大城县</area>
+<area id="634">固安县</area>
+<area id="662">广阳区</area>
+<area id="1814">三河市</area>
+<area id="2171">文安县</area>
+<area id="2333">香河县</area>
+<area id="2626">永清县</area>
+<area id="2976">廊坊市</area>
+</city>
+<city id="93" name="秦皇岛市">
+<area id="105">北戴河区</area>
+<area id="170">昌黎县</area>
+<area id="534">抚宁县</area>
+<area id="682">海港区</area>
+<area id="1337">卢龙县</area>
+<area id="1711">青龙满族自治县</area>
+<area id="1839">山海关区</area>
+<area id="2977">秦皇岛市</area>
+</city>
+<city id="94" name="石家庄市">
+<area id="176">长安区</area>
+<area id="595">高邑县</area>
+<area id="598">藁城市</area>
+<area id="1027">晋州市</area>
+<area id="1040">井陉矿区</area>
+<area id="1041">井陉县</area>
+<area id="1271">灵寿县</area>
+<area id="1359">鹿泉市</area>
+<area id="1372">栾城县</area>
+<area id="1617">平山县</area>
+<area id="1687">桥东区</area>
+<area id="1690">桥西区</area>
+<area id="1876">深泽县</area>
+<area id="2206">无极县</area>
+<area id="2369">辛集市</area>
+<area id="2388">新华区</area>
+<area id="2397">新乐市</area>
+<area id="2449">行唐县</area>
+<area id="2683">裕华区</area>
+<area id="2690">元氏县</area>
+<area id="2729">赞皇县</area>
+<area id="2766">赵县</area>
+<area id="2790">正定县</area>
+<area id="2978">石家庄市</area>
+</city>
+<city id="95" name="唐山市">
+<area id="490">丰南区</area>
+<area id="492">丰润区</area>
+<area id="627">古冶区</area>
+<area id="1087">开平区</area>
+<area id="1163">乐亭县</area>
+<area id="1365">路北区</area>
+<area id="1366">路南区</area>
+<area id="1374">滦南县</area>
+<area id="1376">滦县</area>
+<area id="1676">迁安市</area>
+<area id="1677">迁西县</area>
+<area id="2032">唐海县</area>
+<area id="2679">玉田县</area>
+<area id="2852">遵化市</area>
+<area id="2979">唐山市</area>
+</city>
+<city id="96" name="邢台市">
+<area id="80">柏乡县</area>
+<area id="663">广宗县</area>
+<area id="1073">巨鹿县</area>
+<area id="1235">临城县</area>
+<area id="1252">临西县</area>
+<area id="1330">隆尧县</area>
+<area id="1490">内丘县</area>
+<area id="1510">南宫市</area>
+<area id="1514">南和县</area>
+<area id="1560">宁晋县</area>
+<area id="1622">平乡县</area>
+<area id="1688">桥东区</area>
+<area id="1691">桥西区</area>
+<area id="1731">清河县</area>
+<area id="1783">任县</area>
+<area id="1826">沙河市</area>
+<area id="2146">威县</area>
+<area id="2387">新河县</area>
+<area id="2450">邢台县</area>
+<area id="2980">邢台市</area>
+</city>
+<city id="97" name="张家口市">
+<area id="244">赤城县</area>
+<area id="249">崇礼县</area>
+<area id="619">沽源县</area>
+<area id="819">怀安县</area>
+<area id="821">怀来县</area>
+<area id="1094">康保县</area>
+<area id="1689">桥东区</area>
+<area id="1692">桥西区</area>
+<area id="1864">尚义县</area>
+<area id="2128">万全县</area>
+<area id="2163">蔚县</area>
+<area id="2314">下花园区</area>
+<area id="2473">宣化区</area>
+<area id="2474">宣化县</area>
+<area id="2534">阳原县</area>
+<area id="2747">张北县</area>
+<area id="2834">涿鹿县</area>
+<area id="2981">张家口市</area>
+</city>
+</province>
+<province id="11" name="河南省">
+<city id="98" name="安阳市">
+<area id="41">安阳县</area>
+<area id="107">北关区</area>
+<area id="812">滑县</area>
+<area id="1232">林州市</area>
+<area id="1293">龙安区</area>
+<area id="1489">内黄县</area>
+<area id="2030">汤阴县</area>
+<area id="2175">文峰区</area>
+<area id="2582">殷都区</area>
+<area id="2982">安阳市</area>
+</city>
+<city id="99" name="鹤壁市">
+<area id="754">鹤山区</area>
+<area id="1078">浚县</area>
+<area id="1667">淇滨区</area>
+<area id="1668">淇县</area>
+<area id="1837">山城区</area>
+<area id="2983">鹤壁市</area>
+</city>
+<city id="100" name="焦作市">
+<area id="132">博爱县</area>
+<area id="986">解放区</area>
+<area id="1405">马村区</area>
+<area id="1446">孟州市</area>
+<area id="1705">沁阳市</area>
+<area id="1841">山阳区</area>
+<area id="2170">温县</area>
+<area id="2257">武陟县</area>
+<area id="2456">修武县</area>
+<area id="2811">中站区</area>
+<area id="2984">焦作市</area>
+</city>
+<city id="101" name="开封市">
+<area id="631">鼓楼区</area>
+<area id="973">郊区</area>
+<area id="1082">开封县</area>
+<area id="1136">兰考县</area>
+<area id="1317">龙亭区</area>
+<area id="1511">禹王台区</area>
+<area id="1673">杞县</area>
+<area id="1948">顺河回族区</area>
+<area id="2085">通许县</area>
+<area id="2159">尉氏县</area>
+<area id="2985">开封市</area>
+<area id="3302">金明区</area>
+</city>
+<city id="102" name="洛阳市">
+<area id="164">瀍河回族区</area>
+<area id="887">吉利区</area>
+<area id="938">涧西区</area>
+<area id="1154">老城区</area>
+<area id="1373">栾川县</area>
+<area id="1392">洛龙区</area>
+<area id="1395">洛宁县</area>
+<area id="1444">孟津县</area>
+<area id="1798">汝阳县</area>
+<area id="1972">嵩县</area>
+<area id="2271">西工区</area>
+<area id="2371">新安县</area>
+<area id="2514">偃师市</area>
+<area id="2545">伊川县</area>
+<area id="2570">宜阳县</area>
+<area id="2986">洛阳市</area>
+</city>
+<city id="103" name="漯河市">
+<area id="1260">临颍县</area>
+<area id="2259">舞阳县</area>
+<area id="2515">郾城区</area>
+<area id="2700">源汇区</area>
+<area id="2764">召陵区</area>
+<area id="2987">漯河市</area>
+</city>
+<city id="104" name="南阳市">
+<area id="360">邓州市</area>
+<area id="471">方城县</area>
+<area id="1491">内乡县</area>
+<area id="1540">南召县</area>
+<area id="1871">社旗县</area>
+<area id="2033">唐河县</area>
+<area id="2094">桐柏县</area>
+<area id="2123">宛城区</area>
+<area id="2187">卧龙区</area>
+<area id="2290">西峡县</area>
+<area id="2299">淅川县</area>
+<area id="2418">新野县</area>
+<area id="2782">镇平县</area>
+<area id="2988">南阳市</area>
+</city>
+<city id="105" name="平顶山市">
+<area id="89">宝丰县</area>
+<area id="916">郏县</area>
+<area id="1353">鲁山县</area>
+<area id="1799">汝州市</area>
+<area id="1897">石龙区</area>
+<area id="2155">卫东区</area>
+<area id="2258">舞钢市</area>
+<area id="2390">新华区</area>
+<area id="2544">叶县</area>
+<area id="2746">湛河区</area>
+<area id="2989">平顶山市</area>
+</city>
+<city id="106" name="濮阳市">
+<area id="470">范县</area>
+<area id="803">华龙区</area>
+<area id="1523">南乐县</area>
+<area id="1639">濮阳县</area>
+<area id="1727">清丰县</area>
+<area id="2009">台前县</area>
+<area id="2990">濮阳市</area>
+</city>
+<city id="107" name="三门峡市">
+<area id="790">湖滨区</area>
+<area id="1265">灵宝市</area>
+<area id="1338">卢氏县</area>
+<area id="1844">陕县</area>
+<area id="1882">渑池县</area>
+<area id="2573">义马市</area>
+<area id="2991">三门峡市</area>
+</city>
+<city id="108" name="商丘市">
+<area id="1221">梁园区</area>
+<area id="1464">民权县</area>
+<area id="1562">宁陵县</area>
+<area id="1985">睢县</area>
+<area id="1986">睢阳区</area>
+<area id="2319">夏邑县</area>
+<area id="2608">永城市</area>
+<area id="2663">虞城县</area>
+<area id="2770">柘城县</area>
+<area id="2992">商丘市</area>
+</city>
+<city id="109" name="新乡市">
+<area id="196">长垣县</area>
+<area id="499">封丘县</area>
+<area id="505">凤泉区</area>
+<area id="771">红旗区</area>
+<area id="854">辉县市</area>
+<area id="875">获嘉县</area>
+<area id="1487">牧野区</area>
+<area id="2154">卫滨区</area>
+<area id="2156">卫辉市</area>
+<area id="2415">新乡县</area>
+<area id="2496">延津县</area>
+<area id="2696">原阳县</area>
+<area id="2993">新乡市</area>
+</city>
+<city id="110" name="信阳市">
+<area id="635">固始县</area>
+<area id="647">光山县</area>
+<area id="826">淮滨县</area>
+<area id="851">潢川县</area>
+<area id="1385">罗山县</area>
+<area id="1614">平桥区</area>
+<area id="1846">商城县</area>
+<area id="1885">浉河区</area>
+<area id="2297">息县</area>
+<area id="2414">新县</area>
+<area id="2994">信阳市</area>
+</city>
+<city id="111" name="许昌市">
+<area id="181">长葛市</area>
+<area id="2164">魏都区</area>
+<area id="2342">襄城县</area>
+<area id="2468">许昌县</area>
+<area id="2491">鄢陵县</area>
+<area id="2671">禹州市</area>
+<area id="2995">许昌市</area>
+</city>
+<city id="112" name="郑州市">
+<area id="359">登封市</area>
+<area id="464">二七区</area>
+<area id="611">巩义市</area>
+<area id="643">管城回族区</area>
+<area id="1006">金水区</area>
+<area id="1419">惠济区</area>
+<area id="1857">上街区</area>
+<area id="2400">新密市</area>
+<area id="2421">新郑市</area>
+<area id="2598">荥阳市</area>
+<area id="2805">中牟县</area>
+<area id="2810">中原区</area>
+<area id="2996">郑州市</area>
+<area id="3281">郑东新区</area>
+</city>
+<city id="113" name="周口市">
+<area id="259">川汇区</area>
+<area id="331">郸城县</area>
+<area id="518">扶沟县</area>
+<area id="828">淮阳县</area>
+<area id="1360">鹿邑县</area>
+<area id="1850">商水县</area>
+<area id="1881">沈丘县</area>
+<area id="2017">太康县</area>
+<area id="2276">西华县</area>
+<area id="2352">项城市</area>
+<area id="2997">周口市</area>
+</city>
+<city id="114" name="驻马店市">
+<area id="1454">泌阳县</area>
+<area id="1627">平舆县</area>
+<area id="1770">确山县</area>
+<area id="1797">汝南县</area>
+<area id="1852">上蔡县</area>
+<area id="1998">遂平县</area>
+<area id="2282">西平县</area>
+<area id="2377">新蔡县</area>
+<area id="2580">驿城区</area>
+<area id="2794">正阳县</area>
+<area id="2998">驻马店市</area>
+</city>
+<city id="430" name="济源市">
+<area id="901">济源市</area>
+</city>
+</province>
+<province id="12" name="黑龙江省">
+<city id="115" name="大庆市">
+<area id="303">大同区</area>
+<area id="438">杜尔伯特蒙古族自治县</area>
+<area id="767">红岗区</area>
+<area id="1228">林甸县</area>
+<area id="1296">龙凤区</area>
+<area id="1772">让胡路区</area>
+<area id="1809">萨尔图区</area>
+<area id="2768">肇源县</area>
+<area id="2769">肇州县</area>
+<area id="2999">大庆市</area>
+</city>
+<city id="116" name="哈尔滨市">
+<area id="3">阿城区</area>
+<area id="63">巴彦县</area>
+<area id="122">宾县</area>
+<area id="339">道里区</area>
+<area id="340">道外区</area>
+<area id="427">动力区</area>
+<area id="473">方正县</area>
+<area id="786">呼兰区</area>
+<area id="1483">木兰县</area>
+<area id="1509">南岗区</area>
+<area id="1601">平房区</area>
+<area id="1865">尚志市</area>
+<area id="1929">双城市</area>
+<area id="1963">松北区</area>
+<area id="2080">通河县</area>
+<area id="2216">五常市</area>
+<area id="2331">香坊区</area>
+<area id="2499">延寿县</area>
+<area id="2553">依兰县</area>
+<area id="3000">哈尔滨市</area>
+</city>
+<city id="117" name="鹤岗市">
+<area id="411">东山区</area>
+<area id="605">工农区</area>
+<area id="1389">萝北县</area>
+<area id="1532">南山区</area>
+<area id="1988">绥滨县</area>
+<area id="2350">向阳区</area>
+<area id="2427">兴安区</area>
+<area id="2442">兴山区</area>
+<area id="3001">鹤岗市</area>
+</city>
+<city id="118" name="黑河市">
+<area id="17">爱辉区</area>
+<area id="101">北安市</area>
+<area id="1544">嫩江县</area>
+<area id="2000">孙吴县</area>
+<area id="2217">五大连池市</area>
+<area id="2486">逊克县</area>
+<area id="3002">黑河市</area>
+</city>
+<city id="119" name="鸡西市">
+<area id="237">城子河区</area>
+<area id="362">滴道区</area>
+<area id="758">恒山区</area>
+<area id="793">虎林市</area>
+<area id="881">鸡东县</area>
+<area id="882">鸡冠区</area>
+<area id="1173">梨树区</area>
+<area id="1401">麻山区</area>
+<area id="1455">密山市</area>
+<area id="3003">鸡西市</area>
+</city>
+<city id="120" name="佳木斯市">
+<area id="394">东风区</area>
+<area id="537">抚远县</area>
+<area id="547">富锦市</area>
+<area id="816">桦川县</area>
+<area id="818">桦南县</area>
+<area id="974">郊区</area>
+<area id="1680">前进区</area>
+<area id="2031">汤原县</area>
+<area id="2091">同江市</area>
+<area id="2351">向阳区</area>
+<area id="2617">永红区</area>
+<area id="3004">佳木斯市</area>
+</city>
+<city id="121" name="牡丹江市">
+<area id="18">爱民区</area>
+<area id="385">东安区</area>
+<area id="406">东宁县</area>
+<area id="684">海林市</area>
+<area id="1229">林口县</area>
+<area id="1488">穆棱市</area>
+<area id="1551">宁安市</area>
+<area id="1990">绥芬河市</area>
+<area id="2263">西安区</area>
+<area id="2527">阳明区</area>
+<area id="3005">牡丹江市</area>
+</city>
+<city id="122" name="七台河市">
+<area id="131">勃利县</area>
+<area id="1695">茄子河区</area>
+<area id="2040">桃山区</area>
+<area id="2416">新兴区</area>
+<area id="3006">七台河市</area>
+</city>
+<city id="123" name="齐齐哈尔市">
+<area id="47">昂昂溪区</area>
+<area id="82">拜泉县</area>
+<area id="548">富拉尔基区</area>
+<area id="555">富裕县</area>
+<area id="566">甘南县</area>
+<area id="927">建华区</area>
+<area id="1108">克东县</area>
+<area id="1110">克山县</area>
+<area id="1302">龙江县</area>
+<area id="1312">龙沙区</area>
+<area id="1428">梅里斯达斡尔族区</area>
+<area id="1543">讷河市</area>
+<area id="1548">碾子山区</area>
+<area id="2022">泰来县</area>
+<area id="2067">铁锋区</area>
+<area id="2552">依安县</area>
+<area id="3007">齐齐哈尔市</area>
+</city>
+<city id="124" name="双鸭山市">
+<area id="90">宝清县</area>
+<area id="91">宝山区</area>
+<area id="899">集贤县</area>
+<area id="919">尖山区</area>
+<area id="1274">岭东区</area>
+<area id="1773">饶河县</area>
+<area id="1956">四方台区</area>
+<area id="2640">友谊县</area>
+<area id="3008">双鸭山市</area>
+</city>
+<city id="125" name="绥化市">
+<area id="20">安达市</area>
+<area id="109">北林区</area>
+<area id="686">海伦市</area>
+<area id="1139">兰西县</area>
+<area id="1472">明水县</area>
+<area id="1709">青冈县</area>
+<area id="1744">庆安县</area>
+<area id="1992">绥棱县</area>
+<area id="2143">望奎县</area>
+<area id="2767">肇东市</area>
+<area id="3009">绥化市</area>
+</city>
+<city id="126" name="伊春市">
+<area id="271">翠峦区</area>
+<area id="322">带岭区</area>
+<area id="775">红星区</area>
+<area id="914">嘉荫县</area>
+<area id="1005">金山屯区</area>
+<area id="1434">美溪区</area>
+<area id="1502">南岔区</area>
+<area id="1854">上甘岭区</area>
+<area id="2029">汤旺河区</area>
+<area id="2068">铁力市</area>
+<area id="2197">乌马河区</area>
+<area id="2202">乌伊岭区</area>
+<area id="2225">五营区</area>
+<area id="2278">西林区</area>
+<area id="2405">新青区</area>
+<area id="2546">伊春区</area>
+<area id="2639">友好区</area>
+<area id="3010">伊春市</area>
+</city>
+<city id="389" name="大兴安岭地区">
+<area id="310">大兴安岭地区</area>
+<area id="787">呼玛县</area>
+<area id="1475">漠河县</area>
+<area id="2003">塔河县</area>
+<area id="3296">加格达奇区</area>
+<area id="3297">松岭区</area>
+<area id="3298">新林区</area>
+<area id="3299">呼中区</area>
+</city>
+</province>
+<province id="13" name="湖北省">
+<city id="127" name="鄂州市">
+<area id="451">鄂城区</area>
+<area id="806">华容区</area>
+<area id="1222">梁子湖区</area>
+<area id="3011">鄂州市</area>
+</city>
+<city id="128" name="黄冈市">
+<area id="766">红安县</area>
+<area id="841">黄梅县</area>
+<area id="848">黄州区</area>
+<area id="1386">罗田县</area>
+<area id="1398">麻城市</area>
+<area id="1670">蕲春县</area>
+<area id="2114">团风县</area>
+<area id="2253">武穴市</area>
+<area id="2298">浠水县</area>
+<area id="2592">英山县</area>
+<area id="3012">黄冈市</area>
+</city>
+<city id="129" name="黄石市">
+<area id="313">大冶市</area>
+<area id="846">黄石港区</area>
+<area id="2071">铁山区</area>
+<area id="2285">西塞山区</area>
+<area id="2315">下陆区</area>
+<area id="2532">阳新县</area>
+<area id="3013">黄石市</area>
+</city>
+<city id="130" name="荆门市">
+<area id="387">东宝区</area>
+<area id="445">掇刀区</area>
+<area id="1030">京山县</area>
+<area id="1834">沙洋县</area>
+<area id="2816">钟祥市</area>
+<area id="3014">荆门市</area>
+</city>
+<city id="131" name="荆州市">
+<area id="607">公安县</area>
+<area id="779">洪湖市</area>
+<area id="921">监利县</area>
+<area id="954">江陵县</area>
+<area id="1035">荆州区</area>
+<area id="1829">沙市区</area>
+<area id="1906">石首市</area>
+<area id="1970">松滋市</area>
+<area id="3015">荆州市</area>
+</city>
+<city id="132" name="潜江市">
+<area id="3016">潜江市</area>
+</city>
+<city id="133" name="神农架林区">
+<area id="3017">神农架林区</area>
+</city>
+<city id="134" name="十堰市">
+<area id="325">丹江口市</area>
+<area id="478">房县</area>
+<area id="1421">茅箭区</area>
+<area id="2724">郧西县</area>
+<area id="2725">郧县</area>
+<area id="2751">张湾区</area>
+<area id="2827">竹山县</area>
+<area id="2828">竹溪县</area>
+<area id="3018">十堰市</area>
+</city>
+<city id="135" name="随州市">
+<area id="661">广水市</area>
+<area id="2735">曾都区</area>
+<area id="3019">随州市</area>
+</city>
+<city id="136" name="天门市">
+<area id="3020">天门市</area>
+</city>
+<city id="137" name="武汉市">
+<area id="142">蔡甸区</area>
+<area id="417">东西湖区</area>
+<area id="709">汉南区</area>
+<area id="712">汉阳区</area>
+<area id="781">洪山区</area>
+<area id="836">黄陂区</area>
+<area id="940">江岸区</area>
+<area id="951">江汉区</area>
+<area id="958">江夏区</area>
+<area id="1686">硚口区</area>
+<area id="1714">青山区</area>
+<area id="2231">武昌区</area>
+<area id="2422">新洲区</area>
+<area id="3021">武汉市</area>
+</city>
+<city id="138" name="仙桃市">
+<area id="3022">仙桃市</area>
+</city>
+<city id="139" name="咸宁市">
+<area id="243">赤壁市</area>
+<area id="254">崇阳县</area>
+<area id="915">嘉鱼县</area>
+<area id="2076">通城县</area>
+<area id="2083">通山县</area>
+<area id="2322">咸安区</area>
+<area id="3023">咸宁市</area>
+</city>
+<city id="140" name="襄阳市">
+<area id="98">保康县</area>
+<area id="467">樊城区</area>
+<area id="629">谷城县</area>
+<area id="1155">老河口市</area>
+<area id="1539">南漳县</area>
+<area id="2341">襄城区</area>
+<area id="2344">襄州区</area>
+<area id="2562">宜城市</area>
+<area id="2731">枣阳市</area>
+<area id="3024">襄樊市</area>
+</city>
+<city id="141" name="孝感市">
+<area id="29">安陆市</area>
+<area id="307">大悟县</area>
+<area id="707">汉川市</area>
+<area id="2362">孝昌县</area>
+<area id="2363">孝南区</area>
+<area id="2588">应城市</area>
+<area id="2718">云梦县</area>
+<area id="3025">孝感市</area>
+</city>
+<city id="142" name="宜昌市">
+<area id="195">长阳土家族自治县</area>
+<area id="335">当阳市</area>
+<area id="363">点军区</area>
+<area id="2218">五峰土家族自治县</area>
+<area id="2229">伍家岗区</area>
+<area id="2280">西陵区</area>
+<area id="2356">猇亭区</area>
+<area id="2443">兴山县</area>
+<area id="2557">夷陵区</area>
+<area id="2564">宜都市</area>
+<area id="2701">远安县</area>
+<area id="2798">枝江市</area>
+<area id="2844">秭归县</area>
+<area id="3026">宜昌市</area>
+</city>
+<city id="384" name="恩施土家族苗族自治州">
+<area id="55">巴东县</area>
+<area id="458">恩施市</area>
+<area id="459">恩施土家族苗族自治州</area>
+<area id="752">鹤峰县</area>
+<area id="931">建始县</area>
+<area id="1128">来凤县</area>
+<area id="1191">利川市</area>
+<area id="2323">咸丰县</area>
+<area id="2471">宣恩县</area>
+</city>
+</province>
+<province id="14" name="湖南省">
+<city id="143" name="长沙市">
+<area id="188">长沙县</area>
+<area id="521">芙蓉区</area>
+<area id="1083">开福区</area>
+<area id="1282">浏阳市</area>
+<area id="1569">宁乡县</area>
+<area id="2056">天心区</area>
+<area id="2139">望城县</area>
+<area id="2666">雨花区</area>
+<area id="2704">岳麓区</area>
+<area id="3027">长沙市</area>
+</city>
+<city id="144" name="常德市">
+<area id="39">安乡县</area>
+<area id="371">鼎城区</area>
+<area id="710">汉寿县</area>
+<area id="1019">津市市</area>
+<area id="1242">临澧县</area>
+<area id="1899">石门县</area>
+<area id="2041">桃源县</area>
+<area id="2241">武陵区</area>
+<area id="3028">常德市</area>
+<area id="3238">澧县</area>
+</city>
+<city id="145" name="郴州市">
+<area id="33">安仁县</area>
+<area id="108">北湖区</area>
+<area id="669">桂东县</area>
+<area id="671">桂阳县</area>
+<area id="909">嘉禾县</area>
+<area id="1251">临武县</area>
+<area id="1796">汝城县</area>
+<area id="1976">苏仙区</area>
+<area id="2571">宜章县</area>
+<area id="2634">永兴县</area>
+<area id="2837">资兴市</area>
+<area id="3029">郴州市</area>
+</city>
+<city id="146" name="衡阳市">
+<area id="200">常宁市</area>
+<area id="762">衡东县</area>
+<area id="763">衡南县</area>
+<area id="764">衡山县</area>
+<area id="765">衡阳县</area>
+<area id="1169">耒阳市</area>
+<area id="1538">南岳区</area>
+<area id="1659">祁东县</area>
+<area id="1893">石鼓区</area>
+<area id="2517">雁峰区</area>
+<area id="2788">蒸湘区</area>
+<area id="2823">珠晖区</area>
+<area id="3030">衡阳市</area>
+</city>
+<city id="147" name="怀化市">
+<area id="210">辰溪县</area>
+<area id="751">鹤城区</area>
+<area id="780">洪江市</area>
+<area id="863">会同县</area>
+<area id="1054">靖州苗族侗族自治县</area>
+<area id="1402">麻阳苗族自治县</area>
+<area id="2078">通道侗族自治县</area>
+<area id="2392">新晃侗族自治县</area>
+<area id="2470">溆浦县</area>
+<area id="2693">沅陵县</area>
+<area id="2800">芷江侗族自治县</area>
+<area id="2803">中方县</area>
+<area id="3031">怀化市</area>
+</city>
+<city id="148" name="娄底市">
+<area id="1171">冷水江市</area>
+<area id="1210">涟源市</area>
+<area id="1336">娄星区</area>
+<area id="1930">双峰县</area>
+<area id="2391">新化县</area>
+<area id="3032">娄底市</area>
+</city>
+<city id="149" name="邵阳市">
+<area id="115">北塔区</area>
+<area id="221">城步苗族自治县</area>
+<area id="308">大祥区</area>
+<area id="428">洞口县</area>
+<area id="1327">隆回县</area>
+<area id="1867">邵东县</area>
+<area id="1869">邵阳县</area>
+<area id="1938">双清区</area>
+<area id="1993">绥宁县</area>
+<area id="2236">武冈市</area>
+<area id="2402">新宁县</area>
+<area id="2408">新邵县</area>
+<area id="3033">邵阳市</area>
+</city>
+<city id="150" name="湘潭市">
+<area id="1866">韶山市</area>
+<area id="2337">湘潭县</area>
+<area id="2339">湘乡市</area>
+<area id="2665">雨湖区</area>
+<area id="2706">岳塘区</area>
+<area id="3034">湘潭市</area>
+</city>
+<city id="151" name="益阳市">
+<area id="25">安化县</area>
+<area id="749">赫山区</area>
+<area id="1535">南县</area>
+<area id="2039">桃江县</area>
+<area id="2692">沅江市</area>
+<area id="2838">资阳区</area>
+<area id="3035">益阳市</area>
+</city>
+<city id="152" name="永州市">
+<area id="341">道县</area>
+<area id="386">东安县</area>
+<area id="952">江华瑶族自治县</area>
+<area id="961">江永县</area>
+<area id="1144">蓝山县</area>
+<area id="1172">冷水滩区</area>
+<area id="1571">宁远县</area>
+<area id="1663">祁阳县</area>
+<area id="1935">双牌县</area>
+<area id="2412">新田县</area>
+<area id="2797">零陵区</area>
+<area id="3036">永州市</area>
+</city>
+<city id="153" name="岳阳市">
+<area id="807">华容县</area>
+<area id="1076">君山区</area>
+<area id="1256">临湘市</area>
+<area id="1453">汨罗市</area>
+<area id="1607">平江县</area>
+<area id="2340">湘阴县</area>
+<area id="2708">岳阳楼区</area>
+<area id="2709">岳阳县</area>
+<area id="2719">云溪区</area>
+<area id="3037">岳阳市</area>
+</city>
+<city id="154" name="张家界市">
+<area id="264">慈利县</area>
+<area id="1823">桑植县</area>
+<area id="2242">武陵源区</area>
+<area id="2612">永定区</area>
+<area id="3038">张家界市</area>
+</city>
+<city id="155" name="株洲市">
+<area id="156">茶陵县</area>
+<area id="747">荷塘区</area>
+<area id="1187">醴陵市</area>
+<area id="1344">芦淞区</area>
+<area id="1892">石峰区</area>
+<area id="2057">天元区</area>
+<area id="2502">炎陵县</area>
+<area id="2636">攸县</area>
+<area id="2822">株洲县</area>
+<area id="3039">株洲市</area>
+</city>
+<city id="379" name="湘西土家族苗族自治州">
+<area id="97">保靖县</area>
+<area id="503">凤凰县</area>
+<area id="628">古丈县</area>
+<area id="800">花垣县</area>
+<area id="891">吉首市</area>
+<area id="1314">龙山县</area>
+<area id="1349">泸溪县</area>
+<area id="2631">永顺县</area>
+<area id="3269">湘西土家族苗族自治州</area>
+</city>
+</province>
+<province id="15" name="吉林省">
+<city id="156" name="白城市">
+<area id="284">大安市</area>
+<area id="2036">洮北区</area>
+<area id="2037">洮南市</area>
+<area id="2086">通榆县</area>
+<area id="2780">镇赉县</area>
+<area id="3040">白城市</area>
+</city>
+<city id="157" name="白山市">
+<area id="51">浑江区</area>
+<area id="178">长白朝鲜族自治县</area>
+<area id="536">抚松县</area>
+<area id="963">江源县</area>
+<area id="1052">靖宇县</area>
+<area id="1241">临江市</area>
+<area id="3041">白山市</area>
+</city>
+<city id="158" name="长春市">
+<area id="205">朝阳区</area>
+<area id="351">德惠市</area>
+<area id="462">二道区</area>
+<area id="1065">九台市</area>
+<area id="1118">宽城区</area>
+<area id="1371">绿园区</area>
+<area id="1512">南关区</area>
+<area id="1572">农安县</area>
+<area id="1941">双阳区</area>
+<area id="2660">榆树市</area>
+<area id="3042">长春市</area>
+</city>
+<city id="159" name="吉林市">
+<area id="261">船营区</area>
+<area id="489">丰满区</area>
+<area id="817">桦甸市</area>
+<area id="981">蛟河市</area>
+<area id="1316">龙潭区</area>
+<area id="1580">磐石市</area>
+<area id="1925">舒兰市</area>
+<area id="2618">永吉县</area>
+<area id="3043">吉林市</area>
+<area id="3287">昌邑区</area>
+</city>
+<city id="160" name="辽源市">
+<area id="393">东丰县</area>
+<area id="403">东辽县</area>
+<area id="1313">龙山区</area>
+<area id="2264">西安区</area>
+<area id="3044">辽源市</area>
+</city>
+<city id="161" name="四平市">
+<area id="608">公主岭市</area>
+<area id="1174">梨树县</area>
+<area id="1932">双辽市</area>
+<area id="2065">铁东区</area>
+<area id="2072">铁西区</area>
+<area id="2550">伊通满族自治县</area>
+<area id="3045">四平市</area>
+</city>
+<city id="162" name="松原市">
+<area id="184">长岭县</area>
+<area id="520">扶余县</area>
+<area id="1558">宁江区</area>
+<area id="1679">前郭尔罗斯蒙古族自治县</area>
+<area id="1681">乾安县</area>
+<area id="3046">松原市</area>
+</city>
+<city id="163" name="通化市">
+<area id="389">东昌区</area>
+<area id="461">二道江区</area>
+<area id="853">辉南县</area>
+<area id="896">集安市</area>
+<area id="1286">柳河县</area>
+<area id="2081">通化县</area>
+<area id="3047">通化市</area>
+<area id="3266">梅河口市</area>
+</city>
+<city id="378" name="延边朝鲜族自治州">
+<area id="35">安图县</area>
+<area id="442">敦化市</area>
+<area id="727">和龙市</area>
+<area id="852">珲春市</area>
+<area id="1303">龙井市</area>
+<area id="2110">图们市</area>
+<area id="2136">汪清县</area>
+<area id="2495">延吉市</area>
+<area id="3267">延边朝鲜族自治州</area>
+</city>
+</province>
+<province id="16" name="江苏省">
+<city id="164" name="常州市">
+<area id="1009">金坛市</area>
+<area id="1200">溧阳市</area>
+<area id="1658">戚墅堰区</area>
+<area id="2051">天宁区</area>
+<area id="2240">武进区</area>
+<area id="2374">新北区</area>
+<area id="2813">钟楼区</area>
+<area id="3048">常州市</area>
+</city>
+<city id="165" name="淮安市">
+<area id="258">楚州区</area>
+<area id="783">洪泽县</area>
+<area id="829">淮阴区</area>
+<area id="996">金湖县</area>
+<area id="1209">涟水县</area>
+<area id="1729">清河区</area>
+<area id="1734">清浦区</area>
+<area id="2464">盱眙县</area>
+<area id="3049">淮安市</area>
+</city>
+<city id="166" name="连云港市">
+<area id="398">东海县</area>
+<area id="571">赣榆县</area>
+<area id="644">灌南县</area>
+<area id="646">灌云县</area>
+<area id="696">海州区</area>
+<area id="1207">连云区</area>
+<area id="2404">新浦区</area>
+<area id="3050">连云港市</area>
+</city>
+<city id="167" name="南京市">
+<area id="74">白下区</area>
+<area id="582">高淳县</area>
+<area id="632">鼓楼区</area>
+<area id="934">建邺区</area>
+<area id="956">江宁区</area>
+<area id="1199">溧水县</area>
+<area id="1290">六合区</area>
+<area id="1644">浦口区</area>
+<area id="1656">栖霞区</area>
+<area id="1702">秦淮区</area>
+<area id="2313">下关区</area>
+<area id="2478">玄武区</area>
+<area id="2667">雨花台区</area>
+<area id="3051">南京市</area>
+</city>
+<city id="168" name="南通市">
+<area id="248">崇川区</area>
+<area id="578">港闸区</area>
+<area id="674">海安县</area>
+<area id="687">海门市</area>
+<area id="1672">启东市</area>
+<area id="1794">如东县</area>
+<area id="1795">如皋市</area>
+<area id="2088">通州市</area>
+<area id="3052">南通市</area>
+</city>
+<city id="169" name="苏州市">
+<area id="144">沧浪区</area>
+<area id="202">常熟市</area>
+<area id="794">虎丘区</area>
+<area id="990">金阊区</area>
+<area id="1125">昆山市</area>
+<area id="1606">平江区</area>
+<area id="2012">太仓市</area>
+<area id="2210">吴江市</area>
+<area id="2214">吴中区</area>
+<area id="2329">相城区</area>
+<area id="2750">张家港市</area>
+<area id="3053">苏州市</area>
+</city>
+<city id="170" name="宿迁市">
+<area id="1927">沭阳县</area>
+<area id="1959">泗洪县</area>
+<area id="1962">泗阳县</area>
+<area id="1981">宿城区</area>
+<area id="1983">宿豫区</area>
+<area id="3054">宿迁市</area>
+</city>
+<city id="171" name="泰州市">
+<area id="583">高港区</area>
+<area id="685">海陵区</area>
+<area id="966">姜堰市</area>
+<area id="1050">靖江市</area>
+<area id="2026">泰兴市</area>
+<area id="2434">兴化市</area>
+<area id="3055">泰州市</area>
+</city>
+<city id="172" name="无锡市">
+<area id="116">北塘区</area>
+<area id="127">滨湖区</area>
+<area id="247">崇安区</area>
+<area id="871">惠山区</area>
+<area id="960">江阴市</area>
+<area id="1504">南长区</area>
+<area id="2303">锡山区</area>
+<area id="2569">宜兴市</area>
+<area id="3056">无锡市</area>
+</city>
+<city id="173" name="徐州市">
+<area id="495">丰县</area>
+<area id="633">鼓楼区</area>
+<area id="917">贾汪区</area>
+<area id="1062">九里区</area>
+<area id="1581">沛县</area>
+<area id="1591">邳州市</area>
+<area id="1769">泉山区</area>
+<area id="1984">睢宁县</area>
+<area id="2105">铜山县</area>
+<area id="2419">新沂市</area>
+<area id="2716">云龙区</area>
+<area id="3057">徐州市</area>
+</city>
+<city id="174" name="盐城市">
+<area id="126">滨海县</area>
+<area id="290">大丰市</area>
+<area id="415">东台市</area>
+<area id="542">阜宁县</area>
+<area id="926">建湖县</area>
+<area id="1873">射阳县</area>
+<area id="2075">亭湖区</area>
+<area id="2349">响水县</area>
+<area id="2505">盐都区</area>
+<area id="3058">盐城市</area>
+</city>
+<city id="175" name="扬州市">
+<area id="95">宝应县</area>
+<area id="656">广陵区</area>
+<area id="699">邗江区</area>
+<area id="948">江都市</area>
+<area id="975">维扬区</area>
+<area id="2556">仪征市</area>
+<area id="3059">扬州市</area>
+<area id="3289">高邮市</area>
+</city>
+<city id="176" name="镇江市">
+<area id="327">丹徒区</area>
+<area id="328">丹阳市</area>
+<area id="1029">京口区</area>
+<area id="1072">句容市</area>
+<area id="1806">润州区</area>
+<area id="2521">扬中市</area>
+<area id="3060">镇江市</area>
+</city>
+</province>
+<province id="17" name="江西省">
+<city id="177" name="抚州市">
+<area id="251">崇仁县</area>
+<area id="418">东乡县</area>
+<area id="650">广昌县</area>
+<area id="1012">金溪县</area>
+<area id="1156">乐安县</area>
+<area id="1177">黎川县</area>
+<area id="1236">临川区</area>
+<area id="1505">南城县</area>
+<area id="1508">南丰县</area>
+<area id="2566">宜黄县</area>
+<area id="2836">资溪县</area>
+<area id="3061">抚州市</area>
+</city>
+<city id="178" name="赣州市">
+<area id="44">安远县</area>
+<area id="255">崇义县</area>
+<area id="316">大余县</area>
+<area id="377">定南县</area>
+<area id="570">赣县</area>
+<area id="859">会昌县</area>
+<area id="1309">龙南县</area>
+<area id="1522">南康市</area>
+<area id="1553">宁都县</area>
+<area id="1766">全南县</area>
+<area id="1805">瑞金市</area>
+<area id="1862">上犹县</area>
+<area id="1891">石城县</area>
+<area id="2423">信丰县</area>
+<area id="2431">兴国县</area>
+<area id="2481">寻乌县</area>
+<area id="2647">于都县</area>
+<area id="2752">章贡区</area>
+<area id="3062">赣州市</area>
+</city>
+<city id="179" name="吉安市">
+<area id="23">安福县</area>
+<area id="886">吉安县</area>
+<area id="892">吉水县</area>
+<area id="894">吉州区</area>
+<area id="1039">井冈山市</area>
+<area id="1723">青原区</area>
+<area id="1997">遂川县</area>
+<area id="2021">泰和县</area>
+<area id="2124">万安县</area>
+<area id="2309">峡江县</area>
+<area id="2385">新干县</area>
+<area id="2614">永丰县</area>
+<area id="2633">永新县</area>
+<area id="3063">吉安市</area>
+</city>
+<city id="180" name="景德镇市">
+<area id="168">昌江区</area>
+<area id="522">浮梁县</area>
+<area id="1161">乐平市</area>
+<area id="2824">珠山区</area>
+<area id="3064">景德镇市</area>
+</city>
+<city id="181" name="九江市">
+<area id="345">德安县</area>
+<area id="431">都昌县</area>
+<area id="791">湖口县</area>
+<area id="1061">九江县</area>
+<area id="1341">庐山区</area>
+<area id="1585">彭泽县</area>
+<area id="1804">瑞昌市</area>
+<area id="2245">武宁县</area>
+<area id="2448">星子县</area>
+<area id="2454">修水县</area>
+<area id="2484">浔阳区</area>
+<area id="2635">永修县</area>
+<area id="3065">九江市</area>
+<area id="3307">共青城市</area>
+</city>
+<city id="182" name="南昌市">
+<area id="42">安义县</area>
+<area id="400">东湖区</area>
+<area id="1022">进贤县</area>
+<area id="1503">南昌县</area>
+<area id="1713">青山湖区</area>
+<area id="1724">青云谱区</area>
+<area id="2122">湾里区</area>
+<area id="2274">西湖区</area>
+<area id="2394">新建县</area>
+<area id="3066">南昌市</area>
+<area id="3301">红谷滩新区</area>
+</city>
+<city id="183" name="萍乡市">
+<area id="43">安源区</area>
+<area id="1213">莲花县</area>
+<area id="1345">芦溪县</area>
+<area id="1858">上栗县</area>
+<area id="2335">湘东区</area>
+<area id="3067">萍乡市</area>
+</city>
+<city id="184" name="上饶市">
+<area id="357">德兴市</area>
+<area id="652">广丰县</area>
+<area id="759">横峰县</area>
+<area id="1635">鄱阳县</area>
+<area id="1678">铅山县</area>
+<area id="1860">上饶县</area>
+<area id="2126">万年县</area>
+<area id="2262">婺源县</area>
+<area id="2425">信州区</area>
+<area id="2576">弋阳县</area>
+<area id="2650">余干县</area>
+<area id="2677">玉山县</area>
+<area id="3068">上饶市</area>
+</city>
+<city id="185" name="新余市">
+<area id="484">分宜县</area>
+<area id="2645">渝水区</area>
+<area id="3069">新余市</area>
+</city>
+<city id="186" name="宜春市">
+<area id="487">丰城市</area>
+<area id="514">奉新县</area>
+<area id="580">高安市</area>
+<area id="1048">靖安县</area>
+<area id="1855">上高县</area>
+<area id="2099">铜鼓县</area>
+<area id="2134">万载县</area>
+<area id="2565">宜丰县</area>
+<area id="2698">袁州区</area>
+<area id="2758">樟树市</area>
+<area id="3070">宜春市</area>
+</city>
+<city id="187" name="鹰潭市">
+<area id="668">贵溪市</area>
+<area id="2652">余江县</area>
+<area id="2702">月湖区</area>
+<area id="3071">鹰潭市</area>
+</city>
+</province>
+<province id="18" name="辽宁省">
+<city id="188" name="鞍山市">
+<area id="678">海城市</area>
+<area id="1190">立山区</area>
+<area id="1674">千山区</area>
+<area id="2005">台安县</area>
+<area id="2066">铁东区</area>
+<area id="2074">铁西区</area>
+<area id="2463">岫岩满族自治县</area>
+<area id="3072">鞍山市</area>
+</city>
+<city id="189" name="本溪市">
+<area id="1471">明山区</area>
+<area id="1507">南芬区</area>
+<area id="1616">平山区</area>
+<area id="2300">溪湖区</area>
+<area id="3073">本溪市</area>
+<area id="3282">本溪满族自治县</area>
+<area id="3304">桓仁满族自治县</area>
+</city>
+<city id="190" name="朝阳市">
+<area id="113">北票市</area>
+<area id="206">朝阳县</area>
+<area id="930">建平县</area>
+<area id="1080">喀喇沁左翼蒙古族自治县</area>
+<area id="1277">凌源市</area>
+<area id="1294">龙城区</area>
+<area id="1939">双塔区</area>
+<area id="3074">朝阳市</area>
+</city>
+<city id="191" name="大连市">
+<area id="182">长海县</area>
+<area id="564">甘井子区</area>
+<area id="1017">金州区</area>
+<area id="1369">旅顺口区</area>
+<area id="1649">普兰店市</area>
+<area id="1825">沙河口区</area>
+<area id="2121">瓦房店市</area>
+<area id="2270">西岗区</area>
+<area id="2808">中山区</area>
+<area id="2829">庄河市</area>
+<area id="3075">大连市</area>
+</city>
+<city id="192" name="丹东市">
+<area id="396">东港市</area>
+<area id="501">凤城市</area>
+<area id="1119">宽甸满族自治县</area>
+<area id="2686">元宝区</area>
+<area id="2774">振安区</area>
+<area id="2775">振兴区</area>
+<area id="3076">丹东市</area>
+</city>
+<city id="193" name="抚顺市">
+<area id="426">东洲区</area>
+<area id="535">抚顺县</area>
+<area id="1739">清原满族自治县</area>
+<area id="1946">顺城区</area>
+<area id="2141">望花区</area>
+<area id="2375">新宾满族自治县</area>
+<area id="2384">新抚区</area>
+<area id="3077">抚顺市</area>
+</city>
+<city id="194" name="阜新市">
+<area id="544">阜新蒙古族自治县</area>
+<area id="697">海州区</area>
+<area id="1728">清河门区</area>
+<area id="2018">太平区</area>
+<area id="2308">细河区</area>
+<area id="2406">新邱区</area>
+<area id="2754">彰武县</area>
+<area id="3078">阜新市</area>
+</city>
+<city id="195" name="葫芦岛市">
+<area id="924">建昌县</area>
+<area id="1205">连山区</area>
+<area id="1298">龙港区</area>
+<area id="1528">南票区</area>
+<area id="1995">绥中县</area>
+<area id="2430">兴城市</area>
+<area id="3079">葫芦岛市</area>
+</city>
+<city id="196" name="锦州市">
+<area id="112">北宁市</area>
+<area id="624">古塔区</area>
+<area id="756">黑山县</area>
+<area id="1275">凌海市</area>
+<area id="1276">凌河区</area>
+<area id="2014">太和区</area>
+<area id="2575">义县</area>
+<area id="3080">锦州市</area>
+</city>
+<city id="197" name="辽阳市">
+<area id="73">白塔区</area>
+<area id="358">灯塔市</area>
+<area id="606">弓长岭区</area>
+<area id="777">宏伟区</area>
+<area id="1224">辽阳县</area>
+<area id="2020">太子河区</area>
+<area id="2177">文圣区</area>
+<area id="3081">辽阳市</area>
+</city>
+<city id="198" name="盘锦市">
+<area id="305">大洼县</area>
+<area id="1577">盘山县</area>
+<area id="1940">双台子区</area>
+<area id="2435">兴隆台区</area>
+<area id="3082">盘锦市</area>
+</city>
+<city id="199" name="沈阳市">
+<area id="287">大东区</area>
+<area id="404">东陵区</area>
+<area id="465">法库县</area>
+<area id="728">和平区</area>
+<area id="835">皇姑区</area>
+<area id="1098">康平县</area>
+<area id="1225">辽中县</area>
+<area id="1880">沈河区</area>
+<area id="1973">苏家屯区</area>
+<area id="2073">铁西区</area>
+<area id="2381">沈北新区</area>
+<area id="2401">新民市</area>
+<area id="2648">于洪区</area>
+<area id="3083">沈阳市</area>
+</city>
+<city id="200" name="铁岭市">
+<area id="173">昌图县</area>
+<area id="366">调兵山市</area>
+<area id="1091">开原市</area>
+<area id="1730">清河区</area>
+<area id="2069">铁岭县</area>
+<area id="2268">西丰县</area>
+<area id="2584">银州区</area>
+<area id="3084">铁岭市</area>
+</city>
+<city id="201" name="营口市">
+<area id="65">鲅鱼圈区</area>
+<area id="299">大石桥市</area>
+<area id="561">盖州市</area>
+<area id="1153">老边区</area>
+<area id="2288">西市区</area>
+<area id="2745">站前区</area>
+<area id="3085">营口市</area>
+</city>
+</province>
+<province id="19" name="内蒙古自治区">
+<city id="202" name="巴彦淖尔市">
+<area id="361">磴口县</area>
+<area id="715">杭锦后旗</area>
+<area id="1240">临河区</area>
+<area id="2191">乌拉特后旗</area>
+<area id="2192">乌拉特前旗</area>
+<area id="2193">乌拉特中旗</area>
+<area id="2226">五原县</area>
+<area id="3086">巴彦淖尔市</area>
+</city>
+<city id="203" name="包头市">
+<area id="77">白云矿区</area>
+<area id="278">达尔罕茂明安联合旗</area>
+<area id="399">东河区</area>
+<area id="636">固阳县</area>
+<area id="1066">九原区</area>
+<area id="1124">昆都仑区</area>
+<area id="1715">青山区</area>
+<area id="1894">石拐区</area>
+<area id="2111">土默特右旗</area>
+<area id="3087">包头市</area>
+</city>
+<city id="204" name="赤峰市">
+<area id="49">敖汉旗</area>
+<area id="57">巴林右旗</area>
+<area id="58">巴林左旗</area>
+<area id="773">红山区</area>
+<area id="1079">喀喇沁旗</area>
+<area id="1111">克什克腾旗</area>
+<area id="1230">林西县</area>
+<area id="1552">宁城县</area>
+<area id="1966">松山区</area>
+<area id="2183">翁牛特旗</area>
+<area id="2687">元宝山区</area>
+<area id="3088">赤峰市</area>
+<area id="3294">阿鲁科尔沁旗</area>
+</city>
+<city id="205" name="呼和浩特市">
+<area id="726">和林格尔县</area>
+<area id="857">回民区</area>
+<area id="1735">清水河县</area>
+<area id="1812">赛罕区</area>
+<area id="2112">土默特左旗</area>
+<area id="2118">托克托县</area>
+<area id="2233">武川县</area>
+<area id="2379">新城区</area>
+<area id="2676">玉泉区</area>
+<area id="3089">呼和浩特市</area>
+</city>
+<city id="206" name="呼伦贝尔市">
+<area id="14">阿荣旗</area>
+<area id="211">陈巴尔虎旗</area>
+<area id="448">额尔古纳市</area>
+<area id="453">鄂伦春自治旗</area>
+<area id="456">鄂温克族自治旗</area>
+<area id="602">根河市</area>
+<area id="683">海拉尔区</area>
+<area id="1418">满洲里市</area>
+<area id="1474">莫力达瓦达斡尔族自治旗</area>
+<area id="2372">新巴尔虎右旗</area>
+<area id="2373">新巴尔虎左旗</area>
+<area id="2487">牙克石市</area>
+<area id="2738">扎兰屯市</area>
+<area id="3090">呼伦贝尔市</area>
+</city>
+<city id="207" name="通辽市">
+<area id="877">霍林郭勒市</area>
+<area id="1086">开鲁县</area>
+<area id="1102">科尔沁区</area>
+<area id="1105">科尔沁左翼后旗</area>
+<area id="1106">科尔沁左翼中旗</area>
+<area id="1116">库伦旗</area>
+<area id="1497">奈曼旗</area>
+<area id="2739">扎鲁特旗</area>
+<area id="3091">通辽市</area>
+</city>
+<city id="208" name="乌海市">
+<area id="675">海勃湾区</area>
+<area id="688">海南区</area>
+<area id="2188">乌达区</area>
+<area id="3092">乌海市</area>
+</city>
+<city id="209" name="乌兰察布市">
+<area id="158">察哈尔右翼后旗</area>
+<area id="159">察哈尔右翼前旗</area>
+<area id="160">察哈尔右翼中旗</area>
+<area id="497">丰镇市</area>
+<area id="813">化德县</area>
+<area id="898">集宁区</area>
+<area id="1216">凉城县</area>
+<area id="1847">商都县</area>
+<area id="1958">四子王旗</area>
+<area id="2433">兴和县</area>
+<area id="2833">卓资县</area>
+<area id="3093">乌兰察布市</area>
+</city>
+<city id="408" name="鄂尔多斯市">
+<area id="279">达拉特旗</area>
+<area id="414">东胜区</area>
+<area id="452">鄂尔多斯市</area>
+<area id="454">鄂托克旗</area>
+<area id="455">鄂托克前旗</area>
+<area id="716">杭锦旗</area>
+<area id="2199">乌审旗</area>
+<area id="2547">伊金霍洛旗</area>
+<area id="2831">准格尔旗</area>
+</city>
+<city id="2091" name="锡林郭勒盟">
+<area id="1">阿巴嘎旗</area>
+<area id="416">东乌珠穆沁旗</area>
+<area id="444">多伦县</area>
+<area id="463">二连浩特市</area>
+<area id="1974">苏尼特右旗</area>
+<area id="1975">苏尼特左旗</area>
+<area id="2019">太仆寺旗</area>
+<area id="2289">西乌珠穆沁旗</area>
+<area id="2301">锡林郭勒盟</area>
+<area id="2302">锡林浩特市</area>
+<area id="2346">镶黄旗</area>
+<area id="2791">正蓝旗</area>
+<area id="2793">正镶白旗</area>
+</city>
+<city id="2092" name="阿拉善盟">
+<area id="9">阿拉善盟</area>
+<area id="10">阿拉善右旗</area>
+<area id="11">阿拉善左旗</area>
+<area id="449">额济纳旗</area>
+</city>
+<city id="2093" name="兴安盟">
+<area id="4">阿尔山市</area>
+<area id="1103">科尔沁右翼前旗</area>
+<area id="1104">科尔沁右翼中旗</area>
+<area id="2109">突泉县</area>
+<area id="2194">乌兰浩特市</area>
+<area id="2426">兴安盟</area>
+<area id="2737">扎赉特旗</area>
+</city>
+</province>
+<province id="20" name="宁夏回族自治区">
+<city id="210" name="固原市">
+<area id="1034">泾源县</area>
+<area id="1325">隆德县</area>
+<area id="1584">彭阳县</area>
+<area id="2277">西吉县</area>
+<area id="2697">原州区</area>
+<area id="3094">固原市</area>
+</city>
+<city id="211" name="石嘴山市">
+<area id="306">大武口区</area>
+<area id="870">惠农区</area>
+<area id="1612">平罗县</area>
+<area id="3095">石嘴山市</area>
+</city>
+<city id="212" name="吴忠市">
+<area id="1193">利通区</area>
+<area id="1718">青铜峡市</area>
+<area id="2093">同心县</area>
+<area id="2504">盐池县</area>
+<area id="3096">吴忠市</area>
+</city>
+<city id="213" name="银川市">
+<area id="748">贺兰县</area>
+<area id="995">金凤区</area>
+<area id="1273">灵武市</area>
+<area id="2291">西夏区</area>
+<area id="2440">兴庆区</area>
+<area id="2624">永宁县</area>
+<area id="3097">银川市</area>
+</city>
+<city id="214" name="中卫市">
+<area id="695">海原县</area>
+<area id="1828">沙坡头区</area>
+<area id="2806">中宁县</area>
+<area id="3098">中卫市</area>
+</city>
+</province>
+<province id="21" name="青海省">
+<city id="215" name="果洛藏族自治州">
+<area id="84">班玛县</area>
+<area id="280">达日县</area>
+<area id="562">甘德县</area>
+<area id="1068">久治县</area>
+<area id="1412">玛多县</area>
+<area id="1414">玛沁县</area>
+<area id="3099">果洛藏族自治州</area>
+</city>
+<city id="216" name="海北藏族自治州">
+<area id="572">刚察县</area>
+<area id="693">海晏县</area>
+<area id="1436">门源回族自治县</area>
+<area id="1660">祁连县</area>
+<area id="3100">海北藏族自治州</area>
+</city>
+<city id="217" name="海南藏族自治州">
+<area id="614">共和县</area>
+<area id="665">贵德县</area>
+<area id="667">贵南县</area>
+<area id="2090">同德县</area>
+<area id="2432">兴海县</area>
+<area id="3101">海南藏族自治州</area>
+</city>
+<city id="218" name="海西蒙古族藏族自治州">
+<area id="353">德令哈市</area>
+<area id="433">都兰县</area>
+<area id="600">格尔木市</area>
+<area id="2050">天峻县</area>
+<area id="2195">乌兰县</area>
+<area id="3102">海西蒙古族藏族自治州</area>
+</city>
+<city id="219" name="黄南藏族自治州">
+<area id="744">河南蒙古族自治县</area>
+<area id="920">尖扎县</area>
+<area id="2092">同仁县</area>
+<area id="2732">泽库县</area>
+<area id="3103">黄南藏族自治州</area>
+</city>
+<city id="220" name="西宁市">
+<area id="220">城北区</area>
+<area id="222">城东区</area>
+<area id="232">城西区</area>
+<area id="236">城中区</area>
+<area id="301">大通回族土族自治县</area>
+<area id="849">湟源县</area>
+<area id="850">湟中县</area>
+<area id="3104">西宁市</area>
+</city>
+<city id="221" name="玉树藏族自治州">
+<area id="213">称多县</area>
+<area id="1542">囊谦县</area>
+<area id="1757">曲麻莱县</area>
+<area id="2678">玉树县</area>
+<area id="2728">杂多县</area>
+<area id="2802">治多县</area>
+<area id="3105">玉树藏族自治州</area>
+</city>
+<city id="412" name="海东地区">
+<area id="680">海东地区</area>
+<area id="795">互助土族自治县</area>
+<area id="814">化隆回族自治县</area>
+<area id="1159">乐都县</area>
+<area id="1461">民和回族土族自治县</area>
+<area id="1595">平安县</area>
+<area id="2485">循化撒拉族自治县</area>
+</city>
+</province>
+<province id="22" name="山东省">
+<city id="222" name="滨州市">
+<area id="125">滨城区</area>
+<area id="138">博兴县</area>
+<area id="869">惠民县</area>
+<area id="2205">无棣县</area>
+<area id="2533">阳信县</area>
+<area id="2743">沾化县</area>
+<area id="2851">邹平县</area>
+<area id="3106">滨州市</area>
+</city>
+<city id="223" name="德州市">
+<area id="348">德城区</area>
+<area id="1160">乐陵市</area>
+<area id="1259">临邑县</area>
+<area id="1281">陵县</area>
+<area id="1559">宁津县</area>
+<area id="1628">平原县</area>
+<area id="1664">齐河县</area>
+<area id="1747">庆云县</area>
+<area id="2232">武城县</area>
+<area id="2317">夏津县</area>
+<area id="2669">禹城市</area>
+<area id="3107">德州市</area>
+</city>
+<city id="224" name="东营市">
+<area id="423">东营区</area>
+<area id="660">广饶县</area>
+<area id="742">河口区</area>
+<area id="1112">垦利县</area>
+<area id="1192">利津县</area>
+<area id="3108">东营市</area>
+</city>
+<city id="225" name="菏泽市">
+<area id="151">曹县</area>
+<area id="216">成武县</area>
+<area id="330">单县</area>
+<area id="379">定陶县</area>
+<area id="405">东明县</area>
+<area id="1074">巨野县</area>
+<area id="1075">鄄城县</area>
+<area id="1482">牡丹区</area>
+<area id="2727">郓城县</area>
+<area id="3109">菏泽市</area>
+</city>
+<city id="226" name="济南市">
+<area id="187">长清区</area>
+<area id="830">槐荫区</area>
+<area id="900">济阳县</area>
+<area id="1188">历城区</area>
+<area id="1189">历下区</area>
+<area id="1626">平阴县</area>
+<area id="1848">商河县</area>
+<area id="1912">市中区</area>
+<area id="2052">天桥区</area>
+<area id="2753">章丘市</area>
+<area id="3110">济南市</area>
+</city>
+<city id="227" name="济宁市">
+<area id="913">嘉祥县</area>
+<area id="1013">金乡县</area>
+<area id="1220">梁山县</area>
+<area id="1755">曲阜市</area>
+<area id="1781">任城区</area>
+<area id="1914">市中区</area>
+<area id="1960">泗水县</area>
+<area id="2149">微山县</area>
+<area id="2182">汶上县</area>
+<area id="2513">兖州市</area>
+<area id="2657">鱼台县</area>
+<area id="2850">邹城市</area>
+<area id="3111">济宁市</area>
+</city>
+<city id="228" name="莱芜市">
+<area id="574">钢城区</area>
+<area id="1131">莱城区</area>
+<area id="3112">莱芜市</area>
+</city>
+<city id="229" name="聊城市">
+<area id="242">茌平县</area>
+<area id="384">东阿县</area>
+<area id="388">东昌府区</area>
+<area id="591">高唐县</area>
+<area id="641">冠县</area>
+<area id="1243">临清市</area>
+<area id="2370">莘县</area>
+<area id="2526">阳谷县</area>
+<area id="3113">聊城市</area>
+</city>
+<city id="230" name="临沂市">
+<area id="148">苍山县</area>
+<area id="483">费县</area>
+<area id="738">河东区</area>
+<area id="1070">莒南县</area>
+<area id="1138">兰山区</area>
+<area id="1246">临沭县</area>
+<area id="1388">罗庄区</area>
+<area id="1441">蒙阴县</area>
+<area id="1625">平邑县</area>
+<area id="2027">郯城县</area>
+<area id="2558">沂南县</area>
+<area id="2559">沂水县</area>
+<area id="3114">临沂市</area>
+</city>
+<city id="231" name="青岛市">
+<area id="234">城阳区</area>
+<area id="837">黄岛区</area>
+<area id="895">即墨市</area>
+<area id="978">胶南市</area>
+<area id="979">胶州市</area>
+<area id="1133">莱西市</area>
+<area id="1152">崂山区</area>
+<area id="1182">李沧区</area>
+<area id="1600">平度市</area>
+<area id="1910">市北区</area>
+<area id="1911">市南区</area>
+<area id="1955">四方区</area>
+<area id="3115">青岛市</area>
+</city>
+<city id="232" name="日照市">
+<area id="395">东港区</area>
+<area id="1071">莒县</area>
+<area id="1142">岚山区</area>
+<area id="2222">五莲县</area>
+<area id="3116">日照市</area>
+</city>
+<city id="233" name="泰安市">
+<area id="321">岱岳区</area>
+<area id="407">东平县</area>
+<area id="479">肥城市</area>
+<area id="1570">宁阳县</area>
+<area id="2024">泰山区</area>
+<area id="2411">新泰市</area>
+<area id="3117">泰安市</area>
+</city>
+<city id="234" name="威海市">
+<area id="831">环翠区</area>
+<area id="1786">荣成市</area>
+<area id="1800">乳山市</area>
+<area id="2174">文登市</area>
+<area id="3118">威海市</area>
+</city>
+<city id="235" name="潍坊市">
+<area id="32">安丘市</area>
+<area id="169">昌乐县</area>
+<area id="175">昌邑市</area>
+<area id="474">坊子区</area>
+<area id="585">高密市</area>
+<area id="704">寒亭区</area>
+<area id="1123">奎文区</area>
+<area id="1244">临朐县</area>
+<area id="1725">青州市</area>
+<area id="1918">寿光市</area>
+<area id="2153">潍城区</area>
+<area id="2825">诸城市</area>
+<area id="3119">潍坊市</area>
+</city>
+<city id="236" name="烟台市">
+<area id="179">长岛县</area>
+<area id="532">福山区</area>
+<area id="694">海阳市</area>
+<area id="1132">莱山区</area>
+<area id="1134">莱阳市</area>
+<area id="1135">莱州市</area>
+<area id="1304">龙口市</area>
+<area id="1481">牟平区</area>
+<area id="1589">蓬莱市</area>
+<area id="1657">栖霞市</area>
+<area id="2759">招远市</area>
+<area id="2796">芝罘区</area>
+<area id="3120">烟台市</area>
+</city>
+<city id="237" name="枣庄市">
+<area id="1840">山亭区</area>
+<area id="1913">市中区</area>
+<area id="2006">台儿庄区</area>
+<area id="2044">滕州市</area>
+<area id="2479">薛城区</area>
+<area id="2577">峄城区</area>
+<area id="3121">枣庄市</area>
+</city>
+<city id="238" name="淄博市">
+<area id="137">博山区</area>
+<area id="589">高青县</area>
+<area id="834">桓台县</area>
+<area id="1263">临淄区</area>
+<area id="2560">沂源县</area>
+<area id="2748">张店区</area>
+<area id="2819">周村区</area>
+<area id="2841">淄川区</area>
+<area id="3122">淄博市</area>
+</city>
+</province>
+<province id="23" name="山西省">
+<city id="239" name="长治市">
+<area id="197">长治县</area>
+<area id="199">长子县</area>
+<area id="230">城区</area>
+<area id="789">壶关县</area>
+<area id="977">郊区</area>
+<area id="1176">黎城县</area>
+<area id="1368">潞城市</area>
+<area id="1618">平顺县</area>
+<area id="1704">沁县</area>
+<area id="1706">沁源县</area>
+<area id="2116">屯留县</area>
+<area id="2251">武乡县</area>
+<area id="2345">襄垣县</area>
+<area id="3123">长治市</area>
+</city>
+<city id="240" name="大同市">
+<area id="228">城区</area>
+<area id="304">大同县</area>
+<area id="655">广灵县</area>
+<area id="874">浑源县</area>
+<area id="1120">矿区</area>
+<area id="1268">灵丘县</area>
+<area id="1519">南郊区</area>
+<area id="2058">天镇县</area>
+<area id="2407">新荣区</area>
+<area id="2525">阳高县</area>
+<area id="2856">左云县</area>
+<area id="3124">大同市</area>
+</city>
+<city id="241" name="晋城市">
+<area id="231">城区</area>
+<area id="587">高平市</area>
+<area id="1279">陵川县</area>
+<area id="1703">沁水县</area>
+<area id="2522">阳城县</area>
+<area id="2734">泽州县</area>
+<area id="3125">晋城市</area>
+</city>
+<city id="242" name="晋中市">
+<area id="731">和顺县</area>
+<area id="987">介休市</area>
+<area id="1270">灵石县</area>
+<area id="1624">平遥县</area>
+<area id="1662">祁县</area>
+<area id="1921">寿阳县</area>
+<area id="2013">太谷县</area>
+<area id="2295">昔阳县</area>
+<area id="2658">榆次区</area>
+<area id="2659">榆社县</area>
+<area id="2855">左权县</area>
+<area id="3126">晋中市</area>
+</city>
+<city id="243" name="临汾市">
+<area id="46">安泽县</area>
+<area id="297">大宁县</area>
+<area id="485">汾西县</area>
+<area id="523">浮山县</area>
+<area id="626">古县</area>
+<area id="778">洪洞县</area>
+<area id="785">侯马市</area>
+<area id="880">霍州市</area>
+<area id="893">吉县</area>
+<area id="1638">蒲县</area>
+<area id="1760">曲沃县</area>
+<area id="2306">隰县</area>
+<area id="2327">乡宁县</area>
+<area id="2343">襄汾县</area>
+<area id="2539">尧都区</area>
+<area id="2581">翼城县</area>
+<area id="2616">永和县</area>
+<area id="3127">临汾市</area>
+</city>
+<city id="244" name="吕梁市">
+<area id="472">方山县</area>
+<area id="486">汾阳市</area>
+<area id="969">交城县</area>
+<area id="970">交口县</area>
+<area id="1143">岚县</area>
+<area id="1175">离石区</area>
+<area id="1255">临县</area>
+<area id="1288">柳林县</area>
+<area id="1898">石楼县</area>
+<area id="2178">文水县</area>
+<area id="2364">孝义市</area>
+<area id="2445">兴县</area>
+<area id="2809">中阳县</area>
+<area id="3128">吕梁市</area>
+</city>
+<city id="245" name="朔州市">
+<area id="823">怀仁县</area>
+<area id="1610">平鲁区</area>
+<area id="1843">山阴县</area>
+<area id="1952">朔城区</area>
+<area id="2589">应县</area>
+<area id="2643">右玉县</area>
+<area id="3129">朔州市</area>
+</city>
+<city id="246" name="太原市">
+<area id="621">古交市</area>
+<area id="918">尖草坪区</area>
+<area id="1026">晋源区</area>
+<area id="1335">娄烦县</area>
+<area id="1738">清徐县</area>
+<area id="2125">万柏林区</area>
+<area id="2359">小店区</area>
+<area id="2451">杏花岭区</area>
+<area id="2528">阳曲县</area>
+<area id="2595">迎泽区</area>
+<area id="3130">太原市</area>
+</city>
+<city id="247" name="忻州市">
+<area id="96">保德县</area>
+<area id="319">代县</area>
+<area id="380">定襄县</area>
+<area id="469">繁峙县</area>
+<area id="745">河曲县</area>
+<area id="1057">静乐县</area>
+<area id="1107">岢岚县</area>
+<area id="1567">宁武县</area>
+<area id="1594">偏关县</area>
+<area id="1878">神池县</area>
+<area id="2223">五台县</area>
+<area id="2227">五寨县</area>
+<area id="2368">忻府区</area>
+<area id="2695">原平市</area>
+<area id="3131">忻州市</area>
+</city>
+<city id="248" name="阳泉市">
+<area id="229">城区</area>
+<area id="976">郊区</area>
+<area id="1121">矿区</area>
+<area id="1599">平定县</area>
+<area id="2655">盂县</area>
+<area id="3132">阳泉市</area>
+</city>
+<city id="249" name="运城市">
+<area id="741">河津市</area>
+<area id="903">稷山县</area>
+<area id="968">绛县</area>
+<area id="1258">临猗县</area>
+<area id="1611">平陆县</area>
+<area id="1802">芮城县</area>
+<area id="2129">万荣县</area>
+<area id="2180">闻喜县</area>
+<area id="2318">夏县</area>
+<area id="2395">新绛县</area>
+<area id="2506">盐湖区</area>
+<area id="2619">永济市</area>
+<area id="2694">垣曲县</area>
+<area id="3133">运城市</area>
+</city>
+</province>
+<province id="24" name="陕西省">
+<city id="250" name="安康市">
+<area id="68">白河县</area>
+<area id="706">汉滨区</area>
+<area id="713">汉阴县</area>
+<area id="1141">岚皋县</area>
+<area id="1566">宁陕县</area>
+<area id="1609">平利县</area>
+<area id="1904">石泉县</area>
+<area id="2482">旬阳县</area>
+<area id="2783">镇坪县</area>
+<area id="2847">紫阳县</area>
+<area id="3134">安康市</area>
+</city>
+<city id="251" name="宝鸡市">
+<area id="212">陈仓区</area>
+<area id="508">凤县</area>
+<area id="509">凤翔县</area>
+<area id="517">扶风县</area>
+<area id="1008">金台区</area>
+<area id="1264">麟游县</area>
+<area id="1334">陇县</area>
+<area id="1425">眉县</area>
+<area id="1665">岐山县</area>
+<area id="1675">千阳县</area>
+<area id="2011">太白县</area>
+<area id="2160">渭滨区</area>
+<area id="3135">宝鸡市</area>
+</city>
+<city id="252" name="汉中市">
+<area id="223">城固县</area>
+<area id="516">佛坪县</area>
+<area id="711">汉台区</area>
+<area id="1283">留坝县</area>
+<area id="1377">略阳县</area>
+<area id="1458">勉县</area>
+<area id="1541">南郑县</area>
+<area id="1565">宁强县</area>
+<area id="2293">西乡县</area>
+<area id="2537">洋县</area>
+<area id="2777">镇巴县</area>
+<area id="3136">汉中市</area>
+</city>
+<city id="253" name="商洛市">
+<area id="324">丹凤县</area>
+<area id="1394">洛南县</area>
+<area id="1842">山阳县</area>
+<area id="1849">商南县</area>
+<area id="1851">商州区</area>
+<area id="2776">镇安县</area>
+<area id="2857">柞水县</area>
+<area id="3137">商洛市</area>
+</city>
+<city id="254" name="铜川市">
+<area id="2137">王益区</area>
+<area id="2542">耀州区</area>
+<area id="2567">宜君县</area>
+<area id="2587">印台区</area>
+<area id="3138">铜川市</area>
+</city>
+<city id="255" name="渭南市">
+<area id="72">白水县</area>
+<area id="238">澄城县</area>
+<area id="295">大荔县</area>
+<area id="551">富平县</area>
+<area id="705">韩城市</area>
+<area id="722">合阳县</area>
+<area id="809">华县</area>
+<area id="810">华阴市</area>
+<area id="1250">临渭区</area>
+<area id="1636">蒲城县</area>
+<area id="2106">潼关县</area>
+<area id="3139">渭南市</area>
+</city>
+<city id="256" name="西安市">
+<area id="67">灞桥区</area>
+<area id="100">碑林区</area>
+<area id="177">长安区</area>
+<area id="584">高陵县</area>
+<area id="796">户县</area>
+<area id="1145">蓝田县</area>
+<area id="1212">莲湖区</area>
+<area id="1249">临潼区</area>
+<area id="2157">未央区</area>
+<area id="2380">新城区</area>
+<area id="2512">阎良区</area>
+<area id="2520">雁塔区</area>
+<area id="2821">周至县</area>
+<area id="3140">西安市</area>
+</city>
+<city id="257" name="咸阳市">
+<area id="124">彬县</area>
+<area id="193">长武县</area>
+<area id="263">淳化县</area>
+<area id="1033">泾阳县</area>
+<area id="1180">礼泉县</area>
+<area id="1701">秦都区</area>
+<area id="1821">三原县</area>
+<area id="2161">渭城区</area>
+<area id="2237">武功县</area>
+<area id="2439">兴平市</area>
+<area id="2483">旬邑县</area>
+<area id="2535">杨凌区</area>
+<area id="2630">永寿县</area>
+<area id="3141">咸阳市</area>
+<area id="3243">乾县</area>
+</city>
+<city id="258" name="延安市">
+<area id="34">安塞县</area>
+<area id="93">宝塔区</area>
+<area id="553">富县</area>
+<area id="567">甘泉县</area>
+<area id="839">黄陵县</area>
+<area id="840">黄龙县</area>
+<area id="1390">洛川县</area>
+<area id="2211">吴起县</area>
+<area id="2493">延长县</area>
+<area id="2494">延川县</area>
+<area id="2563">宜川县</area>
+<area id="2801">志丹县</area>
+<area id="2842">子长县</area>
+<area id="3142">延安市</area>
+</city>
+<city id="259" name="榆林市">
+<area id="374">定边县</area>
+<area id="538">府谷县</area>
+<area id="760">横山县</area>
+<area id="907">佳县</area>
+<area id="1049">靖边县</area>
+<area id="1452">米脂县</area>
+<area id="1732">清涧县</area>
+<area id="1879">神木县</area>
+<area id="1989">绥德县</area>
+<area id="2208">吴堡县</area>
+<area id="2661">榆阳区</area>
+<area id="2843">子洲县</area>
+<area id="3143">榆林市</area>
+</city>
+</province>
+<province id="25" name="上海市">
+<city id="260" name="上海市">
+<area id="92">宝山区</area>
+<area id="185">长宁区</area>
+<area id="250">崇明县</area>
+<area id="513">奉贤区</area>
+<area id="784">虹口区</area>
+<area id="844">黄浦区</area>
+<area id="908">嘉定区</area>
+<area id="1004">金山区</area>
+<area id="1055">静安区</area>
+<area id="1339">卢湾区</area>
+<area id="1466">闵行区</area>
+<area id="1516">南汇区</area>
+<area id="1642">浦东新区</area>
+<area id="1652">普陀区</area>
+<area id="1712">青浦区</area>
+<area id="1964">松江区</area>
+<area id="2465">徐汇区</area>
+<area id="2536">杨浦区</area>
+<area id="2742">闸北区</area>
+<area id="3144">上海市</area>
+</city>
+</province>
+<province id="26" name="四川省">
+<city id="261" name="阿坝藏族羌族自治州">
+<area id="2">阿坝县</area>
+<area id="757">黑水县</area>
+<area id="776">红原县</area>
+<area id="993">金川县</area>
+<area id="1067">九寨沟县</area>
+<area id="1184">理县</area>
+<area id="1406">马尔康县</area>
+<area id="1424">茂县</area>
+<area id="1771">壤塘县</area>
+<area id="1807">若尔盖县</area>
+<area id="1965">松潘县</area>
+<area id="2181">汶川县</area>
+<area id="2361">小金县</area>
+<area id="3145">阿坝藏族羌族自治州</area>
+</city>
+<city id="262" name="巴中市">
+<area id="64">巴州区</area>
+<area id="1518">南江县</area>
+<area id="1597">平昌县</area>
+<area id="2082">通江县</area>
+<area id="3146">巴中市</area>
+</city>
+<city id="263" name="成都市">
+<area id="215">成华区</area>
+<area id="256">崇州市</area>
+<area id="314">大邑县</area>
+<area id="432">都江堰市</area>
+<area id="1000">金牛区</area>
+<area id="1010">金堂县</area>
+<area id="1020">锦江区</area>
+<area id="1311">龙泉驿区</area>
+<area id="1586">彭州市</area>
+<area id="1593">郫县</area>
+<area id="1637">蒲江县</area>
+<area id="1707">青白江区</area>
+<area id="1721">青羊区</area>
+<area id="1748">邛崃市</area>
+<area id="1933">双流县</area>
+<area id="2166">温江区</area>
+<area id="2238">武侯区</area>
+<area id="2382">新都区</area>
+<area id="2396">新津县</area>
+<area id="3147">成都市</area>
+</city>
+<city id="264" name="达州市">
+<area id="281">达县</area>
+<area id="317">大竹县</area>
+<area id="1085">开江县</area>
+<area id="1763">渠县</area>
+<area id="2077">通川区</area>
+<area id="2133">万源市</area>
+<area id="2472">宣汉县</area>
+<area id="3148">达州市</area>
+</city>
+<city id="265" name="德阳市">
+<area id="653">广汉市</area>
+<area id="1037">旌阳区</area>
+<area id="1383">罗江县</area>
+<area id="1457">绵竹市</area>
+<area id="1890">什邡市</area>
+<area id="2804">中江县</area>
+<area id="3149">德阳市</area>
+</city>
+<city id="267" name="甘孜藏族自治州">
+<area id="62">巴塘县</area>
+<area id="76">白玉县</area>
+<area id="323">丹巴县</area>
+<area id="338">当雄县</area>
+<area id="343">稻城县</area>
+<area id="344">得荣县</area>
+<area id="349">德格县</area>
+<area id="569">甘孜县</area>
+<area id="1064">九龙县</area>
+<area id="1095">康定县</area>
+<area id="1183">理塘县</area>
+<area id="1346">泸定县</area>
+<area id="1351">炉霍县</area>
+<area id="1824">色达县</area>
+<area id="1903">石渠县</area>
+<area id="2326">乡城县</area>
+<area id="2398">新龙县</area>
+<area id="2488">雅江县</area>
+<area id="3151">甘孜藏族自治州</area>
+</city>
+<city id="268" name="广安市">
+<area id="649">广安区</area>
+<area id="811">华蓥市</area>
+<area id="1227">邻水县</area>
+<area id="2250">武胜县</area>
+<area id="2703">岳池县</area>
+<area id="3152">广安市</area>
+</city>
+<city id="269" name="广元市">
+<area id="150">苍溪县</area>
+<area id="203">朝天区</area>
+<area id="936">剑阁县</area>
+<area id="1708">青川县</area>
+<area id="1915">市中区</area>
+<area id="2138">旺苍县</area>
+<area id="2685">元坝区</area>
+<area id="3153">广元市</area>
+</city>
+<city id="270" name="乐山市">
+<area id="446">峨边彝族自治县</area>
+<area id="906">夹江县</area>
+<area id="922">犍为县</area>
+<area id="998">金口河区</area>
+<area id="1042">井研县</area>
+<area id="1404">马边彝族自治县</area>
+<area id="1486">沐川县</area>
+<area id="1830">沙湾区</area>
+<area id="1917">市中区</area>
+<area id="2224">五通桥区</area>
+<area id="3150">峨眉山市</area>
+<area id="3154">乐山市</area>
+</city>
+<city id="271" name="凉山彝族自治州">
+<area id="141">布拖县</area>
+<area id="347">德昌县</area>
+<area id="565">甘洛县</area>
+<area id="860">会东县</area>
+<area id="861">会理县</area>
+<area id="1015">金阳县</area>
+<area id="1166">雷波县</area>
+<area id="1432">美姑县</area>
+<area id="1459">冕宁县</area>
+<area id="1485">木里藏族自治县</area>
+<area id="1564">宁南县</area>
+<area id="1648">普格县</area>
+<area id="2307">喜德县</area>
+<area id="2511">盐源县</area>
+<area id="2711">越西县</area>
+<area id="2760">昭觉县</area>
+<area id="3155">凉山彝族自治州</area>
+<area id="3162">西昌市</area>
+</city>
+<city id="272" name="泸州市">
+<area id="623">古蔺县</area>
+<area id="718">合江县</area>
+<area id="959">江阳区</area>
+<area id="1307">龙马潭区</area>
+<area id="1350">泸县</area>
+<area id="1494">纳溪区</area>
+<area id="2469">叙永县</area>
+<area id="3156">泸州市</area>
+</city>
+<city id="273" name="眉山市">
+<area id="326">丹棱县</area>
+<area id="408">东坡区</area>
+<area id="782">洪雅县</area>
+<area id="1582">彭山县</area>
+<area id="1716">青神县</area>
+<area id="1780">仁寿县</area>
+<area id="3157">眉山市</area>
+</city>
+<city id="274" name="绵阳市">
+<area id="38">安县</area>
+<area id="104">北川羌族自治县</area>
+<area id="524">涪城区</area>
+<area id="962">江油市</area>
+<area id="1621">平武县</area>
+<area id="1819">三台县</area>
+<area id="2510">盐亭县</area>
+<area id="2638">游仙区</area>
+<area id="2845">梓潼县</area>
+<area id="3158">绵阳市</area>
+</city>
+<city id="275" name="内江市">
+<area id="420">东兴区</area>
+<area id="1324">隆昌县</area>
+<area id="1916">市中区</area>
+<area id="2148">威远县</area>
+<area id="2840">资中县</area>
+<area id="3159">内江市</area>
+</city>
+<city id="276" name="南充市">
+<area id="588">高坪区</area>
+<area id="911">嘉陵区</area>
+<area id="1150">阆中市</area>
+<area id="1501">南部县</area>
+<area id="1587">蓬安县</area>
+<area id="1950">顺庆区</area>
+<area id="2266">西充县</area>
+<area id="2555">仪陇县</area>
+<area id="2599">营山县</area>
+<area id="3160">南充市</area>
+</city>
+<city id="277" name="遂宁市">
+<area id="27">安居区</area>
+<area id="260">船山区</area>
+<area id="315">大英县</area>
+<area id="1590">蓬溪县</area>
+<area id="1872">射洪县</area>
+<area id="3161">遂宁市</area>
+</city>
+<city id="279" name="雅安市">
+<area id="94">宝兴县</area>
+<area id="714">汉源县</area>
+<area id="1343">芦山县</area>
+<area id="1469">名山县</area>
+<area id="1900">石棉县</area>
+<area id="2053">天全县</area>
+<area id="2597">荥经县</area>
+<area id="2664">雨城区</area>
+<area id="3163">雅安市</area>
+</city>
+<city id="280" name="宜宾市">
+<area id="186">长宁县</area>
+<area id="272">翠屏区</area>
+<area id="592">高县</area>
+<area id="613">珙县</area>
+<area id="939">江安县</area>
+<area id="1077">筠连县</area>
+<area id="1534">南溪县</area>
+<area id="1633">屏山县</area>
+<area id="2444">兴文县</area>
+<area id="2561">宜宾县</area>
+<area id="3164">宜宾市</area>
+</city>
+<city id="281" name="资阳市">
+<area id="45">安岳县</area>
+<area id="923">简阳市</area>
+<area id="1165">乐至县</area>
+<area id="2518">雁江区</area>
+<area id="3165">资阳市</area>
+</city>
+<city id="282" name="自贡市">
+<area id="283">大安区</area>
+<area id="552">富顺县</area>
+<area id="616">贡井区</area>
+<area id="1787">荣县</area>
+<area id="2501">沿滩区</area>
+<area id="2849">自流井区</area>
+<area id="3166">自贡市</area>
+</city>
+<city id="351" name="攀枝花市">
+<area id="409">东区</area>
+<area id="1451">米易县</area>
+<area id="1777">仁和区</area>
+<area id="2284">西区</area>
+<area id="2503">盐边县</area>
+<area id="3242">攀枝花市</area>
+</city>
+</province>
+<province id="28" name="天津市">
+<city id="283" name="天津市">
+<area id="88">宝坻区</area>
+<area id="103">北辰区</area>
+<area id="291">大港区</area>
+<area id="402">东丽区</area>
+<area id="708">汉沽区</area>
+<area id="729">和平区</area>
+<area id="737">河北区</area>
+<area id="739">河东区</area>
+<area id="746">河西区</area>
+<area id="772">红桥区</area>
+<area id="902">蓟县</area>
+<area id="1018">津南区</area>
+<area id="1056">静海县</area>
+<area id="1521">南开区</area>
+<area id="1556">宁河县</area>
+<area id="2035">塘沽区</area>
+<area id="2248">武清区</area>
+<area id="2283">西青区</area>
+<area id="3167">天津市</area>
+</city>
+</province>
+<province id="29" name="西藏自治区">
+<city id="284" name="阿里地区">
+<area id="275">措勤县</area>
+<area id="559">噶尔县</area>
+<area id="560">改则县</area>
+<area id="599">革吉县</area>
+<area id="1650">普兰县</area>
+<area id="1784">日土县</area>
+<area id="2741">札达县</area>
+<area id="3168">阿里地区</area>
+</city>
+<city id="285" name="昌都地区">
+<area id="53">八宿县</area>
+<area id="120">边坝县</area>
+<area id="161">察雅县</area>
+<area id="165">昌都县</area>
+<area id="370">丁青县</area>
+<area id="617">贡觉县</area>
+<area id="946">江达县</area>
+<area id="1170">类乌齐县</area>
+<area id="1393">洛隆县</area>
+<area id="1420">芒康县</area>
+<area id="2854">左贡县</area>
+<area id="3169">昌都地区</area>
+</city>
+<city id="286" name="拉萨市">
+<area id="225">城关区</area>
+<area id="282">达孜县</area>
+<area id="334">当雄县</area>
+<area id="441">堆龙德庆县</area>
+<area id="1233">林周县</area>
+<area id="1479">墨竹工卡县</area>
+<area id="1547">尼木县</area>
+<area id="1758">曲水县</area>
+<area id="3170">拉萨市</area>
+</city>
+<city id="287" name="林芝地区">
+<area id="129">波密县</area>
+<area id="162">察隅县</area>
+<area id="604">工布江达县</area>
+<area id="1149">朗县</area>
+<area id="1231">林芝县</area>
+<area id="1449">米林县</area>
+<area id="1477">墨脱县</area>
+<area id="3171">林芝地区</area>
+</city>
+<city id="288" name="那曲地区">
+<area id="22">安多县</area>
+<area id="61">巴青县</area>
+<area id="83">班戈县</area>
+<area id="117">比如县</area>
+<area id="910">嘉黎县</area>
+<area id="1493">那曲县</area>
+<area id="1546">尼玛县</area>
+<area id="1550">聂荣县</area>
+<area id="1875">申扎县</area>
+<area id="2001">索县</area>
+<area id="3172">那曲地区</area>
+</city>
+<city id="289" name="日喀则地区">
+<area id="3173">日喀则地区</area>
+</city>
+<city id="290" name="日喀则市">
+<area id="48">昂仁县</area>
+<area id="70">白朗县</area>
+<area id="376">定结县</area>
+<area id="378">定日县</area>
+<area id="573">岗巴县</area>
+<area id="888">吉隆县</area>
+<area id="965">江孜县</area>
+<area id="1097">康马县</area>
+<area id="1126">拉孜县</area>
+<area id="1526">南木林县</area>
+<area id="1549">聂拉木县</area>
+<area id="1776">仁布县</area>
+<area id="1810">萨嘎县</area>
+<area id="1811">萨迦县</area>
+<area id="2366">谢通门县</area>
+<area id="2489">亚东县</area>
+<area id="2817">仲巴县</area>
+<area id="3174">日喀则市</area>
+</city>
+<city id="291" name="山南地区">
+<area id="274">措美县</area>
+<area id="276">错那县</area>
+<area id="615">贡嘎县</area>
+<area id="905">加查县</area>
+<area id="1151">浪卡子县</area>
+<area id="1331">隆子县</area>
+<area id="1397">洛扎县</area>
+<area id="1496">乃东县</area>
+<area id="1750">琼结县</area>
+<area id="1759">曲松县</area>
+<area id="1822">桑日县</area>
+<area id="2740">扎囊县</area>
+<area id="3175">山南地区</area>
+</city>
+</province>
+<province id="31" name="新疆维吾尔自治区">
+<city id="292" name="阿克苏地区">
+<area id="7">阿克苏市</area>
+<area id="16">阿瓦提县</area>
+<area id="81">拜城县</area>
+<area id="1101">柯坪县</area>
+<area id="1114">库车县</area>
+<area id="1833">沙雅县</area>
+<area id="2169">温宿县</area>
+<area id="2200">乌什县</area>
+<area id="2386">新和县</area>
+<area id="3176">阿克苏地区</area>
+</city>
+<city id="293" name="阿拉尔市">
+<area id="3177">阿拉尔市</area>
+</city>
+<city id="294" name="阿勒泰地区">
+<area id="12">阿勒泰市</area>
+<area id="140">布尔津县</area>
+<area id="529">福海县</area>
+<area id="557">富蕴县</area>
+<area id="672">哈巴河县</area>
+<area id="889">吉木乃县</area>
+<area id="1710">青河县</area>
+<area id="3178">阿勒泰地区</area>
+</city>
+<city id="295" name="巴音郭楞蒙古自治州">
+<area id="134">博湖县</area>
+<area id="725">和静县</area>
+<area id="732">和硕县</area>
+<area id="1115">库尔勒市</area>
+<area id="1378">轮台县</area>
+<area id="1696">且末县</area>
+<area id="1808">若羌县</area>
+<area id="2158">尉犁县</area>
+<area id="2490">焉耆回族自治县</area>
+<area id="3179">巴音郭楞蒙古自治州</area>
+</city>
+<city id="296" name="博尔塔拉蒙古自治州">
+<area id="135">博乐市</area>
+<area id="1038">精河县</area>
+<area id="2168">温泉县</area>
+<area id="3180">博尔塔拉蒙古自治州</area>
+</city>
+<city id="297" name="昌吉回族自治州">
+<area id="166">昌吉市</area>
+<area id="540">阜康市</area>
+<area id="788">呼图壁县</area>
+<area id="890">吉木萨尔县</area>
+<area id="1413">玛纳斯县</area>
+<area id="1450">米泉市</area>
+<area id="1484">木垒哈萨克自治县</area>
+<area id="1666">奇台县</area>
+<area id="3181">昌吉回族自治州</area>
+</city>
+<city id="298" name="哈密地区">
+<area id="56">巴里坤哈萨克自治县</area>
+<area id="673">哈密市</area>
+<area id="2551">伊吾县</area>
+<area id="3182">哈密地区</area>
+</city>
+<city id="299" name="和田地区">
+<area id="153">策勒县</area>
+<area id="733">和田市</area>
+<area id="734">和田县</area>
+<area id="1396">洛浦县</area>
+<area id="1460">民丰县</area>
+<area id="1478">墨玉县</area>
+<area id="1592">皮山县</area>
+<area id="2649">于田县</area>
+<area id="3183">和田地区</area>
+</city>
+<city id="300" name="喀什地区">
+<area id="54">巴楚县</area>
+<area id="558">伽师县</area>
+<area id="1081">喀什市</area>
+<area id="1416">麦盖提县</area>
+<area id="1836">莎车县</area>
+<area id="1922">疏附县</area>
+<area id="1923">疏勒县</area>
+<area id="2004">塔什库尔干塔吉克自治县</area>
+<area id="2543">叶城县</area>
+<area id="2591">英吉沙县</area>
+<area id="2705">岳普湖县</area>
+<area id="2733">泽普县</area>
+<area id="3184">喀什地区</area>
+</city>
+<city id="301" name="克拉玛依市">
+<area id="69">白碱滩区</area>
+<area id="437">独山子区</area>
+<area id="1109">克拉玛依区</area>
+<area id="2190">乌尔禾区</area>
+<area id="3185">克拉玛依市</area>
+</city>
+<city id="302" name="克孜勒苏柯尔克孜自治州">
+<area id="5">阿合奇县</area>
+<area id="8">阿克陶县</area>
+<area id="15">阿图什市</area>
+<area id="2198">乌恰县</area>
+<area id="3186">克孜勒苏柯尔克孜自治州</area>
+</city>
+<city id="303" name="石河子市">
+<area id="3187">石河子市</area>
+</city>
+<city id="304" name="塔城地区">
+<area id="450">额敏县</area>
+<area id="724">和布克赛尔蒙古自治县</area>
+<area id="1831">沙湾县</area>
+<area id="2002">塔城市</area>
+<area id="2120">托里县</area>
+<area id="2201">乌苏市</area>
+<area id="2684">裕民县</area>
+<area id="3188">塔城地区</area>
+</city>
+<city id="305" name="图木舒克市">
+<area id="3189">图木舒克市</area>
+</city>
+<city id="306" name="吐鲁番地区">
+<area id="1845">鄯善县</area>
+<area id="2113">吐鲁番市</area>
+<area id="2119">托克逊县</area>
+<area id="3190">吐鲁番地区</area>
+</city>
+<city id="307" name="乌鲁木齐市">
+<area id="277">达坂城区</area>
+<area id="412">米东区</area>
+<area id="1835">沙依巴克区</area>
+<area id="1944">水磨沟区</area>
+<area id="2054">天山区</area>
+<area id="2108">头屯河区</area>
+<area id="2196">乌鲁木齐县</area>
+<area id="2410">新市区</area>
+<area id="3191">乌鲁木齐市</area>
+</city>
+<city id="308" name="五家渠市">
+<area id="3192">五家渠市</area>
+</city>
+<city id="309" name="伊犁哈萨克自治州">
+<area id="157">察布查尔锡自治县</area>
+<area id="610">巩留县</area>
+<area id="876">霍城县</area>
+<area id="1122">奎屯市</area>
+<area id="1545">尼勒克县</area>
+<area id="2042">特克斯县</area>
+<area id="2420">新源县</area>
+<area id="2548">伊宁市</area>
+<area id="2549">伊宁县</area>
+<area id="2762">昭苏县</area>
+<area id="3193">伊犁哈萨克自治州</area>
+</city>
+</province>
+<province id="32" name="云南省">
+<city id="311" name="保山市">
+<area id="171">昌宁县</area>
+<area id="1306">龙陵县</area>
+<area id="1329">隆阳区</area>
+<area id="1888">施甸县</area>
+<area id="2043">腾冲县</area>
+<area id="3195">保山市</area>
+</city>
+<city id="312" name="楚雄彝族自治州">
+<area id="257">楚雄市</area>
+<area id="312">大姚县</area>
+<area id="1362">禄丰县</area>
+<area id="1480">牟定县</area>
+<area id="1515">南华县</area>
+<area id="1928">双柏县</area>
+<area id="2234">武定县</area>
+<area id="2540">姚安县</area>
+<area id="2627">永仁县</area>
+<area id="2689">元谋县</area>
+<area id="3196">楚雄彝族自治州</area>
+</city>
+<city id="313" name="大理白族自治州">
+<area id="121">宾川县</area>
+<area id="460">洱源县</area>
+<area id="753">鹤庆县</area>
+<area id="935">剑川县</area>
+<area id="1447">弥渡县</area>
+<area id="1517">南涧彝族自治县</area>
+<area id="2150">巍山彝族回族自治县</area>
+<area id="2347">祥云县</area>
+<area id="2538">漾濞彝族自治县</area>
+<area id="2625">永平县</area>
+<area id="2717">云龙县</area>
+<area id="3197">大理白族自治州</area>
+<area id="3198">大理市</area>
+</city>
+<city id="315" name="德宏傣族景颇族自治州">
+<area id="1218">梁河县</area>
+<area id="1332">陇川县</area>
+<area id="2596">盈江县</area>
+<area id="3199">德宏傣族景颇族自治州</area>
+<area id="3206">芒市</area>
+<area id="3209">瑞丽市</area>
+</city>
+<city id="316" name="迪庆藏族自治州">
+<area id="354">德钦县</area>
+<area id="2152">维西傈僳族自治县</area>
+<area id="2332">香格里拉县</area>
+<area id="3200">迪庆藏族自治州</area>
+</city>
+<city id="317" name="红河哈尼族彝族自治州">
+<area id="601">个旧市</area>
+<area id="743">河口瑶族自治县</area>
+<area id="769">红河县</area>
+<area id="932">建水县</area>
+<area id="1001">金平苗族瑶族傣族自治县</area>
+<area id="1092">开远市</area>
+<area id="1348">泸西县</area>
+<area id="1370">绿春县</area>
+<area id="1442">蒙自市</area>
+<area id="1448">弥勒县</area>
+<area id="1631">屏边苗族自治县</area>
+<area id="1901">石屏县</area>
+<area id="2691">元阳县</area>
+<area id="3201">红河哈尼族彝族自治州</area>
+</city>
+<city id="319" name="昆明市">
+<area id="218">呈贡县</area>
+<area id="391">东川区</area>
+<area id="549">富民县</area>
+<area id="640">官渡区</area>
+<area id="1025">晋宁县</area>
+<area id="1363">禄劝彝族苗族自治县</area>
+<area id="1576">盘龙区</area>
+<area id="1896">石林彝族自治县</area>
+<area id="1971">嵩明县</area>
+<area id="2220">五华区</area>
+<area id="2287">西山区</area>
+<area id="2480">寻甸回族彝族自治县</area>
+<area id="2568">宜良县</area>
+<area id="3194">安宁市</area>
+<area id="3203">昆明市</area>
+</city>
+<city id="320" name="丽江市">
+<area id="620">古城区</area>
+<area id="805">华坪县</area>
+<area id="1561">宁蒗彝族自治县</area>
+<area id="2629">永胜县</area>
+<area id="2673">玉龙纳西族自治县</area>
+<area id="3204">丽江市</area>
+</city>
+<city id="321" name="临沧市">
+<area id="146">沧源佤族自治县</area>
+<area id="504">凤庆县</area>
+<area id="603">耿马傣族佤族自治县</area>
+<area id="1257">临翔区</area>
+<area id="1931">双江拉祜族佤族布朗族傣族自治县</area>
+<area id="2610">永德县</area>
+<area id="2720">云县</area>
+<area id="2779">镇康县</area>
+<area id="3205">临沧市</area>
+</city>
+<city id="323" name="怒江傈僳族自治州">
+<area id="528">福贡县</area>
+<area id="618">贡山独龙族怒族自治县</area>
+<area id="1137">兰坪白族普米族自治县</area>
+<area id="1347">泸水县</area>
+<area id="3207">怒江傈僳族自治州</area>
+</city>
+<city id="324" name="曲靖市">
+<area id="556">富源县</area>
+<area id="864">会泽县</area>
+<area id="1357">陆良县</area>
+<area id="1384">罗平县</area>
+<area id="1408">马龙县</area>
+<area id="1671">麒麟区</area>
+<area id="1886">师宗县</area>
+<area id="2475">宣威市</area>
+<area id="2744">沾益县</area>
+<area id="3208">曲靖市</area>
+</city>
+<city id="326" name="普洱市">
+<area id="273">翠云区</area>
+<area id="943">江城哈尼族彝族自治县</area>
+<area id="1043">景东彝族自治县</area>
+<area id="1044">景谷傣族彝族自治县</area>
+<area id="1146">澜沧拉祜族自治县</area>
+<area id="1445">孟连傣族拉祜族佤族自治县</area>
+<area id="1476">墨江哈尼族自治县</area>
+<area id="1647">宁洱哈尼族彝族自治县</area>
+<area id="2281">西盟佤族自治县</area>
+<area id="2785">镇沅彝族哈尼族拉祜族自治县</area>
+<area id="3210">思茅市</area>
+<area id="3295">普洱市</area>
+</city>
+<city id="327" name="文山壮族苗族自治州">
+<area id="550">富宁县</area>
+<area id="657">广南县</area>
+<area id="1400">麻栗坡县</area>
+<area id="1407">马关县</area>
+<area id="1753">丘北县</area>
+<area id="2176">文山市</area>
+<area id="2267">西畴县</area>
+<area id="2516">砚山县</area>
+<area id="3211">文山壮族苗族自治州</area>
+</city>
+<city id="328" name="西双版纳傣族自治州">
+<area id="1437">勐海县</area>
+<area id="1438">勐腊县</area>
+<area id="3202">景洪市</area>
+<area id="3212">西双版纳傣族自治州</area>
+</city>
+<city id="329" name="玉溪市">
+<area id="240">澄江县</area>
+<area id="447">峨山彝族自治县</area>
+<area id="774">红塔区</area>
+<area id="804">华宁县</area>
+<area id="945">江川县</area>
+<area id="2079">通海县</area>
+<area id="2403">新平彝族傣族自治县</area>
+<area id="2578">易门县</area>
+<area id="2688">元江哈尼族彝族傣族自治县</area>
+<area id="3213">玉溪市</area>
+</city>
+<city id="330" name="昭通市">
+<area id="292">大关县</area>
+<area id="1352">鲁甸县</area>
+<area id="1694">巧家县</area>
+<area id="1943">水富县</area>
+<area id="1991">绥江县</area>
+<area id="2147">威信县</area>
+<area id="2507">盐津县</area>
+<area id="2572">彝良县</area>
+<area id="2628">永善县</area>
+<area id="2763">昭阳区</area>
+<area id="2784">镇雄县</area>
+<area id="3214">昭通市</area>
+</city>
+</province>
+<province id="33" name="浙江省">
+<city id="331" name="杭州市">
+<area id="128">滨江区</area>
+<area id="262">淳安县</area>
+<area id="554">富阳市</area>
+<area id="612">拱墅区</area>
+<area id="925">建德市</area>
+<area id="949">江干区</area>
+<area id="1234">临安市</area>
+<area id="1853">上城区</area>
+<area id="2096">桐庐县</area>
+<area id="2275">西湖区</area>
+<area id="2312">下城区</area>
+<area id="2357">萧山区</area>
+<area id="2651">余杭区</area>
+<area id="3215">杭州市</area>
+</city>
+<city id="332" name="湖州市">
+<area id="26">安吉县</area>
+<area id="194">长兴县</area>
+<area id="355">德清县</area>
+<area id="1537">南浔区</area>
+<area id="2213">吴兴区</area>
+<area id="3216">湖州市</area>
+</city>
+<city id="333" name="嘉兴市">
+<area id="689">海宁市</area>
+<area id="692">海盐县</area>
+<area id="912">嘉善县</area>
+<area id="1605">平湖市</area>
+<area id="2097">桐乡市</area>
+<area id="2457">南湖区</area>
+<area id="2462">秀洲区</area>
+<area id="3217">嘉兴市</area>
+</city>
+<city id="334" name="金华市">
+<area id="422">东阳市</area>
+<area id="994">金东区</area>
+<area id="1140">兰溪市</area>
+<area id="1579">磐安县</area>
+<area id="1643">浦江县</area>
+<area id="2255">武义县</area>
+<area id="2261">婺城区</area>
+<area id="2574">义乌市</area>
+<area id="2622">永康市</area>
+<area id="3218">金华市</area>
+</city>
+<city id="335" name="丽水市">
+<area id="1028">缙云县</area>
+<area id="1045">景宁畲族自治县</area>
+<area id="1211">莲都区</area>
+<area id="1310">龙泉市</area>
+<area id="1717">青田县</area>
+<area id="1746">庆元县</area>
+<area id="1969">松阳县</area>
+<area id="1996">遂昌县</area>
+<area id="2715">云和县</area>
+<area id="3219">丽水市</area>
+</city>
+<city id="336" name="宁波市">
+<area id="111">北仑区</area>
+<area id="265">慈溪市</area>
+<area id="511">奉化市</area>
+<area id="690">海曙区</area>
+<area id="941">江北区</area>
+<area id="947">江东区</area>
+<area id="1555">宁海县</area>
+<area id="2354">象山县</area>
+<area id="2585">鄞州区</area>
+<area id="2654">余姚市</area>
+<area id="2778">镇海区</area>
+<area id="3220">宁波市</area>
+</city>
+<city id="337" name="衢州市">
+<area id="201">常山县</area>
+<area id="957">江山市</area>
+<area id="1084">开化县</area>
+<area id="1100">柯城区</area>
+<area id="1320">龙游县</area>
+<area id="1764">衢江区</area>
+<area id="3221">衢州市</area>
+</city>
+<city id="338" name="绍兴市">
+<area id="1863">上虞市</area>
+<area id="1870">绍兴县</area>
+<area id="1884">嵊州市</area>
+<area id="2378">新昌县</area>
+<area id="2710">越城区</area>
+<area id="2826">诸暨市</area>
+<area id="3222">绍兴市</area>
+</city>
+<city id="339" name="台州市">
+<area id="847">黄岩区</area>
+<area id="980">椒江区</area>
+<area id="1239">临海市</area>
+<area id="1367">路桥区</area>
+<area id="1816">三门县</area>
+<area id="2055">天台县</area>
+<area id="2167">温岭市</area>
+<area id="2320">仙居县</area>
+<area id="2672">玉环县</area>
+<area id="3223">台州市</area>
+</city>
+<city id="340" name="温州市">
+<area id="147">苍南县</area>
+<area id="429">洞头县</area>
+<area id="1162">乐清市</area>
+<area id="1318">龙湾区</area>
+<area id="1358">鹿城区</area>
+<area id="1573">瓯海区</area>
+<area id="1623">平阳县</area>
+<area id="1803">瑞安市</area>
+<area id="2025">泰顺县</area>
+<area id="2173">文成县</area>
+<area id="2620">永嘉县</area>
+<area id="3224">温州市</area>
+</city>
+<city id="341" name="舟山市">
+<area id="320">岱山县</area>
+<area id="375">定海区</area>
+<area id="1653">普陀区</area>
+<area id="1883">嵊泗县</area>
+<area id="3225">舟山市</area>
+</city>
+</province>
+<province id="34" name="重庆市">
+<city id="346" name="重庆市">
+<area id="60">巴南区</area>
+<area id="102">北碚区</area>
+<area id="119">璧山县</area>
+<area id="189">长寿区</area>
+<area id="226">城口县</area>
+<area id="288">大渡口区</area>
+<area id="318">大足县</area>
+<area id="365">垫江县</area>
+<area id="488">丰都县</area>
+<area id="512">奉节县</area>
+<area id="525">涪陵区</area>
+<area id="942">江北区</area>
+<area id="1063">九龙坡区</area>
+<area id="1089">开县</area>
+<area id="1219">梁平县</area>
+<area id="1499">南岸区</area>
+<area id="1583">彭水苗族土家族自治县</area>
+<area id="1669">綦江县</area>
+<area id="1684">黔江区</area>
+<area id="1785">荣昌县</area>
+<area id="1827">沙坪坝区</area>
+<area id="1908">石柱土家族自治县</area>
+<area id="1937">双桥区</area>
+<area id="2101">铜梁县</area>
+<area id="2107">潼南县</area>
+<area id="2131">万盛区</area>
+<area id="2135">万州区</area>
+<area id="2203">巫山县</area>
+<area id="2204">巫溪县</area>
+<area id="2243">武隆县</area>
+<area id="2459">秀山土家族苗族自治县</area>
+<area id="2641">酉阳土家族苗族自治县</area>
+<area id="2644">渝北区</area>
+<area id="2646">渝中区</area>
+<area id="2723">云阳县</area>
+<area id="2812">忠县</area>
+<area id="3226">合川区</area>
+<area id="3227">江津区</area>
+<area id="3228">南川区</area>
+<area id="3229">永川区</area>
+<area id="3230">重庆市</area>
+</city>
+</province>
+</results>

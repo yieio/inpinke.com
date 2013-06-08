@@ -1,0 +1,96 @@
+﻿@using Inpinke.Model
+@{
+    ViewBag.Title = "我的订单-Inpinke感受印品的美好";
+}
+<div class="content_wrapper account_wrapper">
+    <!--用户菜单-->
+    @Html.Partial("_MyMenuPartial")
+    <div class="content_wrapper clearfix">
+        <div class="myorder_list">
+            @if (ViewBag.OrderList == null)
+            {
+
+            }
+            else
+            {
+                IList<Inpinke_Order> oList = ViewBag.OrderList as List<Inpinke_Order>;
+                IList<Inpinke_Order_Product> pList = ViewBag.OrderProductList as List<Inpinke_Order_Product>;
+                foreach (Inpinke_Order o in oList)
+                {
+                    int pCount = 0;
+                <div class="order_item">
+                    <div class="order_item_sum">
+                        <span class="order_status">@(Inpinke.Model.Enum.OrderStatusDesc.GetOrderStatusDesc(o.OrderStatus))</span><span>订单编号：@(o.OrderCode)</span><span
+                            class="order_total_price">总计：@(o.TotalPrice)</span></div>
+                    @foreach (Inpinke_Order_Product p in pList)
+                    {
+                        if (p.OrderID == o.ID)
+                        {
+                            pCount++;
+                            string lastCss = pCount == pList.Count() ? "last_order_prod" : "";
+                            decimal singelPrice = p.Inpinke_Product.Price + p.Inpinke_Product.PlusPrice * ((p.Inpinke_Book.PageCount - p.Inpinke_Product.BasePages) / p.Inpinke_Product.PlusPages);
+                            
+                        <div class="order_prod @(lastCss) clearfix">
+                            <div class="prod_info">
+                                <a href="/show?id=@(p.Inpinke_Book.ID)" class="prod_info_cover" target="_blank">
+                                    <img src="@(p.Inpinke_Book.BookCover)" alt="@(p.Inpinke_Book.BookName)" /></a>
+                                <div class="prod_info_detail">
+                                    <h2 class="book_name">
+                                        @(p.Inpinke_Book.BookName)</h2>
+                                    <p class="info_detail">
+                                        品名：<a href="">@(p.Inpinke_Product.Name)</a>&nbsp;&nbsp;规格：@(p.Inpinke_Product.Width)X@(p.Inpinke_Product.Height)CM&nbsp;&nbsp;页数：@(p.Inpinke_Book.PageCount)&nbsp;&nbsp;单价：@(singelPrice)<br />
+            @{
+                                            string enveName = "无";
+                                            if (p.Envelope != 0)
+                                            {
+                                                Inpinke_Product envelope = Inpinke.BLL.DBProductBLL.GetProductByID(p.Envelope);
+                                                if (envelope != null)
+                                                {
+                                                    enveName = envelope.Name;
+                                                }
+                                            }
+}
+                                        封套：@(enveName)
+                                        @* 附赠：索引卡<br />*@
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="prod_price">
+                                <span class="prod_num">@(p.Num)</span><br />
+                                <span class="prod_total_price">@(singelPrice * p.Num)RMB</span>
+                            </div>
+                        </div>
+                        }
+                    }
+                    <div class="order_item_action">
+                        <p class="book_btn clearfix">
+                            <span style="float: left; padding: 10px 0px;">下单日期：@(o.CreateTime)</span>
+                            @if (o.OrderStatus == (int)Inpinke.Model.Enum.OrderStatus.Create)
+                            {
+                                <a href="/order/pay?orderid=@(o.ID)" class="r_btn">付款</a><a href="/order/modify?orderid=@(o.ID)" class="r_btn">修改</a> 
+                            }
+                            <a href="/order/detail?orderid=@(o.ID)" target="_blank" class="r_btn">订单详情</a>
+                        </p>
+                    </div>
+                </div>
+                }
+                <div class="the_pages" style="width: 710px;">
+                    @Html.Raw(Html.uiPager4(4))
+                </div>
+            }
+        </div>
+        <div class="right_menu_wrapper">
+            <div class="menu_box">
+                <div class="menu_title">
+                    <h2>
+                        快速定制印品</h2>
+                </div>
+                <div class="box_con">
+                    <a href="javascript:;">
+                        <img src="../../Content/pagestyle/images/intime_info.png" alt="" /></a>
+                </div>
+            </div>
+            @Html.Partial("_TopList_Right")
+        </div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+﻿@model inpinke.com.Models.OrderInfoModel
+@using (Html.BeginForm("AjaxUpdateAddress", "Order", FormMethod.Post, new { @class = "consignee_form", id = "ConsigneeForm" }))
+{
+    <div>
+        <div class="editor_label">
+            @Html.LabelFor(m => m.Consignee)
+        </div>
+        <div class="editor_field">
+        <input type="hidden" name="AddressID" id="AddressID" value="0" />
+            @Html.TextBoxFor(m => m.Consignee)
+            @Html.ValidationMessageFor(m => m.Consignee)
+        </div>
+        <div class="editor_label">
+            @Html.LabelFor(m => m.Mobile)
+        </div>
+        <div class="editor_field">
+            @Html.TextBoxFor(m => m.Mobile)
+            @Html.ValidationMessageFor(m => m.Mobile)
+        </div>
+        <div class="editor_label">
+            收货地址
+        </div>
+        <div class="editor_field">
+            <select name="ProvID" id="ProvID">
+                <option>--请选择省--</option>
+            </select>
+            <select name="CityID" id="CityID" onchange="Scripts.pca.Doajax('ajax.do?act=area&id='+escape(this.value),'post','AreaID','area');">
+                <option>--请选择市--</option>
+            </select>
+            <select name="AreaID" id="AreaID">
+                <option>--请选择区--</option>
+            </select>
+            @Html.ValidationMessageFor(m => m.AreaID)
+        </div>
+        <div class="editor_field">
+            @Html.TextBoxFor(m => m.Address, new { onfocus = "if (value =='详细地址'){value =''}", onblur = "if (value ==''){value='详细地址'}", value = "详细地址" })
+            @Html.ValidationMessageFor(m => m.Address)
+        </div>
+    </div>
+    <p id="ViewBagMsg">@ViewBag.Msg</p>
+    <p class=" editor_label order_btn_field">
+        <input value="保存" type="submit" class="color_btn" />
+        &nbsp;&nbsp;<a href="javascript:CloseBox()">关闭</a>
+    </p>
+}
+<script type="text/javascript" src="../../Scripts/pca.js"></script>
+<script type="text/javascript">
+    $(function () {
+        Scripts.pca.Doajax('ajax.do?act=province', 'post', 'ProvID', "province", $("#provinceH").val());
+        Scripts.pca.Doajax('ajax.do?act=city&id=' + escape($("#provinceH").val()), 'post', 'CityID', "city", $("#cityH").val());
+        Scripts.pca.Doajax('ajax.do?act=area&id=' + escape($("#cityH").val()), 'post', 'AreaID', "area", $("#areaH").val());
+        $("#ProvID").change(function () {
+            Scripts.pca.Doajax('ajax.do?act=city&id=' + escape($(this).val()), 'post', 'CityID', 'city');
+            Scripts.pca.Doajax('ajax.do?act=area&id=' + escape(0), 'post', 'AreaID', 'area');
+        })
+        
+
+    })
+</script>

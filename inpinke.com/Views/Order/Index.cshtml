@@ -1,0 +1,178 @@
+﻿@using Inpinke.Model;
+@using Inpinke.BLL;
+@{
+    ViewBag.Title = "Inpinke-确认商品信息";
+    string products = "";
+}
+@section  LinkScript{
+   }
+<div class="content_wrapper order_wrapper">
+    <p class="content_title">
+        <span>确认商品信息</span>
+    </p>
+    <p class="order_step">
+        <span style="color: #111; font-weight:bold;">1、确认商品信息</span><span>></span><span>2、填写订单信息</span><span>></span><span>3、完成支付</span><span>></span><span>4、等待收货</span></p>
+    <div class="order_product_wrapper">
+        <p style="color: #a00">@ViewBag.Msg</p>
+        @using (Html.BeginForm("Index", "Order", FormMethod.Post, new { @class = "cart_form" }))
+        {
+            if (Model != null)
+            {
+                IList<Inpinke_Cart> list = Model as IList<Inpinke_Cart>;
+                if (list.Count() > 0)
+                {
+            <table cellpadding="0" cellspacing="0" class="order_table">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="h_item_name">
+                            商品
+                        </th>
+                        <th class="h_item_prize">
+                            单价(元)
+                        </th>
+                        <th class="h_item_num">
+                            数量
+                        </th>
+                        <th class="h_item_coupon">
+                            优惠方式(元)
+                        </th>
+                        <th class="h_item_total">
+                            小计(元)
+                        </th>
+                        <th class="h_item_action">
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Inpinke_Cart c in list)
+                    {
+                        products += c.BookID + ","; 
+                        <tr class="list_item" id="list_item_@(c.BookID)">
+                            <td class="item_img">
+                                <input type="checkbox" value="@(c.BookID)" checked="checked" name="bookids" style="
+                display:none" />
+                                <img src="@(c.Inpinke_Book.BookCover)" style="width: 80px; height:
+                80px;" alt="" />
+                            </td>
+                            <td class="item_name">
+                                <h2>
+                                    <a href="/show?id=@c.Inpinke_Book.ID" target="_blank">@c.Inpinke_Book.BookName</a></h2>
+                                <p class="item_packet">
+                                    <label>
+                                        封套：</label>
+                                    @{               
+                                                                         IList<Inpinke_Product> envList = DBProductBLL.GetPlusProduct(c.ProductID, Inpinke.Model.Enum.ProductType.Envelope);         
+                                    }
+                                    @if (envList == null || envList.Count() <= 0)
+                                    { 
+                                        <span>无</span>
+                                    }
+                                    else
+                                    {
+                                        <select name="envelope_@(c.BookID)" id="envelope_@(c.BookID)" class="envelope_select">
+                                            @foreach (Inpinke_Product p in envList)
+                                            {
+                                                string selected = p.ID == c.Envelope ? "selected=true" : "";
+                                                <option value="@(p.ID)" @(selected)>@(p.ShortName)</option>
+                                            }
+                                        </select>
+                                    }
+                                    <a href="/intime/envelope" style="color: #007700;">什么是封套？</a>
+                                </p>
+                                <p class="item_free">
+                                    <label>
+                                        其他附赠：</label>@(c.PlusID != 0 ? "" : "无")</p>
+                            </td>
+                            <td>
+                                @(c.Inpinke_Product.BasePages)页： @c.Inpinke_Product.Price<br />
+                                @{decimal plusPrice = c.Inpinke_Product.PlusPrice * ((c.Inpinke_Book.PageCount - c.Inpinke_Product.BasePages) / c.Inpinke_Product.PlusPages);}
+                                加页：@plusPrice
+                                <input type="hidden" id="single_price_@(c.BookID)" value="@(c.Inpinke_Product.Price + plusPrice)"
+                />
+                            </td>
+                            <td>
+                                <input type="text" id="num_@(c.BookID)" value="@(c.Num)" class="num_input"
+                name="num_@(c.BookID)" />
+                            </td>
+                            <td>
+                                <select name="coupon_select_@(c.BookID)" id="coupon_select_@(c.BookID)"
+                style="width:auto; min-width:130px;">
+                                    <option value="0">无优惠</option>
+                                </select>
+                            </td>
+                            <td id="total_price_@(c.BookID)">
+                                @{decimal totalPrice = (c.Inpinke_Product.Price + plusPrice) * c.Num; }
+                                @totalPrice
+                            </td>
+                            <td>
+                                <a href="javascript:;" onclick="DeleteCartProduct(@(c.BookID))">[删除]</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">
+                        </td>
+                        <td colspan="5" style="text-align: right;">
+                            <input value="下一步：填写订单信息" type="submit" class="color_btn" />
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <!--购物车中含有的礼品-->
+@*<input type="hidden" id="bookids"  name="bookids" value="@products" />*@
+                }
+                else 
+                {
+                    <div class="cart_empty clearfix">
+                    <div class="cart_state_1">
+                      <div class="cart_product_num">空</div>
+                    </div>
+                  <div class="cart_empty_guide">
+                    <h2>您的购物车为空，没有要确认的商品信息</h2>
+                    <p>您可以：</p>
+                    <p>选择下单印刷 <a href="/my/book">自己已经制作的印品</a> </p>
+                    <p>马上开始 <a href="/intime/createintime?prodid=1"> 定制自己的个性印品</a></p>
+                    <p>看看我们为您 <a href="/shelf">精选的印品</a></p>
+                  </div>
+                   </div>
+                }
+            }
+        }
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $("input.num_input").change(function () {
+            var id = $(this).attr("id"),
+            idInfo = id.split('_'),
+            totalObj = $("#total_price_" + idInfo[1]),
+            singlePrice = $("#single_price_" + idInfo[1]).val(),
+            totalPrice = singlePrice * $(this).val();
+            totalObj.text(totalPrice.toFixed(2));
+        })
+    })
+
+    function DeleteCartProduct(bookid) {
+        if (confirm("确认要把该印品移出购物车吗？")) {
+            $.ajax({
+                url: '/order/AjaxDeleteCartProduct',
+                type: 'get',
+                dataType: 'json',
+                cache: false,
+                data: { bookid: bookid },
+                success: function (r) {
+                    if (r.success) {
+                        $("#list_item_" + r.bookid).remove();
+                        var count = $("#CartProductCount").text(), nowCount = parseInt(count) - 1 < 0 ? 0 : parseInt(count) - 1;
+                        $("#CartProductCount").text(nowCount);
+                    } else {
+                        alert(r.message);
+                    }
+                }
+            })
+        }
+    }
+
+</script>

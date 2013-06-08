@@ -1,0 +1,28 @@
+﻿@{
+    int userBookCount = Inpinke.BLL.DBBookBLL.GetUserBooksCount(Inpinke.BLL.Session.UserSession.CurrentUser.ID);
+    int userOrderCount = Inpinke.BLL.DBOrderBLL.GetUserOrderCount(Inpinke.BLL.Session.UserSession.CurrentUser.ID);
+    int userAddressCount = Inpinke.BLL.DBAddressBLL.GetUserAddressCount(Inpinke.BLL.Session.UserSession.CurrentUser.ID);
+    int userImageCount = Inpinke.BLL.DBImageBLL.GetUserImageCount(Inpinke.BLL.Session.UserSession.CurrentUser.ID);
+    }
+<ul id="myUserNav" class="usernav clearfix">
+        <li><a href="/my/photo">影像（@(userImageCount)）</a></li>
+        <li><a href="/my/book">照片书（@userBookCount）</a></li>
+        <li><a href="/my/order">我的订单（@userOrderCount）</a></li>
+        <li><a href="/my/coupon">优惠券（0）</a></li>
+        <li><a href="/my/address">收货地址（@(userAddressCount)）</a> </li>
+        <li><a href="/my/message">我的消息（0）</a> </li>
+        <li id="myindex_href"><a href="/my/index">账户信息</a> </li>
+    </ul>
+<script type="text/javascript">
+    $(function () {
+        var url = window.location + "";
+        url = url.toLowerCase();    
+        $("#myUserNav li").each(function () {
+            var theLink = $(this).find("a"); href = theLink.attr("href");
+            if (url.indexOf(href) >= 0) {
+                theLink.addClass("active");
+                $(this).siblings("li").find("a").removeClass("active");
+            }
+        })
+    })
+</script>
